@@ -1,5 +1,51 @@
-# Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files /// Django
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
+
+# Backup files # 
+*.bak 
+
+# If you are using PyCharm # 
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# AWS User-specific
+.idea/**/aws.xml
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
 __pycache__/
+# Python
 *.py[cod]
 *$py.class
 
@@ -9,6 +55,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+.Python build/ 
 develop-eggs/
 dist/
 downloads/
@@ -41,6 +88,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
+.pytest_cache/ 
 nosetests.xml
 coverage.xml
 *.cover
@@ -77,6 +125,7 @@ target/
 
 # celery beat schedule file
 celerybeat-schedule
+celerybeat-schedule.* 
 
 # SageMath parsed files
 *.sage.py
@@ -106,8 +155,31 @@ venv.bak/
 # Exclude collected Django static files
 static_collected
 
+# Sublime Text # 
+*.tmlanguage.cache 
+*.tmPreferences.cache 
+*.stTheme.cache 
+*.sublime-workspace 
+*.sublime-project 
+
+# sftp configuration file 
+sftp-config.json 
+
+# Package control specific files Package 
+Control.last-run 
+Control.ca-list 
+Control.ca-bundle 
+Control.system-ca-bundle 
+GitHub.sublime-settings 
+
 # Exclude machine-specific vs code settings
 .vscode/settings.json
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
 
 # node for sass folders
 node_modules/

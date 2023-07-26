@@ -1,0 +1,10 @@
+@use "reset";
+@use "variables" as *;
+@use "typography" as *;
+a {
+  color: $link-color;
+}
+
+a:hover {
+  text-decoration: none;
+}
