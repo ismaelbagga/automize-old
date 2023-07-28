@@ -1,5 +1,5 @@
+@use "variables";
 /* typography.scss */
-
 @font-face {
   font-family: "Open Sans";
   font-weight: normal;
@@ -23,3 +23,33 @@
 }
 
 /* Add more @font-face rules for other font weights and styles */
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+html,
+body,
+* {
+  font-family: $fontFamily;
+}

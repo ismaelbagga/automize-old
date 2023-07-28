@@ -2,33 +2,18 @@
 @use "variables" as *;
 @use "typography" as *;
 
-body {
-  font-family: "Open Sans";
-}
-
-a {
-  color: $link-color;
-}
-h1 {
-  font-size: 52px;
-}
-h2 {
-  font-size: 32px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 21px;
-}
-h5 {
-  font-size: 18px;
-}
-h6 {
-  font-size: 16px;
-}
-
 .block-title {
   font-size: 32px;
   font-weight: 700;
+  // font-family: $fontFamily;
+}
+
+body {
+  background-color: red;
+  .container {
+    background-color: $primary-color;
+    a {
+      color: $secondary-color;
+    }
+  }
 }
