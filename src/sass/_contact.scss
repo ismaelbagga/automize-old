@@ -1,0 +1,227 @@
+.contactUs {
+    position: absolute;
+    width: 80%;
+    padding: 40px;
+
+    .top {
+        width: 100%;
+        margin: 15%;
+
+        .title {
+            p {
+                margin-bottom: 50px;
+                margin-left: 20px;
+                font-size: 48px;
+                letter-spacing: -2.4px;
+            }
+        }
+
+        .box {
+            position: relative;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 5fr 4fr;
+            grid-template-areas: "form info" "form map";
+            grid-gap: 20px;
+            width: 90%;
+            margin-left: 20px;
+
+            .contact {
+                padding: 40px;
+                background-color: white;
+                box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+            }
+
+            .form {
+                grid-area: form;
+
+                .formBox {
+                    position: relative;
+                    width: 100%;
+
+                    .row50 {
+                        display: flex;
+                        gap: 25px;
+                    }
+
+                    .inputBox {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 10px;
+                        width: 100%;
+
+                        span {
+                            color: #6f6f6f;
+                            margin-top: 10px;
+                            margin-bottom: 5px;
+                        }
+
+                        input {
+                            padding: 10px;
+                            font-size: 1.1em;
+                            outline: none;
+                            border: 1px solid #eee9e9;
+                            background-color: #f9f9f9;
+                        }
+                    }
+                }
+
+                .row100 {
+                    .inputBox {
+                        width: 100%;
+
+                        input[type="submit"] {
+                            background: #dd170f;
+                            color: white;
+                            border: none;
+                            font-size: 1.1em;
+                            font-weight: 500;
+                            max-width: 200px;
+                            cursor: pointer;
+                            padding: 14px 15px;
+                        }
+
+                        span {
+                            color: #6f6f6f;
+                            margin-top: 10px;
+                            margin-bottom: 5px;
+                        }
+
+                        textarea {
+                            padding: 10px;
+                            font-size: 1.1em;
+                            outline: none;
+                            border: 1px solid #ede8e8;
+                            resize: none;
+                            min-height: 220px;
+                            margin-bottom: 10px;
+                            background-color: #f9f9f9;
+                        }
+                    }
+
+                    .check {
+                        margin-bottom: 15px;
+
+                        .container {
+                            display: block;
+                            position: relative;
+                            padding-left: 35px;
+                            margin-left: 0px;
+                            margin-bottom: 17px;
+                            cursor: pointer;
+                            font-size: 18px;
+                            color: #6f6f6f;
+                            user-select: none;
+
+                            input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            }
+
+                            .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 20px;
+                                width: 20px;
+                                background-color: #eee;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info {
+                grid-area: info;
+                height: 70%;
+                font-family: 'Open Sans';
+
+                .boxInfo {
+                    width: 100%;
+
+                    p {
+                        font-style: italic;
+                        line-height: 35px;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    .desc {
+                        float: left;
+                        margin-top: 15px;
+
+                        span {
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .map {
+                margin: 0;
+                height: 30%;
+                grid-area: map;
+                color: #333;
+
+                .map_desc {
+                    p {
+                        margin-top: 0;
+                        margin-left: 120px;
+                        line-height: 10px;
+                    }
+
+                    ul {
+                        margin: 20px;
+
+                        li {
+                            list-style-type: square;
+                            line-height: 30px;
+                        }
+
+                        ::marker {
+                            color: #dd170f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc !important;
+}
+
+.container input:checked~.checkmark {
+    background-color: #dd170f !important;
+}
+
+.checkmark:after {
+    content: "" !important;
+    position: absolute !important;
+    display: none !important;
+}
+
+.container input:checked~.checkmark:after {
+    display: block !important;
+}
+
+.container .checkmark:after {
+    left: 7px !important;
+    top: 5px !important;
+    width: 3px !important;
+    height: 6px !important;
+    border: solid white !important;
+    border-width: 0 3px 3px 0 !important;
+    -webkit-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+}
