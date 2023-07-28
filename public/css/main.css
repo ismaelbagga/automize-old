@@ -156,6 +156,91 @@ body,
   font-family: "Open Sans";
 }
 
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+.centered h1 {
+  font-size: 4rem;
+}
+
+.centered p {
+  margin-top: 2em;
+  font-size: 18px;
+}
+
+.desc {
+  margin-top: 100px;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  border-bottom: 4px solid #dd170f;
+  margin: 15px;
+}
+
+.desc p {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.desc img {
+  width: 60%;
+  margin-top: 20px;
+}
+
+section {
+  text-align: center;
+  width: 50%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin: 10px;
+  width: 80%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card img {
+  width: 90%;
+}
+
+.desc button a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+.desc button {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 70%;
+  height: 50px;
+  background-color: #dd170f;
+  border: none;
+}
+
 .block-title {
   font-size: 32px;
   font-weight: 700;
