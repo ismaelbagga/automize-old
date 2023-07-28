@@ -1,0 +1,159 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item1 {
+    grid-area: menu;
+    width: 100%;
+    margin-right: 150px;
+    margin-left: 300px;
+}
+
+.item2 {
+    grid-area: main;
+
+}
+
+.item3 {
+    grid-area: right;
+
+}
+
+.item4 {
+    grid-area: left;
+
+}
+
+.item5 {
+    grid-area: second;
+
+}
+
+.item6 {
+    grid-area: sec;
+
+}
+
+.item7 {
+    grid-area: left_1;
+
+}
+.item8{
+    grid-area: footer;
+    width: 100%;
+    display: flex; /* Use flexbox container */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'menu menu menu main right' 'menu menu menu left  second' 'menu menu menu sec left_1' 'menu menu menu footer footer';
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    gap: 2%;
+}
+
+.grid-container>div {
+    padding: 20px;
+}
+
+.search input[type="search"] {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    border: 2px solid rgb(207, 201, 201);
+}
+
+table tr {
+    width: 100%;
+}
+
+td a {
+    text-decoration: none;
+    color: #6f6f6f;
+    font-size: 14px;
+}
+
+td a:hover {
+    color: #dd170f;
+    text-decoration: underline;
+}
+
+td p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+hr {
+    width: 190px;
+    color: #d0cccc;
+    margin-top: 12px;
+}
+
+.card {
+    width: 100%;
+    box-shadow: #d0d3d4 0px 0px 5px 0px;
+}
+
+.info_card {
+    padding: 5%;
+}
+
+.article {
+    line-height: 24px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.article p {
+    color: #666666;
+    font-size: 15px;
+}
+
+.article a {
+    font-size: 16px;
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+}
+
+.article a:hover {
+    color: #dd170f;
+}
+
+.meta p {
+    background-position: 0px 0px;
+    color: #777777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.btn_post button{
+    padding: 15px ;
+    background-color: #dd170f;
+    color: white;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+.btn_post button {
+    text-decoration: none;
+    color: white;
+}
+.btn_post button:hover{
+    background-color: #6f6f6f;
+}
+
+.title td{
+    padding-top: 50px;
+}
+.title_1 td{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeecec;
+}
