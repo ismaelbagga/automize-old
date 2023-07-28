@@ -1,0 +1,47 @@
+
+.home-main-section{
+    padding: 0%;
+    margin: 0px 0%;
+    background-image: url(img/home-top-image.png);
+    background-position: left top;
+
+    overflow: hidden;
+    background-size: 100mv;
+    min-height: 41mv;
+}
+
+.line{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 114px;
+    background: #DB1C1E;
+    margin: 30px auto 0;
+}
+
+.home-main-section-right img{
+    width: 100px;
+    height: 100px;
+}
+.section-home{
+    background-color: #ffebeb;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.title-block{
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
