@@ -1,19 +1,13 @@
 @use "reset";
 @use "variables" as *;
 @use "typography" as *;
+@use "buttons" as *;
+
+//=== Pages ===//
+@use "about";
 
 .block-title {
   font-size: 32px;
   font-weight: 700;
   // font-family: $fontFamily;
-}
-
-body {
-  background-color: red;
-  .container {
-    background-color: $primary-color;
-    a {
-      color: $secondary-color;
-    }
-  }
 }
