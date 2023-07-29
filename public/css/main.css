@@ -401,8 +401,9 @@
   font-size: 15px;
 }
 .grid-container .card .info_card .article a {
-  font-size: 16px;
-  color: rgb(78, 78, 78);
+  font-size: 19px;
+  font-weight: 600;
+  color: #373737;
   text-decoration: none;
 }
 .grid-container .card .info_card .article a :hover {
@@ -416,6 +417,217 @@
   letter-spacing: 1px;
   text-align: left;
   text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+}
+body .container {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0;
+}
+body .container .centered {
+  text-align: center;
+}
+body .container .description_first {
+  margin-top: 100px;
+  width: 50%;
+}
+body .container .description_first .title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+body .container .description_first .title hr {
+  border: 2px solid #dd170f;
+  width: 15%;
+}
+body .container .description_first section {
+  text-align: center;
+}
+body .container .description_first section p {
+  line-height: 38px;
+  font-size: 22px;
+  color: #454747;
+}
+body .container .description {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 60%;
+  padding: 100px 0 150px 0;
+  background-color: #FFF5F5;
+  margin: 100px 0 0 0;
+}
+body .container .description .service {
+  text-align: center;
+  width: 50%;
+}
+body .container .description .service h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+body .container .description .service hr {
+  border: 2px solid #dd170f;
+  width: 15%;
+}
+body .container .description .service .service_text p {
+  font-size: 22px;
+  line-height: 33px;
+}
+body .container .description .service .service_items {
+  width: 100%;
+}
+body .container .description .service .service_items table tr {
+  text-align: center;
+}
+body .container .description .service .service_items table tr th {
+  font-size: 22px;
+  padding-left: 50px;
+}
+body .container .description .service .service_items table tr td {
+  font-size: 20px;
+  padding-left: 50px;
+  color: #454747;
+  line-height: 30px;
+}
+body .container .description .service .service_items table tr td button {
+  margin-top: 60px;
+  padding: 15px;
+  background-color: white;
+  color: #dd170f;
+  border: 1px solid white;
+  cursor: pointer;
+}
+body .container .desck {
+  margin-top: 100px;
+  width: 60%;
+}
+body .container .desck h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+body .container .desck hr {
+  border: 2px solid #dd170f;
+  width: 15%;
+}
+body .container .desck .box {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 7fr 3fr;
+  grid-template-areas: "form info" "form map";
+  grid-gap: 50px;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  margin: 80px;
+  text-align: left;
+}
+body .container .desck .box .form {
+  grid-area: form;
+}
+body .container .desck .box .form .form_box {
+  line-height: 50px;
+}
+body .container .desck .box .form .form_box span {
+  font-size: 22px;
+  font-weight: 700;
+}
+body .container .desck .box .form .form_box p {
+  font-size: 18px;
+  line-height: 27px;
+}
+body .container .desck .box .info {
+  grid-area: info;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+body .container .desck .box .info .info_text p {
+  font-size: 20px;
+  line-height: 38px;
+  font-style: italic;
+  padding: 40px;
+}
+body .container .desck .box .info .info_name {
+  width: 40%;
+  padding-left: 40px;
+}
+body hr {
+  width: 100%;
+  color: #e7ebeb;
+}
+body .final {
+  margin-top: 150px;
+}
+body .final span {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .final .btn {
+  margin-top: 50px;
+}
+body .final .btn button {
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #dd170f;
+  color: white;
+  border: none;
+  padding: 20px;
+  word-spacing: 5px;
+}
+body .desc_test {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 60%;
+  margin-top: 100px;
+  padding: 100px 0 150px 0;
+  background-color: #DFF0FC;
+}
+body .desc_test .test {
+  text-align: center;
+  width: 50%;
+}
+body .desc_test .test h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+body .desc_test .test hr {
+  border: 2px solid #dd170f;
+  width: 15%;
+}
+body .desc_test .test .test_text p {
+  font-size: 22px;
+  line-height: 33px;
+  margin-top: 50px;
+}
+body .desc_test .test .test_items {
+  width: 100%;
+  margin-top: 50px;
+}
+body .desc_test .test .test_items table tr {
+  text-align: left;
+}
+body .desc_test .test .test_items table tr th {
+  font-size: 22px;
+  padding-left: 50px;
+}
+body .desc_test .test .test_items table tr td {
+  font-size: 20px;
+  padding-left: 50px;
+  color: #454747;
+  line-height: 30px;
 }
 
 body {
