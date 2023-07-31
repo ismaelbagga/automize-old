@@ -23,3 +23,13 @@
 }
 
 /* Add more @font-face rules for other font weights and styles */
+
+.section-title {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}

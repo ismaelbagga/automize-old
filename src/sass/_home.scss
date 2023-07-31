@@ -1,15 +1,14 @@
+@import "variables";
+@import "typography";
 body{
-    margin: 0;
     
     .container {
         text-align: center;
         display: grid;
         place-items: center;
-        width: 100%;
-        margin: 0;
 
         .centered {
-            text-align: center;
+            
         }
 
         .description_first {
@@ -25,7 +24,7 @@ body{
                 }
 
                 hr {
-                    border: 2px solid #dd170f;
+                    border: 2px solid $primary-color;
                     width: 15%;
                 }
             }
@@ -50,10 +49,10 @@ body{
             padding: 100px 0 150px 0;
             background-color: #FFF5F5;
             margin: 100px 0 0 0;
+
             .service{
                 text-align: center;
-
-                width: 50%;
+                width: 80%;
                 h2{
                     font-size: 32px;
                     font-weight: 700;
@@ -61,9 +60,10 @@ body{
                     text-transform: uppercase;
                 }
                 hr{
-                    border: 2px solid #dd170f;
+                    border: 2px solid $primary-color;
                     width: 15%;
                 }
+
                 .service_text{
                     p{
                         font-size: 22px;
@@ -89,7 +89,7 @@ body{
                                 margin-top: 60px;
                                 padding: 15px;
                                 background-color: white;
-                                color: #dd170f;
+                                color: $primary-color;
                                 border: 1px solid white;
                                 cursor: pointer;
                                }
@@ -112,7 +112,7 @@ body{
                 text-transform: uppercase;
             }
             hr{
-                border: 2px solid #dd170f;
+                border: 2px solid $primary-color;
                 width: 15%;
                 
             }
@@ -155,6 +155,7 @@ body{
                             }
                         }
                         .info_name{
+                            display: flex;
                             width: 40%;
                             padding-left: 40px;
                         }
@@ -181,7 +182,7 @@ body{
             button{
                 text-transform: uppercase;
                 font-size: 18px;
-                background-color: #dd170f;
+                background-color: $primary-color;
                 color: white;
                 border: none;
                 padding: 20px;
@@ -208,7 +209,7 @@ body{
                     text-transform: uppercase;
                 }
                 hr{
-                    border: 2px solid #dd170f;
+                    border: 2px solid $primary-color;
                     width: 15%;
                 }
                 .test_text{
