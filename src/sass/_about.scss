@@ -1,3 +1,49 @@
+@import "variables";
+@import "typography";
+
+.container_service {
+  position: relative;
+  text-align: center;
+  margin: 0;
+
+  .header_img {
+ 
+
+    #image {
+      width: 100%;
+      height: 830px;
+    }
+
+    .centered_service {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: black;
+      transform: translate(-50%, -50%);
+
+      .title_header {
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 78px;
+        width: 100%;
+        font-weight: 400;
+      }
+
+      .banner_text {
+        p {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+
+
+    }
+  }
+}
+
+
+
+
 .container {
   display: inline-block;
   justify-content: center;
@@ -7,10 +53,12 @@
 
   .centered {
     text-align: center;
+
     h1 {
-        font-size: 60px;
+      font-size: 60px;
       line-height: 78px;
     }
+
     p {
       margin-top: 2em;
       font-size: 18px;
@@ -22,46 +70,57 @@
   margin-top: 100px;
   display: grid;
   place-items: center;
+
   .title {
     border-bottom: 3px solid #dd170f;
     margin: 30px;
+
     h2 {
       text-transform: uppercase;
       line-height: 48px;
     }
   }
+
   p {
     line-height: 30px;
     font-size: 18px;
   }
+
   section {
     text-align: left;
     width: 50%;
+
     p {
       line-height: 32px;
       margin: 0 0 25px;
     }
   }
+
   img {
     width: 60%;
     margin-top: 20px;
   }
+
   .row {
     margin: 20px;
     margin-left: 20%;
     width: 85%;
+
     :after {
       content: "";
       display: table;
       clear: both;
     }
+
     .column {
       float: left;
       width: 27%;
+
       .card {
         img {
           width: 90%;
         }
+
         h3 {
           color: #474747;
           font-size: 14px;
@@ -69,6 +128,7 @@
           line-height: 21px;
           margin: 5px 0px 5px;
         }
+
         p {
           background-position: 0px 0px;
           color: #888888;
@@ -78,6 +138,7 @@
       }
     }
   }
+
   button {
     width: 28%;
     height: 50px;
@@ -85,6 +146,7 @@
     border: none;
     line-height: 52px;
     margin: 25px 434px 60px;
+
     a {
       text-decoration: none;
       color: white;

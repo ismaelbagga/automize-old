@@ -28,6 +28,64 @@
   text-transform: uppercase;
 }
 
+/* typography.scss */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Open Sans Regular"), url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+}
+/* Add more @font-face rules for other font weights and styles */
+.section-title {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container_service {
+  position: relative;
+  text-align: center;
+  margin: 0;
+}
+.container_service .header_img #image {
+  width: 100%;
+  height: 830px;
+}
+.container_service .header_img .centered_service {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+}
+.container_service .header_img .centered_service .title_header {
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 78px;
+  width: 100%;
+  font-weight: 400;
+}
+.container_service .header_img .centered_service .banner_text p {
+  font-size: 18px;
+  line-height: 27px;
+}
+
 .container {
   display: inline-block;
   justify-content: center;
@@ -312,16 +370,68 @@
   transform: rotate(45deg) !important;
 }
 
+/* typography.scss */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: local("Open Sans Regular"), url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
+}
+/* Add more @font-face rules for other font weights and styles */
+.section-title {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container_blog {
+  position: relative;
+  text-align: left;
+}
+.container_blog .blog_img img {
+  width: 100%;
+  height: 500px;
+}
+.container_blog .blog_img .centered_blog {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: black;
+  transform: translate(-50%, -50%);
+}
+.container_blog .blog_img .centered_blog h1 {
+  line-height: 52px;
+  font-size: 70px;
+}
+.container_blog .blog_img .centered_blog .title_header_blog {
+  font-size: 30px;
+  width: 100%;
+  font-weight: 500;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas: "menu menu menu main right" "menu menu menu left  second" "menu menu menu sec left_1" "menu menu menu footer footer";
   width: 60%;
   margin-top: 5%;
   margin-bottom: 10%;
-  gap: 2%;
-}
-.grid-container > div {
-  padding: 20px;
+  gap: 5%;
 }
 .grid-container .item1 {
   grid-area: menu;
@@ -349,7 +459,7 @@
   color: #6f6f6f;
   font-size: 14px;
 }
-.grid-container .item1 table tr td a :hover {
+.grid-container .item1 table tr td a:hover {
   color: #dd170f;
   text-decoration: underline;
 }
@@ -416,7 +526,7 @@
   color: #373737;
   text-decoration: none;
 }
-.grid-container .card .info_card .article a :hover {
+.grid-container .card .info_card .article a:hover {
   color: #dd170f;
 }
 .grid-container .card .info_card .meta p {
