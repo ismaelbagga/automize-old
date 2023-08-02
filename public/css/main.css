@@ -762,6 +762,7 @@ body .desc_test .test .test_items table tr td {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
+  text-align: left;
 }
 
 .section_two {
@@ -853,6 +854,7 @@ body .desc_test .test .test_items table tr td {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
+  text-align: left;
 }
 .section_three .logo_partner {
   position: relative;
@@ -879,7 +881,6 @@ body .desc_test .test .test_items table tr td {
 .section_four {
   position: relative;
   color: black;
-  margin: 5% 0 0 0;
   width: 100%;
   background-color: #dff0fc;
   padding: 7% 0 7% 0;
@@ -905,6 +906,7 @@ body .desc_test .test .test_items table tr td {
   line-height: 28px;
   font-size: 16px;
   color: #454747;
+  text-align: left;
 }
 .section_four .box {
   display: grid;
@@ -915,26 +917,26 @@ body .desc_test .test .test_items table tr td {
   margin-left: 13%;
 }
 .section_four .box_item {
-  font-size: 30px;
   text-align: center;
   width: 100%;
-  padding: 8%;
+  height: 200px;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
-  background-color: white;
 }
 .section_four .box_item img {
   width: 60px;
   height: 60px;
+  position: relative;
+  bottom: 25%;
 }
-.section_four .box_item label {
+.section_four .box_item .item {
+  margin-top: -15%;
+}
+.section_four .box_item .item label {
   color: #454747;
-  margin-top: 15px;
   font-size: 20px;
-  font-weight: 500;
 }
-.section_four .box_item #p_box {
+.section_four .box_item .item #p_box {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -981,6 +983,7 @@ body .desc_test .test .test_items table tr td {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
+  text-align: left;
 }
 
 .section_six {
@@ -1039,6 +1042,7 @@ body .desc_test .test .test_items table tr td {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
+  text-align: left;
 }
 .section_seven .section_articles {
   display: grid;
@@ -1069,16 +1073,73 @@ body .desc_test .test .test_items table tr td {
 }
 
 .section_eight {
+  position: relative;
+  text-align: center;
+  margin: 5% 0 0 0;
   width: 100%;
+}
+.section_eight .bottom_img {
+  margin: 0;
+}
+.section_eight .bottom_img #img_btm {
+  width: 100%;
+  height: 640px;
+  margin: 0;
+}
+.section_eight .bottom_img .centered_art {
   margin-top: 5%;
-}
-.section_eight .banner {
-  margin: 0;
-}
-.section_eight .banner #img_bn {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
   width: 100%;
-  height: 650px;
-  margin: 0;
+}
+.section_eight .bottom_img .centered_art h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.section_eight .bottom_img .centered_art hr {
+  border: 2px solid #dc170f;
+  width: 15%;
+}
+.section_eight .bottom_img .centered_art .grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 80%;
+  padding: 5%;
+  margin-left: 8%;
+}
+.section_eight .bottom_img .centered_art .grid_btm {
+  text-align: center;
+  width: 80%;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.section_eight .bottom_img .centered_art .grid_btm img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 10%;
+}
+.section_eight .bottom_img .centered_art .grid_btm .grid_item {
+  padding: 0 25px 10px 25px;
+}
+.section_eight .bottom_img .centered_art .grid_btm .grid_item label {
+  color: #454747;
+  font-size: 20px;
+}
+.section_eight .bottom_img .centered_art .grid_btm .grid_item #pb_grid {
+  font-size: 14px;
+  line-height: 24px;
+  color: #454747;
+  text-align: left;
 }
 
 .section_nine {
@@ -1108,6 +1169,7 @@ body .desc_test .test .test_items table tr td {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
+  text-align: left;
 }
 .section_nine button {
   background-color: #dc170f;
@@ -1116,12 +1178,53 @@ body .desc_test .test .test_items table tr td {
   height: 45px;
   width: 390px;
   border: none;
-  margin-left: 37%;
-  margin-top: 5%;
+  margin: 2% 37% 0 0;
   cursor: pointer;
 }
 .section_nine button:hover {
   background-color: #454747;
+}
+
+.section_teen {
+  margin-top: 7%;
+  background-color: #fff5f5;
+  position: relative;
+  color: black;
+  width: 100%;
+  padding: 5% 0 5% 0;
+  width: 100%;
+  margin-bottom: -5%;
+}
+.section_teen h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section_teen hr {
+  border: 2px solid #dc170f;
+  width: 15%;
+}
+.section_teen .list {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+.section_teen .list .list_item {
+  font-size: 14px;
+}
+.section_teen .list .list_item ul {
+  gap: 100px;
+}
+.section_teen .list .list_item ul li {
+  list-style-type: square;
+  line-height: 30px;
+}
+.section_teen .list .list_item ul ::marker {
+  color: #dc170f;
 }
 
 /* typography.scss */
@@ -1154,40 +1257,43 @@ body .desc_test .test .test_items table tr td {
   text-transform: uppercase;
 }
 
-.container_sertec {
+body {
+  margin: 0;
+}
+body .container_sertec {
   position: relative;
   text-align: center;
   margin: 0;
 }
-.container_sertec .head_img {
+body .container_sertec .head_img {
   margin: 0;
 }
-.container_sertec .head_img #image {
+body .container_sertec .head_img #image {
   width: 100%;
   margin: 0;
 }
-.container_sertec .head_img .centered_sertec {
+body .container_sertec .head_img .centered_sertec {
   position: absolute;
   top: 50%;
   left: 50%;
   color: black;
   transform: translate(-50%, -50%);
 }
-.container_sertec .head_img .centered_sertec .title_head {
+body .container_sertec .head_img .centered_sertec .title_head {
   text-transform: uppercase;
   font-size: 60px;
   line-height: 78px;
   width: 100%;
   font-weight: 400;
 }
-.container_sertec .head_img .centered_sertec .ban_text p {
+body .container_sertec .head_img .centered_sertec .ban_text p {
   font-size: 18px;
   line-height: 27px;
 }
-.container_sertec .head_img .centered_sertec .btn_head {
+body .container_sertec .head_img .centered_sertec .btn_head {
   margin-top: 10%;
 }
-.container_sertec .head_img .centered_sertec .btn_head a {
+body .container_sertec .head_img .centered_sertec .btn_head a {
   font-size: 20px;
   word-spacing: 5px;
   text-decoration: none;
@@ -1195,51 +1301,49 @@ body .desc_test .test .test_items table tr td {
   color: white;
   background-color: #dc170f;
 }
-
-.sectec_one {
+body .sectec_one {
   position: relative;
   color: black;
   margin-top: 10%;
   width: 100%;
 }
-.sectec_one h1 {
+body .sectec_one h1 {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
 }
-.sectec_one hr {
+body .sectec_one hr {
   border: 2px solid #dc170f;
   width: 15%;
 }
-.sectec_one .sec_text {
+body .sectec_one .sec_text {
   margin-top: 5%;
   position: relative;
   width: 50%;
   left: 25%;
 }
-.sectec_one .sec_text #so_text {
+body .sectec_one .sec_text #so_text {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
 }
-
-.sectec_two {
+body .sectec_two {
   margin-top: 10%;
 }
-.sectec_two h1 {
+body .sectec_two h1 {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
 }
-.sectec_two hr {
+body .sectec_two hr {
   border: 2px solid #dc170f;
   width: 15%;
 }
-.sectec_two .box {
+body .sectec_two .box {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 70%;
@@ -1247,7 +1351,7 @@ body .desc_test .test .test_items table tr td {
   margin-top: 5%;
   margin-left: 13%;
 }
-.sectec_two .box_item {
+body .sectec_two .box_item {
   font-size: 30px;
   text-align: center;
   width: 100%;
@@ -1255,17 +1359,17 @@ body .desc_test .test .test_items table tr td {
   justify-content: center;
   align-items: center;
 }
-.sectec_two .box_item img {
+body .sectec_two .box_item img {
   width: 90px;
   height: 75px;
 }
-.sectec_two .box_item p {
+body .sectec_two .box_item p {
   color: #454747;
   margin-top: 15px;
   font-size: 18px;
   text-transform: uppercase;
 }
-.sectec_two button {
+body .sectec_two button {
   background-color: #dc170f;
   color: white;
   font-size: 18px;
@@ -1276,11 +1380,10 @@ body .desc_test .test .test_items table tr td {
   margin-top: 5%;
   cursor: pointer;
 }
-.sectec_two button:hover {
+body .sectec_two button:hover {
   background-color: #454747;
 }
-
-.section_four {
+body .section_four {
   position: relative;
   color: black;
   margin: 5% 0 0 0;
@@ -1288,29 +1391,29 @@ body .desc_test .test .test_items table tr td {
   background-color: #dff0fc;
   padding: 7% 0 7% 0;
 }
-.section_four h1 {
+body .section_four h1 {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
 }
-.section_four hr {
+body .section_four hr {
   border: 2px solid #dc170f;
   width: 15%;
 }
-.section_four .section_text {
+body .section_four .section_text {
   margin-top: 35px;
   position: relative;
   width: 50%;
   left: 25%;
 }
-.section_four .section_text #so_text {
+body .section_four .section_text #so_text {
   line-height: 28px;
   font-size: 16px;
   color: #454747;
 }
-.section_four .box {
+body .section_four .box {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 70%;
@@ -1318,7 +1421,7 @@ body .desc_test .test .test_items table tr td {
   margin-top: 35px;
   margin-left: 13%;
 }
-.section_four .box_item {
+body .section_four .box_item {
   font-size: 30px;
   text-align: center;
   width: 100%;
@@ -1328,22 +1431,22 @@ body .desc_test .test .test_items table tr td {
   border: 1px solid white;
   background-color: white;
 }
-.section_four .box_item img {
+body .section_four .box_item img {
   width: 60px;
   height: 60px;
 }
-.section_four .box_item label {
+body .section_four .box_item label {
   color: #454747;
   margin-top: 15px;
   font-size: 20px;
   font-weight: 500;
 }
-.section_four .box_item #p_box {
+body .section_four .box_item #p_box {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
 }
-.section_four button {
+body .section_four button {
   background-color: #dc170f;
   color: white;
   font-size: 18px;
@@ -1354,11 +1457,10 @@ body .desc_test .test .test_items table tr td {
   margin-top: 5%;
   cursor: pointer;
 }
-.section_four button:hover {
+body .section_four button:hover {
   background-color: #454747;
 }
-
-.sec_five {
+body .sec_five {
   background-color: #fff5f5;
   position: relative;
   color: black;
@@ -1366,56 +1468,55 @@ body .desc_test .test .test_items table tr td {
   padding: 7% 0 7% 0;
   width: 100%;
 }
-.sec_five h1 {
+body .sec_five h1 {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
 }
-.sec_five hr {
+body .sec_five hr {
   border: 2px solid #dc170f;
   width: 15%;
 }
-.sec_five .sec_text {
+body .sec_five .sec_text {
   margin-top: 5%;
   position: relative;
   width: 50%;
   left: 25%;
 }
-.sec_five .sec_text #so_text {
+body .sec_five .sec_text #so_text {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
 }
-.sec_five .list {
+body .sec_five .list {
   display: flex;
   justify-content: space-between;
   width: 35%;
   position: relative;
   left: 30%;
 }
-.sec_five .list .list_item {
+body .sec_five .list .list_item {
   font-size: 14px;
 }
-.sec_five .list .list_item li {
+body .sec_five .list .list_item li {
   list-style-type: square;
   line-height: 30px;
 }
-.sec_five .list .list_item ::marker {
+body .sec_five .list .list_item ::marker {
   color: #dc170f;
 }
-
-.section_six {
+body .section_six {
   width: 100%;
   margin: 10% 0 0 0;
   position: relative;
   text-align: center;
 }
-.section_six img {
+body .section_six img {
   width: 100%;
 }
-.section_six .centered_logo {
+body .section_six .centered_logo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1425,80 +1526,77 @@ body .desc_test .test .test_items table tr td {
   grid-template-columns: auto auto auto auto auto auto;
   width: 70%;
 }
-.section_six .centered_logo .banner_logo img {
+body .section_six .centered_logo .banner_logo img {
   width: 60px;
   height: 65px;
 }
-.section_six .centered_logo .banner_logo p {
+body .section_six .centered_logo .banner_logo p {
   margin-top: 40px;
   font-size: 16px;
   color: white;
 }
-
-.section_text {
+body .section_text {
   margin-top: 90px;
   position: relative;
   width: 50%;
   left: 25%;
 }
-.section_text #so_text {
+body .section_text #so_text {
   line-height: 28px;
   font-size: 18px;
   color: #454747;
   text-align: center;
 }
-
-.logo_partner {
+body .logo_partner {
   position: relative;
   width: 50%;
   left: 20%;
 }
-.logo_partner .logo_box {
+body .logo_partner .logo_box {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   width: 85%;
   gap: 10%;
 }
-.logo_partner .logo_box .logo_item {
+body .logo_partner .logo_box .logo_item {
   width: 100%;
   padding: 5%;
   justify-content: center;
   align-items: center;
 }
-.logo_partner .logo_box .logo_item #logo_img {
+body .logo_partner .logo_box .logo_item #logo_img {
   width: 155px;
   height: 110px;
 }
-
-.section_seven {
+body .section_seven {
   position: relative;
   color: black;
   margin: 10% 0 0 0;
   width: 100%;
 }
-.section_seven h1 {
+body .section_seven h1 {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
 }
-.section_seven hr {
+body .section_seven hr {
   border: 2px solid #dc170f;
   width: 15%;
 }
-.section_seven .section_text {
+body .section_seven .section_text {
   margin-top: 5%;
   position: relative;
   width: 50%;
   left: 25%;
 }
-.section_seven .section_text #so_text {
+body .section_seven .section_text #so_text {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
 }
-.section_seven .section_articles {
+body .section_seven .section_articles {
   display: grid;
   grid-template-columns: auto auto auto;
   width: 70%;
@@ -1506,7 +1604,7 @@ body .desc_test .test .test_items table tr td {
   margin-top: 35px;
   margin-left: 13%;
 }
-.section_seven .section_article {
+body .section_seven .section_article {
   width: 100%;
   padding: 8%;
   justify-content: center;
@@ -1515,46 +1613,45 @@ body .desc_test .test .test_items table tr td {
   background-color: white;
   float: left;
 }
-.section_seven .section_article #article_title a {
+body .section_seven .section_article #article_title a {
   font-size: 18px;
   text-transform: uppercase;
   line-height: 24px;
   font-weight: 600;
 }
-.section_seven .section_article #article_title a:hover {
+body .section_seven .section_article #article_title a:hover {
   color: #454747;
   text-decoration: none;
 }
-
-.section_nine {
+body .section_nine {
   position: relative;
   color: black;
   margin: 10% 0 0 0;
   width: 100%;
 }
-.section_nine h1 {
+body .section_nine h1 {
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
 }
-.section_nine hr {
+body .section_nine hr {
   border: 2px solid #dc170f;
   width: 15%;
 }
-.section_nine .section_text {
+body .section_nine .section_text {
   margin-top: 5%;
   position: relative;
   width: 50%;
   left: 25%;
 }
-.section_nine .section_text #so_text {
+body .section_nine .section_text #so_text {
   line-height: 30px;
   font-size: 18px;
   color: #454747;
 }
-.section_nine button {
+body .section_nine button {
   background-color: #dc170f;
   color: white;
   font-size: 18px;
@@ -1565,31 +1662,47 @@ body .desc_test .test .test_items table tr td {
   margin-top: 5%;
   cursor: pointer;
 }
-.section_nine button:hover {
+body .section_nine button:hover {
   background-color: #454747;
 }
-
-.art_clients {
+body .art_clients {
   margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
-.art_clients .art_client {
-  margin-left: 5%;
+body .art_clients .art_client {
+  margin-left: 3%;
+  width: 20%;
 }
-.art_clients .art_client .artclient_title {
-  display: flex;
-}
-.art_clients .art_client .artclient_title span {
+body .art_clients .art_client .artclient_title {
+  position: relative;
   background-image: url(../../public/services/pages/images/comma-com.svg);
   background-repeat: no-repeat;
   height: 200px;
-  font-size: 16px;
+}
+body .art_clients .art_client .artclient_title span {
+  font-size: 20px;
   font-style: italic;
-  align-items: end;
-  top: 10%;
+  position: relative;
+  bottom: -50px;
+  left: 15px;
+}
+body .art_clients .art_client .artclient_body .client_name {
+  position: relative;
+  top: -35px;
+}
+body .art_clients .art_client .artclient_body .client_job {
+  position: relative;
+  top: -30px;
+  left: 64px;
+}
+body .art_clients .art_client .artclient_body p {
+  font-size: 14px;
+  color: #454747;
+  font-style: italic;
+  line-height: 22px;
 }
 
 body {
