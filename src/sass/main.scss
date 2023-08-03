@@ -5,9 +5,15 @@
 
 //=== Pages ===//
 @use "about";
-
+@use "componenets";
 .block-title {
   font-size: 32px;
   font-weight: 700;
   // font-family: $fontFamily;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

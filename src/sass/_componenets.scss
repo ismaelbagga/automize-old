@@ -1,0 +1,15 @@
+@use "reset";
+@use "variables";
+@use "typography";
+@use "buttons";
+
+@use "components/header";
+@use "components/footer";
+/* ===== Header styles ===== */ /* ===== End header styles ===== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// ==== Foooter ==== //
