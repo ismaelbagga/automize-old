@@ -111,7 +111,8 @@ input {
   font-family: "Open Sans";
   font-weight: normal;
   font-style: normal;
-  src: local("Open Sans Regular"), url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
+  src: local("Open Sans Regular"),
+    url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
