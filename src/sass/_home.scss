@@ -1,7 +1,8 @@
 @import "variables";
 @import "typography";
 body{
-    
+    margin: 0;
+    width: 100%;
     .container {
         text-align: center;
         display: grid;
