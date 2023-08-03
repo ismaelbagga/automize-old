@@ -10,30 +10,43 @@
 nav {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  height: 113px;
 }
 .dropdown-menu {
-  overflow-x: hidden;
-  min-width: calc(
-    variables.$half-screen-width - 16px
-  ); /* Set a minimum width to accommodate the inner divs */
-  width: fit-content;
+  // overflow-x: hidden;
+  // min-width: calc(
+  //   variables.$half-screen-width - 16px
+  // ); /* Set a minimum width to accommodate the inner divs */
+  // width: fit-content;
+  width: variables.$half-screen-width;
   border: 1px solid rgba(169, 169, 169, 0.5);
   border-radius: 1px;
   top: 61px;
-  right: 0px;
-  left: -23px;
+  padding: 50px 25px;
+  left: 0px;
+  // right: 0px;
+  // left: -23px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
   /* Create a Flexbox layout for the row */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
 
-    > div {
-      width: calc(100% / 3); /* Adjust the width as needed */
-      flex: 0 0 auto; /* Prevent flex items from shrinking */
-    }
+.header-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  > div {
+    width: calc(100% / 3); /* Adjust the width as needed */
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
   }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
 }

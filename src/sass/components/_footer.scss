@@ -4,17 +4,20 @@
 @use "../buttons";
 
 .footer {
+  background-color: #242427;
+
   margin-top: auto;
   #big_footer {
     #primary_footer {
-      background-color: #242427;
       background-position: calc(100% - 30px);
       color: variables.$silver-color;
       background-repeat: no-repeat;
       background-image: url("https://www.digiteum.com/wp-content/themes/blake/images/footer-map.svg");
       font-size: 15px;
       max-height: 450px;
-      .container {
+      .footer-container {
+        width: 70%;
+        margin: 0 auto;
         background-repeat: no-repeat;
         background-image: url("https://www.digiteum.com/wp-content/themes/blake/images/footer-top-logo.svg");
         background-position: 0px 169px;
@@ -244,7 +247,9 @@
     }
     #secondary_footer {
       background-color: #1e1e21;
-      .container {
+      .footer-container {
+        width: 70%;
+        margin: 0 auto;
         background-color: #1e1e21;
         color: #687177;
         font-size: 15px;
