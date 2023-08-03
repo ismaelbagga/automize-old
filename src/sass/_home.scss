@@ -1,0 +1,251 @@
+@import "variables";
+@import "typography";
+body{
+    
+    .container {
+        text-align: center;
+        display: grid;
+        place-items: center;
+
+        .centered {
+            
+        }
+
+        .description_first {
+            margin-top: 100px;
+            width: 50%;
+
+            .title {
+                h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                }
+
+                hr {
+                    border: 2px solid $primary-color;
+                    width: 15%;
+                }
+            }
+
+            section {
+                text-align: center;
+
+                p {
+                    line-height: 38px;
+                    font-size: 22px;
+                    color: #454747;
+                }
+            }
+
+        }
+
+        .description {
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 60%;
+            padding: 100px 0 150px 0;
+            background-color: #FFF5F5;
+            margin: 100px 0 0 0;
+
+            .service{
+                text-align: center;
+                width: 80%;
+                h2{
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                }
+                hr{
+                    border: 2px solid $primary-color;
+                    width: 15%;
+                }
+
+                .service_text{
+                    p{
+                        font-size: 22px;
+                        line-height: 33px;
+                    }
+                }
+                .service_items{
+                    width: 100%;
+                   table{
+                        tr{
+                            text-align: center;
+                            th{
+                                font-size: 22px;
+                                padding-left: 50px;
+
+                            }
+                            td{
+                               font-size: 20px;
+                               padding-left: 50px;
+                               color: #454747;
+                               line-height: 30px;
+                               button{
+                                margin-top: 60px;
+                                padding: 15px;
+                                background-color: white;
+                                color: $primary-color;
+                                border: 1px solid white;
+                                cursor: pointer;
+                               }
+                                
+                            }  
+                        }
+                    }
+                   
+                }
+            }
+
+        }
+        .desck{
+            margin-top: 100px;
+            width: 60%;
+            h2{
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 32px;
+                text-transform: uppercase;
+            }
+            hr{
+                border: 2px solid $primary-color;
+                width: 15%;
+                
+            }
+            .box{
+                display: grid;
+                grid-template-columns: 5fr 5fr;
+                grid-template-rows: 7fr 3fr;
+                grid-template-areas: "form info" "form map";
+                grid-gap: 50px;
+                width: 100%;
+                height: 100%;
+                margin-left: 20px;
+                margin: 80px;
+                text-align: left;
+                
+                    .form{
+                        grid-area: form;
+                        .form_box{
+                            line-height: 50px;
+                            span{
+                                font-size: 22px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 18px;
+                                line-height: 27px;
+                            }
+                        }
+
+                    }
+                    .info{
+                        grid-area: info;
+                        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+                        .info_text{
+                            p{
+                                font-size: 20px;
+                                line-height: 38px;
+                                font-style: italic;
+                                padding: 40px;
+                            }
+                        }
+                        .info_name{
+                            display: flex;
+                            width: 40%;
+                            padding-left: 40px;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+        hr{
+            width: 100%;
+            color: #e7ebeb;
+        }
+        .final{
+            margin-top: 150px;
+            span{
+                text-align: center;
+                font-size: 32px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+           .btn{
+           margin-top: 50px;
+            button{
+                text-transform: uppercase;
+                font-size: 18px;
+                background-color: $primary-color;
+                color: white;
+                border: none;
+                padding: 20px;
+                word-spacing: 5px;
+            }
+           }
+        }
+        
+        .desc_test {
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 60%;
+            margin-top: 100px;
+            padding: 100px 0 150px 0;
+            background-color: #DFF0FC;
+            .test{
+                text-align: center;
+                width: 50%;
+                h2{
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    text-transform: uppercase;
+                }
+                hr{
+                    border: 2px solid $primary-color;
+                    width: 15%;
+                }
+                .test_text{
+                    p{
+                        font-size: 22px;
+                        line-height: 33px;
+                        margin-top: 50px;
+                    }
+                }
+                .test_items{
+                    width: 100%;
+                    margin-top: 50px;
+                   table{
+                        tr{
+                            text-align: left;
+                            th{
+                                font-size: 22px;
+                                padding-left: 50px;
+
+                            }
+                            td{
+                               font-size: 20px;
+                               padding-left: 50px;
+                               color: #454747;
+                               line-height: 30px;
+                               
+                                
+                            }  
+                        }
+                    }
+                   
+                }
+            }
+
+        }
+
+    
+
+}

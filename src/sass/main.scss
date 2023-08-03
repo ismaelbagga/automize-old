@@ -1,11 +1,47 @@
-@use "reset";
+// @use "reset";
 @use "variables" as *;
 @use "typography" as *;
 @use "buttons" as *;
 
-//=== Pages ===//
 @use "about";
-@use "componenets";
+@use "contact";
+@use "blog";
+@use "home";
+@use "servicesde";
+@use "servicetec";
+
+body {
+  font-family: "Open Sans";
+}
+
+a {
+  color: $link-color;
+}
+h1 {
+  font-size: 52px;
+  font-family: "Open Sans";
+}
+h2 {
+  font-size: 32px;
+  font-family: "Open Sans";
+}
+h3 {
+  font-size: 24px;
+  font-family: "Open Sans";
+}
+h4 {
+  font-size: 21px;
+  font-family: "Open Sans";
+}
+h5 {
+  font-size: 18px;
+  font-family: "Open Sans";
+}
+h6 {
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
 .block-title {
   font-size: 32px;
   font-weight: 700;

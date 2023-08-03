@@ -41,8 +41,8 @@
 .item8{
     grid-area: footer;
     width: 100%;
-    display: flex; /* Use flexbox container */
-    justify-content: center; /* Center horizontally */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
 }
 
