@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f1f1f1;
+        padding: 10px;
+        width: 70%;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .menu {
+        display: flex;
+      }
+
+      .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .menu li {
+        margin-right: 20px;
+      }
+
+      .menu a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px;
+      }
+
+      .mega-menu {
+        position: relative;
+        width: 500px;
+      }
+
+      .mega-menu-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        min-width: 300px;
+      }
+
+      .mega-menu:hover .mega-menu-content {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .category1,
+      .category2 {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        flex-direction: column !important;
+        height: 500px;
+      }
+
+      .category1 h3,
+      .category2 h3 {
+        margin: 0;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .column {
+        flex: 1;
+        margin-right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .column:last-child {
+        margin-right: 0;
+      }
+
+      .column ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .column li {
+        margin-bottom: 5px;
+      }
+    </style>
+    <title>Your Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Your Logo</div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="mega-menu">
+            <a href="#">Services</a>
+            <div class="mega-menu-content">
+              <div class="category1">
+                <h3>Category 1</h3>
+                <div class="row">
+                  <div class="column">
+                    <ul>
+                      <li><a href="#">Service 1</a></li>
+                      <li><a href="#">Service 2</a></li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <ul>
+                      <li><a href="#">Service 3</a></li>
+                      <li><a href="#">Service 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="category2">
+                <h3>Category 2</h3>
+                <div class="column">
+                  <ul>
+                    <li><a href="#">Service 5</a></li>
+                    <li><a href="#">Service 6</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Rest of your website content -->
+  </body>
+</html>
