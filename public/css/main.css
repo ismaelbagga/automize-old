@@ -80,92 +80,70 @@
   font-size: 60px;
   line-height: 78px;
   width: 100%;
-  font-weight: 400;
 }
-.container_service .header_img .centered_service .banner_text p {
+.container_service .header_img .centered_service .banner_text #text_about_img {
   font-size: 18px;
   line-height: 27px;
 }
 
-.container {
+.container_about {
   display: inline-block;
   justify-content: center;
   align-items: center;
   width: 95%;
   margin-left: 50px;
 }
-.container .centered {
-  text-align: center;
-}
-.container .centered h1 {
-  font-size: 60px;
-  line-height: 78px;
-}
-.container .centered p {
-  margin-top: 2em;
-  font-size: 18px;
-}
-
-.desc {
+.container_about .desc {
   margin-top: 100px;
   display: grid;
   place-items: center;
 }
-.desc .title {
-  border-bottom: 3px solid #dd170f;
+.container_about .desc .title {
   margin: 30px;
 }
-.desc .title h2 {
+.container_about .desc .title span {
   text-transform: uppercase;
   line-height: 48px;
+  font-size: 32px;
 }
-.desc p {
-  line-height: 30px;
-  font-size: 18px;
+.container_about .desc .title hr {
+  border: 1px solid #dc170f;
 }
-.desc section {
+.container_about .desc section {
   text-align: left;
   width: 50%;
 }
-.desc section p {
+.container_about .desc section p {
   line-height: 32px;
   margin: 0 0 25px;
+  font-size: 18px;
 }
-.desc img {
+.container_about .desc img {
   width: 60%;
   margin-top: 20px;
 }
-.desc .row {
+.container_about .desc .row {
   margin: 20px;
   margin-left: 20%;
   width: 85%;
 }
-.desc .row :after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.desc .row .column {
+.container_about .desc .row .column {
   float: left;
   width: 27%;
 }
-.desc .row .column .card img {
+.container_about .desc .row .column .card img {
   width: 90%;
 }
-.desc .row .column .card h3 {
+.container_about .desc .row .column .card label {
   color: #474747;
   font-size: 14px;
-  font-weight: 300;
-  line-height: 21px;
-  margin: 5px 0px 5px;
 }
-.desc .row .column .card p {
+.container_about .desc .row .column .card p {
   background-position: 0px 0px;
   color: #888888;
   font-size: 14px;
-  line-height: 18px;
 }
-.desc button {
+.container_about .desc button {
   width: 28%;
   height: 50px;
   background-color: #dd170f;
@@ -173,7 +151,7 @@
   line-height: 52px;
   margin: 25px 434px 60px;
 }
-.desc button a {
+.container_about .desc button a {
   text-decoration: none;
   color: white;
 }
@@ -423,7 +401,6 @@
 .container_blog .blog_img .centered_blog .title_header_blog {
   font-size: 30px;
   width: 100%;
-  font-weight: 500;
 }
 
 .grid-container {
@@ -467,7 +444,6 @@
 .grid-container .item1 table tr td p {
   font-size: 13px;
   text-transform: uppercase;
-  font-weight: bolder;
 }
 .grid-container .item2 {
   grid-area: main;
@@ -522,8 +498,7 @@
   font-size: 15px;
 }
 .grid-container .card .info_card .article a {
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 18px;
   color: #373737;
   text-decoration: none;
 }
@@ -534,7 +509,6 @@
   background-position: 0px 0px;
   color: #777777;
   font-size: 11px;
-  font-weight: 700;
   letter-spacing: 1px;
   text-align: left;
   text-transform: uppercase;
