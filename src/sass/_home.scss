@@ -5,10 +5,12 @@
     position: relative;
     text-align: center;
     margin: 0;
-
+    background-color: $primary-color;
+    height: 780px;
     img {
-        width: 100%;
-        margin: 0;
+        width: 85%;
+        height: 780px;
+        margin-left: 253px;
     }
 
     .header_home_img {
@@ -16,7 +18,7 @@
             position: absolute;
             top: 50%;
             left: 25%;
-            color: black;
+            color: white;
             transform: translate(-50%, -50%);
             text-align: left;
 
@@ -42,8 +44,8 @@
                     font-size: 18px;
                     text-decoration: none;
                     padding: 15px 20px 15px 20px;
-                    color: white;
-                    background-color: $primary-color;
+                    color: $primary-color;
+                    background-color: white;
                     text-transform: uppercase;
                     margin-right: 5%;
                 }

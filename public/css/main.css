@@ -574,16 +574,19 @@
   position: relative;
   text-align: center;
   margin: 0;
+  background-color: #dc170f;
+  height: 780px;
 }
 .container_home img {
-  width: 100%;
-  margin: 0;
+  width: 85%;
+  height: 780px;
+  margin-left: 253px;
 }
 .container_home .header_home_img .centered_home {
   position: absolute;
   top: 50%;
   left: 25%;
-  color: black;
+  color: white;
   transform: translate(-50%, -50%);
   text-align: left;
 }
@@ -604,8 +607,8 @@
   font-size: 18px;
   text-decoration: none;
   padding: 15px 20px 15px 20px;
-  color: white;
-  background-color: #dc170f;
+  color: #dc170f;
+  background-color: white;
   text-transform: uppercase;
   margin-right: 5%;
 }
