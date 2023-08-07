@@ -1,519 +1,330 @@
 @import "variables";
 @import "typography";
 
-body{
-    margin: 0;
-    .container_sertec {
-        position: relative;
+
+.sectec_two {
+    margin-top: 10%;
+    .box_tec {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 70%;
+        gap: 6%;
+        margin-top: 5%;
+        margin-left: 13%;
+
+    }
+
+    .box_item_tec {
+        font-size: 30px;
         text-align: center;
-        margin: 0;
-    
-        .head_img {
-            margin: 0;
-    
-            #image {
-                width: 100%;
-                margin: 0;
-            }
-    
-            .centered_sertec {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                color: black;
-                transform: translate(-50%, -50%);
-    
-                .title_head {
-                    text-transform: uppercase;
-                    font-size: 60px;
-                    line-height: 78px;
-                    width: 100%;
-                    font-weight: 400;
-                }
-    
-                .ban_text {
-                    p {
-                        font-size: 18px;
-                        line-height: 27px;
-                    }
-                }
-    
-                .btn_head {
-                    margin-top: 10%;
-    
-                    a {
-                        font-size: 20px;
-                        word-spacing: 5px;
-                        text-decoration: none;
-                        padding: 15px;
-                        color: white;
-                        background-color: $primary-color;
-                    }
-                }
-            }
-        }
-    
-    }
-    .sectec_one {
-        position: relative;
-        color: black;
-        margin-top: 10%;
         width: 100%;
-        
-        h1 {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 32px;
+        padding: 5%;
+        justify-content: center;
+        align-items: center;
+
+        .box_img_tec {
+            width: 90px;
+            height: 75px;
+        }
+
+        .p_box_tec {
+            color: #454747;
+            margin-top: 15px;
+            font-size: 20px;
             text-transform: uppercase;
+        }
+
+    }
+
+    #btn_ser_tec_box{
+        margin-left: 42%;
+        margin-top: 5%;
+    }
+}
+
+.section_four_ser {
+    position: relative;
+    color: black;
+    margin: 5% 0 0 0;
+    width: 100%;
+    background-color: #dff0fc;
+    padding: 7% 0 7% 0;
+
+    .section_text {
+        margin-top: 35px;
+        position: relative;
+        width: 50%;
+        left: 25%;
+
+    }
+
+    .box_tec_des {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 70%;
+        gap: 2%;
+        margin-top: 100px;
+        margin-left: 13%;
+
+    }
+
+    .box_item_tec_des {
+        font-size: 30px;
+        text-align: center;
+        width: 285px;
+        height: 250px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        background-color: white;
+
+        .box_img_ser {
+            width: 60px;
+            height: 60px;
+            margin-top: -55px;
+        }
+
+        .label_ser_des {
+            color: #454747;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 30px;
+            text-transform: uppercase;
+
+        }
+
+        .p_box {
+            font-size: 14px;
+            line-height: 24px;
             text-align: center;
+            padding: 10px;
+            margin-top: 12px;
+            
         }
-    
-        hr {
-            border: 2px solid $primary-color;
-            width: 15%;
-        }
-    
-        .sec_text {
-            margin-top: 5%;
-            position: relative;
-            width: 50%;
-            left: 25%;
-            #so_text {
+    }
+
+    button {
+        background-color: $primary-color;
+        color: white;
+        font-size: 18px;
+        height: 45px;
+        width: 390px;
+        border: none;
+        margin-left: 37%;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #454747;
+    }
+}
+
+/*.sec_five {
+    background-color: #fff5f5;
+    position: relative;
+    color: black;
+    width: 100%;
+    padding: 7% 0 7% 0;
+    width: 100%;
+
+   
+    .list {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        position: relative;
+        left: 30%;
+
+        .list_item {
+            font-size: 14px;
+
+            li {
+                list-style-type: square;
                 line-height: 30px;
-                font-size: 18px;
-                color: #454747;
+            }
+
+            ::marker {
+                color: $primary-color;
             }
         }
     }
-    .sectec_two {
-        margin-top: 10%;
-    
-        h1 {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 32px;
-            text-transform: uppercase;
-            text-align: center;
+}*/
+
+.section_six {
+    width: 100%;
+    margin: 10% 0 0 0;
+    position: relative;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+
+    .centered_logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: black;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        width: 70%;
+
+        .banner_logo {
+            img {
+                width: 60px;
+                height: 65px;
+            }
+
+            p {
+                margin-top: 40px;
+                font-size: 16px;
+                color: white;
+            }
         }
-    
-        hr {
-            border: 2px solid $primary-color;
-            width: 15%;
-        }
-    
-        .box {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            width: 70%;
-            gap: 6%;
-            margin-top: 5%;
-            margin-left: 13%;
-    
-        }
-    
-        .box_item {
-            font-size: 30px;
-            text-align: center;
+
+
+    }
+
+
+
+}
+
+.section_text {
+    margin-top: 90px;
+    position: relative;
+    width: 50%;
+    left: 25%;
+
+
+}
+
+.logo_partner {
+    position: relative;
+    width: 50%;
+    left: 20%;
+
+    .logo_box {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        width: 85%;
+        gap: 10%;
+
+        .logo_item {
             width: 100%;
             padding: 5%;
             justify-content: center;
             align-items: center;
-    
-            img {
-                width: 90px;
-                height: 75px;
+
+            #logo_img {
+                width: 155px;
+                height: 110px;
             }
-    
-            p {
-                color: #454747;
-                margin-top: 15px;
-                font-size: 18px;
-                text-transform: uppercase;
-            }
-    
-        }
-    
-        button {
-            background-color: $primary-color;
-            color: white;
-            font-size: 18px;
-            height: 45px;
-            width: 390px;
-            border: none;
-            margin-left: 37%;
-            margin-top: 5%;
-            cursor: pointer;
-        }
-    
-        button:hover {
-            background-color: #454747;
+
         }
     }
-    .section_four{
-        position: relative;
-        color: black;
-        margin: 5% 0 0 0;
-        width: 100%;
-        background-color: #dff0fc;
-        padding: 7% 0 7% 0;
-    
-        h1 {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 32px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    
-        hr {
-            border: 2px solid $primary-color;
-            width: 15%;
-        }
-    
-        .section_text {
-            margin-top: 35px;
-            position: relative;
-            width: 50%;
-            left: 25%;
-            #so_text {
-                line-height: 28px;
-                font-size: 16px;
-                color: #454747;
-            }
-        }
-        .box {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            width: 70%;
-            gap: 6%;
-            margin-top: 35px;
-            margin-left: 13%;
-            
-        }
-    
-        .box_item {
-            font-size: 30px;
-            text-align: center;
-            width: 100%;
-            padding: 8%;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid white;
-            background-color: white;
-    
-            img {
-                width: 60px;
-                height: 60px;
-            }
-    
-            label {
-                color: #454747;
-                margin-top: 15px;
-                font-size: 20px;
-                font-weight: 500;
-            }
-    
-            #p_box {
-                font-size: 14px;
-                line-height: 24px;
-                text-align: center;
-            }
-        }
-        button {
-            background-color: $primary-color;
-            color: white;
-            font-size: 18px;
-            height: 45px;
-            width: 390px;
-            border: none;
-            margin-left: 37%;
-            margin-top: 5%;
-            cursor: pointer;
-        }
-    
-        button:hover {
-            background-color: #454747;
-        }
-    }
-    
-    .sec_five{
-        background-color: #fff5f5;
-        position: relative;
-        color: black;
-        width: 100%;
-        padding: 7% 0 7% 0;
-        width: 100%;
-        
-        h1 {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 32px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    
-        hr {
-            border: 2px solid $primary-color;
-            width: 15%;
-        }
-    
-        .sec_text {
-            margin-top: 5%;
-            position: relative;
-            width: 50%;
-            left: 25%;
-            #so_text {
-                line-height: 30px;
-                font-size: 18px;
-                color: #454747;
-            }
-        }
-        .list{
-            display: flex;
-            justify-content: space-between;
-            width: 35%;
-            position: relative;
-            left: 30%;
-            .list_item{
-                font-size: 14px;
-                li {
-                    list-style-type: square;
-                    line-height: 30px;
-                }
-    
-                ::marker {
-                    color: $primary-color;
-                }
-            }
-        }
-    }
-    
-    .section_six{
-        width: 100%;
-        margin: 10% 0 0 0;
-        position: relative;
+}
+
+
+.section_nine {
+    position: relative;
+    color: black;
+    margin: 10% 0 0 0;
+    width: 100%;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 32px;
+        text-transform: uppercase;
         text-align: center;
-        img{
-            width: 100%;
-        }
-        .centered_logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            color: black;
-            transform: translate(-50%, -50%);
-            display: grid;
-            grid-template-columns: auto auto auto auto auto auto;
-            width: 70%;
-    
-            .banner_logo {
-                img{
-                    width: 60px;
-                    height: 65px;
-                }
-                p {
-                    margin-top: 40px;
-                    font-size: 16px;
-                    color: white;
-                }
-            }
-            
-            
-        }
-        
-       
-    
     }
-    
+
+    hr {
+        border: 2px solid $primary-color;
+        width: 15%;
+    }
+
     .section_text {
-        margin-top: 90px;
+        margin-top: 5%;
         position: relative;
         width: 50%;
         left: 25%;
-    
-        #so_text {
-            line-height: 28px;
-            font-size: 18px;
-            color: #454747;
-            text-align: center;
-        }
+
     }
-    .logo_partner{
-        position: relative;
-        width: 50%;
-        left: 20%;
-        .logo_box {
-            display: grid;
-            grid-template-columns: auto auto auto auto auto;
-            width: 85%;
-            gap: 10%;
-            .logo_item {
-                width: 100%;
-                padding: 5%;
-                justify-content: center;
-                align-items: center;
-        
-                #logo_img {
-                    width: 155px;
-                    height: 110px;
-                }
-        
-            }
-        }
+
+    button {
+        background-color: $primary-color;
+        color: white;
+        font-size: 18px;
+        height: 45px;
+        width: 390px;
+        border: none;
+        margin-left: 37%;
+        margin-top: 5%;
+        cursor: pointer;
     }
-    .section_seven{
-        position: relative;
-        color: black;
-        margin: 10% 0 0 0;
-        width: 100%;
-    
-        h1 {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 32px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    
-        hr {
-            border: 2px solid $primary-color;
-            width: 15%;
-        }
-    
-        .section_text {
-            margin-top: 5%;
+
+    button:hover {
+        background-color: #454747;
+    }
+}
+
+.art_clients {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    .art_client {
+        margin-left: 3%;
+        width: 20%;
+
+        .artclient_title {
             position: relative;
-            width: 50%;
-            left: 25%;
-            #so_text {
-                line-height: 30px;
+
+            background-image: url(../../public/services/pages/images/comma-com.svg);
+            background-repeat: no-repeat;
+            height: 200px;
+
+            .title_ser_des {
                 font-size: 18px;
-                color: #454747;
-            }
-        }
-        .section_articles {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            width: 70%;
-            gap: 6%;
-            margin-top: 35px;
-            margin-left: 13%;
-            
-    
-        }
-    
-        .section_article {
-            width: 100%;
-            padding: 8%;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid white;
-            background-color: white;
-            float: left;
-            #article_title{
-                a{
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    line-height: 24px;
-                    font-weight: 600;
-                }
-                a:hover{
-                    color: #454747;
-                    text-decoration: none;
-                }
-            }
-    
-        }
-    }
-    
-    
-    .section_nine{
-        position: relative;
-        color: black;
-        margin: 10% 0 0 0;
-        width: 100%;
-    
-        h1 {
-            font-size: 32px;
-            font-weight: 500;
-            line-height: 32px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    
-        hr {
-            border: 2px solid $primary-color;
-            width: 15%;
-        }
-    
-        .section_text {
-            margin-top: 5%;
-            position: relative;
-            width: 50%;
-            left: 25%;
-            #so_text {
-                line-height: 30px;
-                font-size: 18px;
-                color: #454747;
-            }
-        }
-        button {
-            background-color: $primary-color;
-            color: white;
-            font-size: 18px;
-            height: 45px;
-            width: 390px;
-            border: none;
-            margin-left: 37%;
-            margin-top: 5%;
-            cursor: pointer;
-        }
-    
-        button:hover {
-            background-color: #454747;
-        }
-    }
-    .art_clients{
-        margin-top: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        
-        .art_client{
-            margin-left: 3%;
-            width: 20%;
-            .artclient_title{
+                font-style: italic;
+                font-weight: 600;
                 position: relative;
-                
-                background-image: url(../../public/services/pages/images/comma-com.svg);
-                background-repeat: no-repeat;
-                height: 200px;
-                span{
-                    font-size: 20px;
-                    font-style: italic;
-                    position: relative;
-                    bottom: -50px;
-                    left: 15px;
-                }
-               
+                bottom: -50px;
+                left: 15px;
             }
-            .artclient_body{
-                .client_name{
-                    position: relative;
-                    top: -35px;
-                }
-                .client_job{
-                    position: relative;
-                    top: -30px;
-                    left: 64px;
-                }
-                p{
-                    font-size: 14px;
-                    color: #454747;
-                    font-style: italic;
-                    line-height: 22px;
-                }
+
+        }
+
+        .artclient_body {
+            margin-top: -60px;
+
+            .client_name {
+                position: relative;
+                top: -39px;
+                left: 10px;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .client_job {
+                position: relative;
+                top: -30px;
+                left: 74px;
+                font-size: 15px;
+            }
+
+            .p_art_ser {
+                font-size: 14px;
+                color: #454747;
+                font-style: italic;
+                line-height: 22px;
             }
         }
     }

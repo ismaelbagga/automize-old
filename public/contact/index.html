@@ -5,13 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/862b1267d5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="contactUs">
       <div class="top">
         <div class="title">
-          <p>Let's talk about your project</p>
+          <p id="title_contact">Let's talk about your project</p>
         </div>
         <div class="box">
           <!--Contact Form-->
@@ -20,71 +24,81 @@
               <div class="formBox">
                 <div class="row50">
                   <div class="inputBox">
-                    <span>Name</span>
-                    <input type="text" />
+                    <span class="input_name_contact">Name</span>
+                    <input class="input_contact" type="text" />
                   </div>
                   <div class="inputBox">
-                    <span>Email</span>
-                    <input type="email" />
+                    <span class="input_name_contact">Email</span>
+                    <input class="input_contact" type="email" />
                   </div>
                 </div>
                 <div class="row50">
                   <div class="inputBox">
-                    <span>Company</span>
-                    <input type="text" />
+                    <span class="input_name_contact">Company</span>
+                    <input class="input_contact" type="text" />
                   </div>
                 </div>
                 <div class="row100">
                   <div class="inputBox">
-                    <span>Message</span>
-                    <textarea cols="25" rows="20"></textarea>
+                    <span class="input_name_contact">Message</span>
+                    <textarea cols="16" rows="12"></textarea>
                   </div>
                 </div>
 
                 <div class="row100">
                   <div class="check">
-                    <label class="container"
+                    <label class="label_check"
                       >Lorem ipsum dolor sit amet, consectetur adipisci ngipsum
                       dolor sit amet, consectetur adipiscing elit, sed
                       adipiscing elit, sed do
                       <a href="#">Privacy Policy.</a>
-                      <input type="checkbox" />
+                      <input type="checkbox" id="checkbox" />
                       <span class="checkmark"></span>
                     </label>
                   </div>
                   <div class="inputBox">
-                    <input type="submit" value="Send Message" />
+                    <input
+                      class="base-btn am-btn-secondary"
+                      type="submit"
+                      value="SEND MESSAGE"
+                      
+                    />
                   </div>
                 </div>
               </div>
             </form>
           </div>
           <!--Contact info-->
-          <div class="contact info">
-            <div class="boxInfo">
-              <p>
-                Lorem ipsum dolor sit amet sed do Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Voluptatem fuga iste.
-              </p>
-              <div class="desc">
-                <span>Lorem ipsum</span>
-                <p>Ceo - Lorem</p>
+          <blockquote class="quote">
+            <div class="contact info">
+              <div class="boxInfo">
+                <p id="info_title_contact">
+                  Lorem ipsum dolor sit amet sed do Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Voluptatem fuga iste.
+                </p>
+                <div class="desc_contact">
+                  <span id="title_author_info">Lorem ipsum</span>
+                  <p id="desck_author_info">Lorem - Lorem</p>
+                </div>
               </div>
             </div>
-          </div>
+          </blockquote>
           <!--Contact map-->
           <div class="map">
             <div class="map_desc">
-              <p>Rue Dayat Aoua</p>
-              <p>Rabat</p>
-              <p><b>Morocco</b></p>
-              <p>Automize@hello.com</p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>orem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
+              <div class="adress_contact">
+                <img id="location_contact" src="../images/location.png" />
+                <p id="p_adress">Rue Dayat Aoua</p>
+                <p id="p_adress">Rabat</p>
+                <p id="p_country_adress">Morocco</p>
+                <p id="p_email_adress">Automize@hello.com</p>
+              </div>
+              <ul class="ul_map_contact">
+                <li class="li_map_contact">Lorem ipsum dolor sit amet</li>
+                <li class="li_map_contact">orem ipsum dolor sit amet</li>
+                <li class="li_map_contact">Lorem ipsum dolor sit amet</li>
+                <li class="li_map_contact">Lorem ipsum dolor sit amet</li>
+                <li class="li_map_contact">Lorem ipsum dolor sit amet</li>
               </ul>
             </div>
           </div>
