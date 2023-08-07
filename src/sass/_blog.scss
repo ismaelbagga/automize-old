@@ -1,5 +1,5 @@
-@import "variables";
-@import "typography";
+@use "variables";
+@use "typography";
 
 
 .container_blog {
@@ -169,10 +169,11 @@
                     font-weight: 600;
                     color: #373737;
                     text-decoration: none;
+                    &:hover{
+                        color: #dd170f;
+                    }
                 }
-                a:hover {
-                    color: #dd170f;
-                }
+                
             }
 
             .meta {
