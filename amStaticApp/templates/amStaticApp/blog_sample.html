@@ -1,0 +1,99 @@
+{% extends 'amStaticApp/base.html' %}
+{% load static %}
+{% block title %} Blog Sample | Automize {%endblock %}
+{% block style %} {% static 'amStaticApp/css/blog.css' %} {% endblock %}
+{% block content %}
+
+    <div class="container_bs">
+        <div class="bs_img">
+            <img src="{% static 'images/1.jpg' %}" id="img_blog_sample"/>
+            <div class="centered_bs">
+                <p class="title_bs">20 Key Stats 2016 <br>You Will Need in 2017</p>
+                <p class="desc_bs">Businesses Won’t Make It <br>Without Tech Partners</p>
+                <button id="btn_contact_bs">Contact Automize</button>
+            </div>
+        </div>
+    </div>
+    <div class="bs_container">
+        <div class="breadcrumb_bs">
+            <ul class="ul_breadcrumb_bs">
+                <li class="li_breadcrumb_bs"><a class="link_breadcrumb_bs" href="#">Home</a></li>
+                <li class="li_breadcrumb_bs"><a class="link_breadcrumb_bs" href="#">Infographics</a></li>
+                <li class="li_breadcrumb_bs">20 Key Stats 2016 You Will Need in 2017</li>
+            </ul>
+        </div>
+        <div class="art_header">
+            <ul class="ul_info_bs">
+                <li class="li_info_bs"><i class="fa-solid fa-calendar-days"></i>JAN 06, 2017</li>
+                <li class="li_info_bs"><i class="fa-solid fa-user"></i>AUTOMIZE TEAM</li>
+                <li class="li_info_bs"><i class="fa-regular fa-folder-open"></i>TECHNOLOGY FOR BUSINESS GROWTH</li>
+                <li class="li_info_bs"><i class="fa-solid fa-pen-to-square"></i>INFOGRAPHICS, TRENDS</li>
+            </ul>
+        </div>
+        <div class="article_blog">
+            <div class="head">
+                <h1 class="h1_bs">The state of technology for business growth</h1>
+                <p class="p1_bs">At the beginning of the year, only the lazy would not get down to making a complex analysis of the
+                    previous year results. Consider us lazy then, since we don’t want to waste your time with bulky
+                    wording. </p>
+                <p class="p2_bs">Instead, we rake up the prominent numbers from Deloitte, Statista, WeAreSocial, CompTIA, Clutch and
+                    other sources to give you a brief insight on what challenges small and medium businesses came up
+                    with at the end of 2016, and how IT industry can help with the technology for business growth.</p>
+                <img src="{% static 'images/People-120x300.png' %}" id="img1_bs">
+            </div>
+            <div class="body_bs">
+                <h3 class="h3_bs">Half of World Population Browses the Internet and Uses Mobile</h3>
+                <ol class="ol_bs">
+                    <li class="li_desc_bs">Imagine, <strong>3.42 bln</strong> people around the globe are Internet users. This is 46%, or almost a half of world population.</li>
+                    <li class="li_desc_bs">Consider today there are 3.79 bln unique mobile users. In other words, more than a half of all people on the planet, particularly 51%, own mobile phones.</li>
+                    <li class="li_desc_bs">More than 30%, or <strong>2.31 bln</strong> people have at least one social media account, with 1.97 bln using mobile to manage their social media.</li>
+                    <li class="li_desc_bs">In comparison with the stats from 2015, the use of the Internet, mobile and social media <strong>grew by 10%</strong> on average.</li>
+                </ol>
+                <p class="p_italic_bs">(Based on the report made by WeAreSocial)</p>
+                <h3 class="h3_bs">Businesses Feel Pressure when Engaging These People and Turning Them into Customers</h3>
+                <ol class="ol_bs">
+                    <li class="li_desc_bs">Imagine, <strong>3.42 bln</strong> people around the globe are Internet users. This is 46%, or almost a half of world population.</li>
+                    <li class="li_desc_bs">Consider today there are 3.79 bln unique mobile users. In other words, more than a half of all people on the planet, particularly 51%, own mobile phones.</li>
+                    <li class="li_desc_bs">More than 30%, or <strong>2.31 bln</strong> people have at least one social media account, with 1.97 bln using mobile to manage their social media.</li>
+                    <li class="li_desc_bs">In comparison with the stats from 2015, the use of the Internet, mobile and social media <strong>grew by 10%</strong> on average.</li>
+                </ol>
+                <p class="p_italic_bs">Based on the statistics collected by Blue Corona taken from Statista, CMOSurvey, PRNewsWire, Business2Community, etc.)</p>
+                <h3 class="h3_bs">Businesses Feel Pressure when Engaging These People and Turning Them into Customers</h3>
+                <ol class="ol_bs">
+                    <li class="li_desc_bs">Imagine, <strong>3.42 bln</strong> people around the globe are Internet users. This is 46%, or almost a half of world population.</li>
+                    <li class="li_desc_bs">Consider today there are 3.79 bln unique mobile users. In other words, more than a half of all people on the planet, particularly 51%, own mobile phones.</li>
+                    <li class="li_desc_bs">More than 30%, or <strong>2.31 bln</strong> people have at least one social media account, with 1.97 bln using mobile to manage their social media.</li>
+                    <li class="li_desc_bs">In comparison with the stats from 2015, the use of the Internet, mobile and social media <strong>grew by 10%</strong> on average.</li>
+                </ol>
+                <p class="p_italic_bs">Based on the statistics collected by Blue Corona taken from Statista, CMOSurvey, PRNewsWire, Business2Community, etc.)</p>
+                <h3 class="h3_bs">Businesses Feel Pressure when Engaging These People and Turning Them into Customers</h3>
+                <ol class="ol_bs">
+                    <li class="li_desc_bs">Imagine, <strong>3.42 bln</strong> people around the globe are Internet users. This is 46%, or almost a half of world population.</li>
+                    <li class="li_desc_bs">Consider today there are 3.79 bln unique mobile users. In other words, more than a half of all people on the planet, particularly 51%, own mobile phones.</li>
+                    <li class="li_desc_bs">More than 30%, or <strong>2.31 bln</strong> people have at least one social media account, with 1.97 bln using mobile to manage their social media.</li>
+                    <li class="li_desc_bs">In comparison with the stats from 2015, the use of the Internet, mobile and social media <strong>grew by 10%</strong> on average.</li>
+                </ol>
+                <p class="p_italic_bs">Based on the statistics collected by Blue Corona taken from Statista, CMOSurvey, PRNewsWire, Business2Community, etc.)</p>
+            </div>
+            <div class="conclusion">
+                <h3 class="h3_bs">Conclusion</h3>
+                <p class="p_consl_bs">Relying on the given numbers that touch upon customers, businesses and tech providers, it’s easy to conclude:</p>
+                <ol class="ol_bs">
+                    <li class="li_desc_bs">Customers heavily rely on online and mobile.</li>
+                    <li class="li_desc_bs">Businesses, especially small ones, experience the lack of online presence and have doubts about investing into web assets.</li>
+                    <li class="li_desc_bs">IT industry provides better and more cost-efficient technology for business growth.</li>
+                    <li class="li_desc_bs">Both long-term tech partnership and IT outsourcing will meet greater demand in 2017.</li>
+                </ol>
+            </div>
+            <div class="social_media">
+                <ul class="ul_bs">
+                    <li class="li_social_bs"><i class="fa-brands fa-square-facebook"></i><a class="link_social_bs" href="#">Facebook</a></li>
+                    <li class="li_social_bs"><i class="fa-brands fa-square-twitter"></i><a class="link_social_bs" href="#">Twitter</a></li>
+                    <li class="li_social_bs"><i class="fa-brands fa-linkedin"></i><a class="link_social_bs" href="#">Linkedin</a></li>
+                    <li class="li_social_bs"><i class="fa-solid fa-envelope"></i><a class="link_social_bs" href="#">Email</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

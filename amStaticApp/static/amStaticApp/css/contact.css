@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .top .title h1{
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    width: 100%;
+    height: 60%;
+    margin-left: 20px;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.top{
+    margin: 8%;
+}
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 25px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    color: #6f6f6f;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.check {
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+.inputBox input[type="submit"]{
+    background: #dd170f;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    max-width: 200px;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox input,textarea{
+    border-color: #eee9e9;
+    background-color: #F9F9F9;
+}
+#textarea{
+    border-color: #eee9e9;
+}
+.info .p{
+    font-style: italic;
+    font-size: x-large;
+}
+.info .desc{
+    margin-top: 50px;
+}
+.desc span {
+    font-size: larger;
+}
+.desc p{
+    font-size: larger;
+}
+.boxInfo{
+    margin-top: 10px;
+}
+.map{
+    margin-top: 15px;
+    margin: 20px;
+    font-size: large;
+    color: #333;
+}
+.mapP{
+    margin-left: 20px;
+}
+ul{
+    margin: 20px;
+}
+.row100 a{
+    color: #dd170f;
+    cursor: pointer;
+}
+ul li{
+    list-style-type: square;
+    font-size: 22px;
+}
+ul li::marker {
+    color: #dd170f;
+  }
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 17px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #6f6f6f;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #dd170f;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    left: 7px;
+    top: 5px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

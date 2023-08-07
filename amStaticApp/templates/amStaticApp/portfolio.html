@@ -1,0 +1,121 @@
+{% extends 'amStaticApp/base.html' %}
+{% load static %}
+{% block title %} Portfolio | Automize {%endblock %}
+{% block style %} {% static 'amStaticApp/css/portfolio.css' %} {% endblock %}
+{% block content %}
+
+    <div class="banner-partners">
+        <div class="banner-partners1">
+            <h2 class="font-title">Lorem ipsum</h2>
+            <p class="font-subtitle">
+                Lorem ipsum dolor sit amet consectetur<br>adipiscing elit
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper-archive">
+       <div class="portfolio-archive">
+            <div class="portfolio-type">
+                <div class="link-wrapper">
+                    <a href="">All</a>
+                    <a href="">Big Data</a>
+                    <a href="">Chatbots</a>
+                    <a href="">cloud</a>
+                    <a href="">Digital Transformation</a>
+                    <a href="">eHealth</a>
+                    <a href="">Lot</a>
+                    <a href="">Mobile</a>
+                    <a href="">Team Augmentation</a>
+                    <a href="">UX/UI</a>
+                    <a href="">Web</a>
+                </div>
+            </div>
+
+
+            <section class="portfolio">
+                <div>
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+                <div>
+                    <div>
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+                <div >
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+                <div>
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+                <div>
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+
+                <div>
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+
+                <div>
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+
+                <div>
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+
+                <div>
+                    <div class="portfolio-image">
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+
+                <div class="portfolio-btn">
+                     <a href="">LOAD MORE</a>
+                </div>
+
+            </section>
+       </div>
+    </div>
+
+{% endblock %}
