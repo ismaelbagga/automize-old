@@ -31,7 +31,8 @@
             }
 
             .banner_text_home {
-                p {
+                margin-top: 35px;
+                #text_home_p {
                     font-size: 22px;
                     line-height: 27px;
                 }
@@ -59,12 +60,13 @@
     margin-top: 10%;
     width: 100%;
 
-    h1 {
+    #h1_home {
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 25px;
     }
 
     hr {
@@ -84,6 +86,8 @@
             font-size: 22px;
             color: #454747;
             text-align: center;
+            position: relative;
+            top: -50px;
         }
     }
 }
@@ -92,14 +96,15 @@
     margin-top: 10%;
     background-color: #fff5f5;
     height: 745px;
-    padding: 30px 0 30px 0;
+    padding: 70px 0 0 0;
 
-    h1 {
+    #h1_home {
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 25px;
     }
 
     hr {
@@ -107,10 +112,11 @@
         width: 15%;
     }
 
-    p {
+    #text_sec_two {
         font-size: 22px;
         text-align: center;
         line-height: 37px;
+        margin-top: 25px;
     }
 
     .box_home {
@@ -135,11 +141,9 @@
             height: 75px;
         }
 
-        a {
+        #link_title_home {
             color: #454747;
-            margin-top: 15px;
-            font-size: 20px;
-            text-transform: uppercase;
+            font-size: 18px;
             text-decoration: none;
             font-weight: 600;
         }
@@ -148,6 +152,7 @@
         #p_home_box {
             font-size: 16px;
             line-height: 28px;
+            margin-top: 2px;
         }
 
         button {
@@ -171,18 +176,19 @@
     position: relative;
     left: 10%;
 
-    h2 {
+    #h1_home {
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 25px;
+        margin-left: 50px;
     }
 
     hr {
         border: 2px solid $primary-color;
         width: 15%;
-
     }
 
     .box_home {
@@ -202,13 +208,14 @@
 
             .form_box_home {
                 line-height: 50px;
+                margin-top: 40px;
 
-                span {
+                .span_form_home {
                     font-size: 22px;
                     font-weight: 700;
                 }
 
-                p {
+                .p_form_home {
                     font-size: 18px;
                     line-height: 27px;
                 }
@@ -218,15 +225,15 @@
 
         .info_home {
             grid-area: info;
-            height: 532px;
+            height: 520px;
             box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 
             .info_text_home {
-                p {
+                .p_info_home {
                     font-size: 20px;
                     line-height: 38px;
                     font-style: italic;
-                    padding: 60px;
+                    padding: 90px 90px 0 40px;
                 }
             }
 
@@ -234,23 +241,20 @@
                 display: flex;
                 width: 65%;
                 padding-left: 50px;
+                margin-top: 70px;
 
-                img {
+                #img_author_info {
                     width: 80px;
                     height: 80px;
                 }
 
                 .description_author {
                     padding-left: 20px;
-
-                    h5 {
-                        position: relative;
-                        top: -15%;
-                    }
-
-                    p {
-                        position: relative;
-                        top: -45%;
+                    width: 500px;
+                    margin-top: 5px;
+                    #des_info_home{
+                        margin-top: 10px;
+                        line-height: 28px;
                     }
                 }
             }
@@ -267,14 +271,16 @@
     position: relative;
     width: 100%;
     top: -150px;
-
-    h1 {
+    #h1_home {
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 25px;
+        margin-left: 50px;
     }
+   
 
     .section_home_btn{
         margin-left: 43%;
@@ -301,13 +307,14 @@
     height: 900px;
     background-color: #dff0fc;
 
-    h1 {
+    #h1_home {
         padding-top: 5%;
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 25px;
     }
 
     hr {
@@ -327,6 +334,7 @@
             font-size: 20px;
             color: #454747;
             text-align: center;
+            
         }
     }
     .section_home_steps{
@@ -336,6 +344,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        margin-top: 25px;
         .home_step{
             width: 280px;
             height: 350px;
@@ -347,6 +356,7 @@
             }
             .step_name{
                 font-size: 18px;
+                font-weight: 600;
                 line-height: 29px;
                 margin: 0px 0px 20px;
                 padding: 0px 0px 20px;

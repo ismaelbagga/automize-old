@@ -1,14 +1,17 @@
 // @use "reset";
 @use "variables" as *;
 @use "typography" as *;
+@use "buttons" as *;
 
 @use "about";
 @use "contact";
 @use "blog";
 @use "home";
+@use "componenets";
 @use "servicesde";
 @use "servicetec";
 @use "blogsample";
+
 
 body {
   font-family: "Open Sans";
@@ -45,4 +48,11 @@ h6 {
 .block-title {
   font-size: 32px;
   font-weight: 700;
+  // font-family: $fontFamily;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

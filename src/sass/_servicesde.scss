@@ -11,10 +11,11 @@
 
         #image {
             width: 100%;
+            height: 818px;
             margin: 0;
         }
 
-        .centered_service {
+        .centered_service_design {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -30,16 +31,19 @@
             }
 
             .banner_text {
-                p {
+                #p_banner_text {
+                    margin-top: 45px;
                     font-size: 18px;
                     line-height: 27px;
+                    width: 600px;
+                    margin-left: 95px;
                 }
             }
 
             .btn_header {
                 margin-top: 10%;
 
-                a {
+                #btn_contact_header {
                     font-size: 20px;
                     word-spacing: 5px;
                     text-decoration: none;
@@ -58,58 +62,26 @@
     margin-top: 10%;
     width: 100%;
 
-    h1 {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 32px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
-    }
-
     .section_text {
-        margin-top: 5%;
+        margin-top: 55px;
         position: relative;
         width: 50%;
         left: 25%;
-        
-
-        #so_text {
-            line-height: 30px;
-            font-size: 18px;
-            color: #454747;
-            text-align: left;
-        }
     }
 }
 
 .section_two {
     margin-top: 10%;
 
-    h1 {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 32px;
-        text-transform: uppercase;
-        text-align: center;
-    }
 
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
-    }
 
     .box {
         display: grid;
         grid-template-columns: auto auto auto;
-        width: 70%;
+        width: 1140px;
         gap: 6%;
-        margin-top: 5%;
-        margin-left: 13%;
+        margin-top: 50px;
+        margin-left: 15%;
     }
 
     .box_item {
@@ -120,43 +92,39 @@
         justify-content: center;
         align-items: center;
 
-        img {
+        .box_img {
             width: 90px;
             height: 75px;
+            margin-bottom: 30px;
+
         }
 
-        a {
+        .link_ser_design {
             color: #454747;
-            margin-top: 15px;
             font-size: 17px;
             text-transform: uppercase;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
 
-        a:hover {
-            text-decoration: none;
-        }
+
 
         #p_box {
             font-size: 16px;
             line-height: 28px;
+            margin-top: 15px;
         }
     }
 
-    button {
-        background-color: $primary-color;
-        color: white;
-        font-size: 18px;
-        height: 45px;
-        width: 390px;
-        border: none;
-        margin-left: 37%;
+    #btn_art_ser {
+
+        margin-left: 42%;
         margin-top: 5%;
-        cursor: pointer;
     }
 
-    button:hover {
-        background-color: #454747;
-    }
+
 }
 
 .section_three {
@@ -165,43 +133,30 @@
     margin-top: 10%;
     width: 100%;
 
-    h1 {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 32px;
-        text-transform: uppercase;
-        text-align: center;
-    }
 
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
-    }
+
+
 
     .section_text {
-        margin-top: 5%;
+        margin-top: 55px;
         position: relative;
         width: 50%;
         left: 25%;
 
-        #so_text {
-            line-height: 30px;
-            font-size: 18px;
-            color: #454747;
-            text-align: left;
-        }
+       
     }
 
     .logo_partner {
         position: relative;
         width: 50%;
         left: 20%;
+        margin-bottom: 10%;
 
         .logo_box {
             display: grid;
             grid-template-columns: auto auto auto auto auto;
             width: 70%;
-            gap: 10%;
+            gap: 7%;
 
             .logo_item {
                 width: 100%;
@@ -218,95 +173,7 @@
     }
 }
 
-.section_four {
-    position: relative;
-    color: black;
-    width: 100%;
-    background-color: #dff0fc;
-    padding: 7% 0 7% 0;
 
-    h1 {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 32px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
-    }
-
-    .section_text {
-        margin-top: 35px;
-        position: relative;
-        width: 50%;
-        left: 25%;
-
-        #so_text {
-            line-height: 28px;
-            font-size: 16px;
-            color: #454747;
-            text-align: left;
-        }
-    }
-
-    .box {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        width: 70%;
-        gap: 6%;
-        margin-top: 35px;
-        margin-left: 13%;
-    }
-
-    .box_item {
-        text-align: center;
-        width: 100%;
-        height: 200px;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 60px;
-            height: 60px;
-            position: relative;
-            bottom: 25%;
-        }
-
-        .item {
-            margin-top: -15%;
-
-            label {
-                color: #454747;
-                font-size: 20px;
-            }
-
-            #p_box {
-                font-size: 14px;
-                line-height: 24px;
-                text-align: center;
-            }
-        }
-    }
-
-    button {
-        background-color: $primary-color;
-        color: white;
-        font-size: 18px;
-        height: 45px;
-        width: 390px;
-        border: none;
-        margin-left: 37%;
-        margin-top: 5%;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #454747;
-    }
-}
 
 .section_five {
     position: relative;
@@ -314,18 +181,6 @@
     margin: 10% 0 0 0;
     width: 100%;
 
-    h1 {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 32px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
-    }
 
     .section_text {
         margin-top: 5%;
@@ -333,14 +188,10 @@
         width: 50%;
         left: 25%;
 
-        #so_text {
-            line-height: 30px;
-            font-size: 18px;
-            color: #454747;
-            text-align: left;
-        }
+        
     }
 }
+
 
 .section_six {
     width: 100%;
@@ -383,31 +234,11 @@
     margin: 10% 0 0 0;
     width: 100%;
 
-    h1 {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 32px;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
-    }
-
     .section_text {
         margin-top: 5%;
         position: relative;
         width: 50%;
         left: 25%;
-
-        #so_text {
-            line-height: 30px;
-            font-size: 18px;
-            color: #454747;
-            text-align: left;
-        }
     }
 
     .section_articles {
@@ -428,33 +259,33 @@
         background-color: white;
         float: left;
 
-        #article_title {
-            a {
-                font-size: 18px;
+        .article_title {
+            margin-top: 15px;
+            width: 360px;
+            .link_article_ser {
+                font-size: 16px;
                 text-transform: uppercase;
                 line-height: 24px;
                 font-weight: 600;
+                
+                
+                &:hover {
+                    color: #454747;
+                    text-decoration: none;
+                }
             }
-
-            a:hover {
-                color: #454747;
-                text-decoration: none;
-            }
+        }
+        .p_article_ser{
+            font-size: 15px;
+            line-height: 24px;
+            margin-top: 10px;
+            width: 360px;
         }
     }
 }
 
-//.section_eight{
-// width: 100%;
-//  margin-top: 5%;
-// .banner_eight {
-//  margin: 0;
-// #img_bn {
-//   width: 100%;
-//   height: 650px;
-//  margin: 0;
 
-.section_eight {
+.section_eight_des {
     position: relative;
     text-align: center;
     margin: 5% 0 0 0;
@@ -470,7 +301,7 @@
         }
 
         .centered_art {
-            margin-top: 5%;
+            margin-top: 10%;
             position: absolute;
             top: 35%;
             left: 50%;
@@ -478,58 +309,47 @@
             transform: translate(-50%, -50%);
             width: 100%;
 
-            h1 {
-                font-size: 32px;
-                font-weight: 500;
-                line-height: 32px;
-                text-transform: uppercase;
-                text-align: center;
-                color: white;
-            }
-
-            hr {
-                border: 2px solid $primary-color;
-                width: 15%;
-            }
-
-            .grid{
+            .grid {
                 display: grid;
                 grid-template-columns: auto auto auto;
                 width: 80%;
                 padding: 5%;
-                margin-left: 8%;
-
+                margin-left: 12%;
             }
+
             .grid_btm {
                 text-align: center;
-                width: 80%;
+                width: 353px;
                 height: 350px;
                 justify-content: center;
                 align-items: center;
                 background-color: white;
-                
-                img {
-                  width: 60px;
-                  height: 60px;
-                  position: relative;
-                  bottom: 10%;
+
+                .img_grid_des {
+                    width: 60px;
+                    height: 60px;
+                    position: relative;
+                    bottom: 10%;
                 }
-            
+
                 .grid_item {
                     padding: 0 25px 10px 25px;
-                  label {
-                    color: #454747;
-                    font-size: 20px;
-                  }
-            
-                  #pb_grid {
-                    font-size: 14px;
-                    line-height: 24px;
-                    color: #454747;
-                    text-align: left;
-                  }
+
+                    .label_grid_des {
+                        color: #454747;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .pb_grid {
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #454747;
+                        text-align: left;
+                        padding: 15px;
+                    }
                 }
-              }
+            }
         }
     }
 }
@@ -540,17 +360,12 @@
     margin: 10% 0 0 0;
     width: 100%;
 
-    h1 {
+    .h1_ser_design {
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 32px;
         text-transform: uppercase;
         text-align: center;
-    }
-
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
     }
 
     .section_text {
@@ -558,33 +373,11 @@
         position: relative;
         width: 50%;
         left: 25%;
-
-        #so_text {
-            line-height: 30px;
-            font-size: 18px;
-            color: #454747;
-            text-align: left;
-        }
     }
 
-    button {
-        background-color: $primary-color;
-        color: white;
-        font-size: 18px;
-        height: 45px;
-        width: 390px;
-        border: none;
-        margin: 2% 37% 0 0;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #454747;
-    }
 }
 
 .section_teen {
-    margin-top: 7%;
     background-color: #fff5f5;
     position: relative;
     color: black;
@@ -593,18 +386,8 @@
     width: 100%;
     margin-bottom: -5%;
 
-    h1 {
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 32px;
-        text-transform: uppercase;
-        text-align: center;
-    }
 
-    hr {
-        border: 2px solid $primary-color;
-        width: 15%;
-    }
+
 
     .list {
         display: flex;
@@ -616,10 +399,17 @@
         .list_item {
             font-size: 14px;
 
-            ul {
+            .h6_ser_des {
+                font-weight: 600;
+                margin-top: 55px;
+                font-size: 14px;
+            }
+
+            .ul_ser_des {
+                margin-top: 30px;
                 gap: 100px;
 
-                li {
+                .li_ser_des {
                     list-style-type: square;
                     line-height: 30px;
                 }
@@ -630,4 +420,27 @@
             }
         }
     }
+}
+
+.hr_service {
+    border: 2px solid $primary-color;
+    width: 20%;
+    margin-top: 15px;
+}
+
+.h1_ser_design {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#so_text {
+    line-height: 28px;
+    font-size: 18px;
+    color: #454747;
+    text-align: left;
+    width: 720px;
+    margin-left: 55px;
+    margin-top: 30px;
 }
