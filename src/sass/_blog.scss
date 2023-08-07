@@ -108,7 +108,7 @@
                 }
 
                 .link_cat_blog:hover {
-                    color: $primary-color;
+                    color: variables.$primary-color;
                     text-decoration: underline;
                 }
             }
