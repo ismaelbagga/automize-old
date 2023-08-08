@@ -2,21 +2,15 @@
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -1335,21 +1329,15 @@ body {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -1766,21 +1754,15 @@ am-text-bold .section-title {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -2105,21 +2087,15 @@ am-text-bold .section-title {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
