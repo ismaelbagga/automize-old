@@ -509,6 +509,8 @@ am-text-bold .section-title {
 }
 
 .container_blog {
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
   position: relative;
   text-align: left;
 }
@@ -755,6 +757,8 @@ am-text-bold .section-title {
 }
 
 .container_home {
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
   position: relative;
   text-align: center;
   margin: 0;

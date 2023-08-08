@@ -1,8 +1,9 @@
 @use "variables";
 @use "typography";
-
+@use "mixins";
 
 .container_blog {
+    @include mixins.fullwidth;
     position: relative;
     text-align: left;
 

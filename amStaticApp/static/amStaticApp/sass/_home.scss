@@ -1,7 +1,11 @@
+@use "mixins";
+
+
 @import "variables";
 @import "typography";
 
 .container_home {
+    @include mixins.fullwidth;  
     position: relative;
     text-align: center;
     margin: 0;
