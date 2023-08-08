@@ -4,40 +4,99 @@
 
 
 //styling header part of home page//
-.header-home {
+.home-section-header {
 
-.container_home {
-    @include mixins.fullwidth;  
-    position: relative;
-    text-align: center;
-    margin: 0;
+    // @include mixins.fullwidth;  
+    // position: relative; 
+    // text-align: center;
+    // margin: 0;
+    // background-color: variables.$primary-color;
+    // height: 780px;
+
+    // img {
+    //     width: 85%;
+    //     height: 780px;
+    //     margin-left: 253px;
+    // }
+
+    // .title-banner-home {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 25%;
+    //     color: white;
+    //     transform: translate(-50%, -50%);
+
+
+    //     #so_text {
+    //         line-height: 37px;
+    //         font-size: 22px;
+    //         color: #454747;
+    //         text-align: center;
+    //         position: relative;
+    //         top: -50px;
+    //     }
+    // }
+
+    // youssef code
+    @include mixins.fullwidth;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: variables.$primary-color;
-    height: 780px;
+    height: 100vh;
+    padding: 0px;
+    .image-container {
+        width: 50% ;
+        height: 100%;
+        background-image: url('../../images/home-top-image-2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
 
-    img {
-        width: 85%;
-        height: 780px;
-        margin-left: 253px;
+
     }
+    .home-text-content{
+        width: 50% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 60px;
 
-    .text-banner-home {
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        color: white;
-        transform: translate(-50%, -50%);
+        .title-banner-home {
+            // display: block;
+            // max-width: 720px;
+            font-size: 34px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
 
-
-        #so_text {
-            line-height: 37px;
-            font-size: 22px;
-            color: #454747;
-            text-align: center;
-            position: relative;
-            top: -50px;
         }
+
+        .info-banner-home {
+                // display: block;
+    // max-width: 450px;
+    // margin: 35px 0;
+    font-size: 22px;
+    color: #fff;
+    // position: relative;
+    line-height: 1.5;
+    // right: -50px;
+    // transition: .5s all;
+    // opacity: 0;
+
+        }
+
+        .btn-header-home {
+            a {
+                margin: 0 20px;
+            }
+        }
+
     }
-}
+
 }
 .section_home_two {
     @include mixins.fullwidth;
@@ -56,7 +115,7 @@
     }
 
     hr {
-        border: 2px solid $primary-color;
+        border: 2px solid variables.$primary-color;
         width: 15%;
     }
 
@@ -105,7 +164,7 @@
 
         button {
             border: 1px solid white;
-            color: $primary-color;
+            color: variables.$primary-color;
             font-weight: 600;
             background-color: white;
             font-size: 16px;
@@ -135,7 +194,7 @@
     }
 
     hr {
-        border: 2px solid $primary-color;
+        border: 2px solid variables.$primary-color;
         width: 15%;
     }
 
@@ -175,6 +234,7 @@
 
 //styling the services section of page home//
 .services-section-home {
+    @include mixins.fullwidth;
     background-color: variables.$section-background;
     height: 745px;
     padding: 70px 0 30px 0;
@@ -327,6 +387,7 @@
 //start//
 
 .steps-section-home {
+    @include mixins.fullwidth;
     background-color: variables.$information-light-color;
     height: 985px;
     padding: 70px 0 30px 0;
@@ -398,10 +459,11 @@
 
 
 .block-section {
-    margin: 100px 0 170px 0;
+    margin: 100px auto;
     text-align: center;
     align-self: center;
-    width: 800px;
+    width: 75%;
+    
 }
 
 .block-title {

@@ -3,9 +3,7 @@
 @use "../typography";
 @use "../buttons";
 
-.nav-link {
-  color: variables.$text-color !important;
-}
+
 
 .dropdown-menu {
   width: variables.$half-screen-width;
@@ -31,6 +29,7 @@
 //   }
 // }
 
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -40,10 +39,20 @@
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+     /* Smooth transition effect */
   nav {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     height: 113px;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
     .header-container {
       .header-row{
         display: flex;
@@ -73,8 +82,10 @@ header {
             li {
               display: flex;
               align-items: center;
-              &::before {
-                content: "";
+              a {
+              // color: white !important;
+              transition: color 0.3s ease;
+
               }
             }
           }
@@ -83,3 +94,18 @@ header {
     }
   }
 }
+
+/* Styling for the header when scrolled */
+.navbar-scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lighten-link{
+  color: white !important;
+}
+
+.darken-link{
+  color: variables.$text-color !important;
+}
+

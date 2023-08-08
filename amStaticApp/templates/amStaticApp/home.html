@@ -4,15 +4,17 @@
 {% block content %}
 
 <!--section header of page home-->
-<div class="header-home">
-  <img src="{% static 'images/home-top-image.png' %}" class="col-8" />
-  <div class="col-4 text-banner-home">
+<div class="home-section-header">
+  <div class="image-container">
+    <!-- <img src="{% static 'images/home-top-image.png' %}" /> -->
+  </div>
+  <div class="home-text-content">
     <p class="title-banner-home">Agile Software Teams <br> and Expertise on Demand</p>
     <p class="info-banner-home">Engage top-tier engineers to solve your <br> tech needs and reach business goals faster
     </p>
-    <div class="btn-header-home">
-      <a href="contact/index.html" class="base-btn am-btn-white col-2">get a quote</a>
-      <a href="#" class="base-btn am-btn-white col-2">our work</a>
+    <div class="btn-header-home d-flex justify-content-start">
+      <a href="contact/index.html" class="base-btn am-btn-white">get a quote</a>
+      <a href="#" class="base-btn am-btn-white">our work</a>
     </div>
   </div>
 </div>
@@ -163,7 +165,7 @@
     <hr class="line-block-title" />
   </div>
   <p class="text-block-section">
-    Meet your one-stop provider of software development and consulting 
+    Meet your one-stop provider of software development and consulting
     services. Your<br> cross-functional team of designers, software
     architects, engineers and managers <br>working together to create digital
     systems that bring <br>value to you and your customers.
@@ -205,7 +207,8 @@
     </div>
   </div>
   <hr id="line-steps">
-  <p class="steps-bottom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore <br>dolore
+  <p class="steps-bottom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididuntut labore <br>dolore
     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
   <button class="base-btn am-btn-secondary" id="btn-block-home">Lorem ipsum dolor</button>
 </div>
