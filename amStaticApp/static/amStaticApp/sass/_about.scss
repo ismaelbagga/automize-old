@@ -4,7 +4,6 @@
 
 
 .header-banner {
-  position: relative;
   text-align: center;
   margin: 0;
 
@@ -15,7 +14,7 @@
 
   .center-text {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     color: black;
     transform: translate(-50%, -50%);
@@ -28,12 +27,25 @@
     }
 
     .banner-text {
+
       margin-top: 45px;
 
       p {
         font-size: 18px;
         line-height: 30px;
         width: 600px;
+        margin-left: 35px;
+      }
+    }
+    
+    .services-banner-text {
+      margin: 45px 80px ;
+
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        width: 600px;
+        margin-left: 35px;
       }
     }
   }
@@ -42,7 +54,7 @@
 
 
 .about-block-section {
-  margin: 100px 0 170px 0;
+  margin: 15px 0  0;
   text-align: center;
   align-self: center;
   width: 800px;
