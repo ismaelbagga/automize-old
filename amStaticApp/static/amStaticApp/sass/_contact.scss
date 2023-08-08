@@ -2,33 +2,27 @@
 @use "typography";
 
 .contactUs {
-  position: absolute;
-  width: 80%;
-  padding: 40px;
 
-  .top {
-    width: 100%;
-    margin: 15%;
+  #title-contact {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -2.4px;
+    margin: 150px 100px 0 250px;
+  }
 
-    .title {
-      #title_contact {
-        margin-bottom: 50px;
-        margin-left: 20px;
-        font-size: 48px;
-        font-weight: 600;
-        letter-spacing: -2.4px;
-      }
-    }
+  .center-section {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
 
-    .box {
-      position: relative;
+    .contact-box {
       display: grid;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: 5fr 4fr;
       grid-template-areas: "form info" "form map";
       grid-gap: 20px;
-      width: 90%;
-      margin-left: 20px;
+      width: 1170px;
+      height: 1050px;
 
       .contact {
         padding: 40px;
@@ -36,33 +30,32 @@
         box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
       }
 
-      .form {
+      .form-contact {
         grid-area: form;
-        height: 800px;
+        height: 760px;
         width: 740px;
 
-        .formBox {
-          position: relative;
+        .form-box {
           width: 100%;
 
-          .row50 {
+          .contact-row {
             display: flex;
             gap: 25px;
           }
 
-          .inputBox {
+          .inputBox-contact {
             display: flex;
             flex-direction: column;
             margin-bottom: 10px;
             width: 100%;
 
-            .input_name_contact {
+            span {
               color: #6f6f6f;
               margin-top: 10px;
               margin-bottom: 5px;
             }
 
-            .input_contact {
+            input {
               height: 60px;
               padding: 10px;
               font-size: 1.1em;
@@ -73,20 +66,10 @@
           }
         }
 
-        .row100 {
-          .inputBox {
-            width: 100%;
+        .bottom-row-contact {
 
-            // input[type="submit"] {
-            //   background: variables.$primary-color;
-            //   color: white;
-            //   border: none;
-            //   font-size: 1.1em;
-            //   font-weight: 500;
-            //   max-width: 200px;
-            //   cursor: pointer;
-            //   padding: 14px 15px;
-            // }
+          .inputBox-contact {
+            width: 100%;
 
             textarea {
               padding: 10px;
@@ -100,22 +83,21 @@
             }
           }
 
-          .check {
+          .checkbox-contact {
             margin-bottom: 15px;
 
-            .label_check {
+            label {
               display: block;
               position: relative;
               padding-left: 35px;
               margin: 20px 0px 17px 0px;
               cursor: pointer;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 21px;
               color: #6f6f6f;
               user-select: none;
 
               input {
-                position: absolute;
                 opacity: 0;
                 cursor: pointer;
                 height: 0;
@@ -135,47 +117,47 @@
         }
       }
 
-      .quote {
+      blockquote {
         position: relative;
-        padding-left: 1.5rem; // Add padding for the icon
+        padding-left: 16px;
         font-style: italic;
+        height: 370px;
 
         &::before {
           content: "\201C"; // Unicode for the opening double quotation mark
           position: absolute;
-          left: -25px;
           top: -50px;
           font-size: 12rem;
           line-height: 1;
           color: variables.$primary-color;
         }
 
-        .info {
+        .info-contact {
           grid-area: info;
           height: 70%;
           width: 340px;
           height: 370px;
 
-          .boxInfo {
+          .info-box {
             width: 100%;
 
-            #info_title_contact {
+            p {
               font-style: italic;
               line-height: 35px;
               font-size: 20px;
               font-weight: 500;
             }
 
-            .desc_contact {
+            .desc-contact {
               float: left;
               margin-top: 45px;
 
-              #title_author_info {
+              span {
                 font-weight: 600;
                 font-size: 20px;
               }
 
-              #desck_author_info {
+              p {
                 margin-top: 10px;
               }
             }
@@ -183,35 +165,38 @@
         }
       }
 
-      .map {
-        height: 30%;
+      .map-contact {
+        height: 370px;
         grid-area: map;
         color: #333;
+        margin-top: -150px;
 
-        .map_desc {
-          margin-top: -100px;
+        .map-description {
+          position: relative;
+          top: -100px;
 
-          .adress_contact {
-            #location_contact {
+          .adress-contact {
+
+            .local-contact {
               position: relative;
-              top: 60px;
-              left: 40px;
+              top: 75px;
+              left: 20px;
             }
 
-            #p_adress {
+            .adress {
               margin-left: 120px;
               line-height: 24px;
               font-size: 14px;
             }
 
-            #p_country_adress {
+            .country-adress {
               margin-left: 120px;
               line-height: 24px;
               font-size: 14px;
               font-weight: 800;
             }
 
-            #p_email_adress {
+            .email-adress {
               color: variables.$primary-color;
               margin-left: 120px;
               line-height: 24px;
@@ -219,18 +204,18 @@
             }
           }
 
-          .ul_map_contact {
+          ul {
             margin: 40px 20px 20px 20px;
 
-            .li_map_contact {
+            li {
               list-style-type: square;
               line-height: 40px;
               margin-left: 40px;
               font-size: 18px;
-            }
 
-            ::marker {
-              color: variables.$primary-color;
+              &::marker {
+                color: variables.$primary-color;
+              }
             }
           }
         }
@@ -239,11 +224,11 @@
   }
 }
 
-.label_check:hover input ~ .checkmark {
+.label-check:hover input~.checkmark {
   background-color: #ccc !important;
 }
 
-.label_check input:checked ~ .checkmark {
+.label-check input:checked~.checkmark {
   background-color: variables.$primary-color !important;
 }
 
@@ -253,11 +238,11 @@
   display: none !important;
 }
 
-.label_check #checkbox:checked ~ .checkmark:after {
+.label-check #checkbox:checked~.checkmark:after {
   display: block !important;
 }
 
-.label_check .checkmark:after {
+.label-check .checkmark:after {
   left: 10px !important;
   top: 7px !important;
   width: 2px !important;

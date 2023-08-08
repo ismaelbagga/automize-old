@@ -2,39 +2,36 @@
 @use "typography";
 
 
-.container_blog {
-    position: relative;
+.blog-header {
     text-align: left;
 
-    .blog_img {
-
-        #img_header_blog {
-            width: 100%;
-            height: 460px;
-        }
-
-        .centered_blog {
-            position: absolute;
-            top: 50%;
-            left: 34%;
-            color: black;
-            transform: translate(-50%, -50%);
-
-            #title_blog {
-                font-size: 52px;
-                font-weight: 600;
-            }
-
-            .title_header_blog {
-                margin-top: 60px;
-                font-size: 24px;
-                width: 100%;
-                line-height: 28px;
-                font-weight: 600;
-            }
-
-        }
+    img {
+        width: 100%;
+        height: 460px;
     }
+
+    .left-text {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        color: black;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: 52px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 60px;
+            font-size: 24px;
+            width: 100%;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+    }
+
 }
 
 
@@ -162,6 +159,7 @@
 
         .btn_post {
             margin-top: 60px;
+
             #btn_previous_blog {
                 padding: 15px;
                 background-color: #dd170f;
@@ -208,7 +206,8 @@
                     line-height: 27px;
                     text-align: left;
                     text-decoration: none;
-                    &:hover{
+
+                    &:hover {
                         color: #dd170f;
                     }
                 }
@@ -220,14 +219,15 @@
 
             .meta {
                 .p_social_blog {
-                    color: #777777; 
-                    font-size: 11px; 
-                    font-weight: 700; 
-                    letter-spacing: 1px; 
-                    line-height: 19.25px; 
-                    text-align: left; 
+                    color: #777777;
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    line-height: 19.25px;
+                    text-align: left;
                     text-transform: uppercase;
-                    .fa-regular{
+
+                    .fa-regular {
                         padding: 10px;
                     }
                 }
