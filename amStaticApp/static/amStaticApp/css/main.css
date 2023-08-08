@@ -2,21 +2,15 @@
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -116,21 +110,15 @@ am-text-bold .section-title {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -712,21 +700,15 @@ am-text-bold .section-title {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -1560,21 +1542,15 @@ body {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -1991,21 +1967,15 @@ am-text-bold .section-title {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -2330,21 +2300,15 @@ am-text-bold .section-title {
 /* typography.scss */
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
-  src: url("../../src/fonts/OpenSans-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Italic.ttf") format("truetype");
 }
 /* Add more @font-face rules for other font weights and styles */
 h1 {
@@ -2597,7 +2561,7 @@ am-text-bold .section-title {
 }
 
 .backgroud {
-  background-image: url("../images/hero-image.webp");
+  background-image: url("../../images/hero-image.webp");
   width: 100%;
   height: 600px;
   background-repeat: no-repeat;
@@ -2637,7 +2601,12 @@ am-text-bold .section-title {
   position: relative;
   justify-content: center;
 }
-.section .section-text p {
+.section .section1 h1 {
+  margin: 40px;
+  font-size: 46px;
+  text-align: left;
+}
+.section .section1 .section-text p {
   font-size: 23px;
   line-height: 36px;
   color: #666666;
@@ -2716,24 +2685,24 @@ am-text-bold .section-title {
 }
 
 /*.send{
-    background-position:0px 0px;
+    background-position:0px 0px; 
     color:#687177;
     font-size:15px;
     line-height:24.4286px;
     margin:12px 20px 0px 0px;
 }*/
 .row {
-  background-image: url("../images/back.webp");
+  background-image: url("../../images/back.webp");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   font-size: 15px;
-  line-height: 24.4286px;
+  line-height: 30px;
 }
 .row h3 {
-  color: white;
+  color: #ffffff;
   padding: 30px;
   text-align: center;
 }
@@ -2741,6 +2710,11 @@ am-text-bold .section-title {
   display: block;
   /*width: 100%;*/
   max-width: 100%;
+  border-style: solid;
+  border-bottom-width: 4px;
+  border-color: rgb(221, 51, 51);
+  width: 450px;
+  margin: 0px auto;
 }
 .row .par-column {
   display: flex;
@@ -2857,6 +2831,11 @@ am-text-bold .section-title {
 
 .section-se .sec5 {
   text-align: center;
+}
+.section-se .sec5 hr {
+  width: 10%;
+  border: 5px solid #db0e07;
+  margin-left: 730px;
 }
 .section-se .section-sec-mx {
   display: flex;
@@ -3101,8 +3080,8 @@ am-text-bold .section-title {
   font-family: "Open sans";
 }
 .single-portfolio .description-banner-single-portfolio1 {
-  margin-right: 60px;
-  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 .single-portfolio .description-banner-single-portfolio1 .top-content {
   font-style: normal;
@@ -3163,7 +3142,7 @@ am-text-bold .section-title {
   color: #000000;
   line-height: 30px;
 }
-.section-text-image .text-wrp p {
+.section-text-image .text-wrp pre {
   font-style: normal;
   font-weight: 400;
   font-size: 18px !important;
@@ -3172,22 +3151,12 @@ am-text-bold .section-title {
   padding-bottom: 24px;
   margin-bottom: 0 !important;
 }
-.section-text-image .text-wrp .text-wrp ul.a {
+.section-text-image .text-wrp ul li {
+  line-height: 40px;
   list-style-type: square;
 }
-.section-text-image .text-wrp .text-wrp ul.a ul li::before {
-  content: "■";
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-.section-text-image .text-wrp .text-wrp ul.a .b {
-  position: relative;
-  color: #000000 !important;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+.section-text-image .text-wrp ul li::marker {
+  color: #dc170f;
 }
 .section-text-image .section-wrapper {
   grid-template-areas: "text image";

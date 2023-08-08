@@ -1,3 +1,7 @@
+
+@use "variables";
+
+
 .body {
     margin: 0;
 }
@@ -38,8 +42,8 @@
     }
 
     .description-banner-single-portfolio1 {
-        margin-right: 60px;
-        margin-bottom: 30px;
+        margin-right: 50px;
+        margin-bottom: 20px;
 
         .top-content {
             font-style: normal;
@@ -109,7 +113,7 @@
         color: #000000;
         line-height: 30px;
 
-        p {
+        pre {
             font-style: normal;
             font-weight: 400;
             font-size: 18px !important;
@@ -118,23 +122,21 @@
             padding-bottom: 24px;
             margin-bottom: 0 !important;
         }
-        .text-wrp ul.a {
-            list-style-type: square;
+        ul {
+            
+            li{
+                line-height: 40px;
+                list-style-type: square;
 
-            ul li::before {
-                content: "\25A0";
-                color: red;
-                font-weight: bold;
-                display: inline-block;
-                width: 1em;
-                margin-left: -1em;
+
+
+                &::marker{
+                    color: variables.$primary-color;
+                }
             }
-            .b{
-                position: relative;
-                color: #000000 !important;
-                font-family: 'Open Sans', sans-serif;
-                font-style: normal;
-            }
+
+            
+           
             
         }
 
