@@ -2927,16 +2927,16 @@ am-text-bold .section-title {
   background-color: #666666;
 }
 
-.banner-partners {
-  background-image: url("../images/banner-portfolio.webp");
+.banner-partners-p {
+  background-image: url("../../images/banner-portfolio.webp");
   width: 100%;
-  height: 350px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   top: -100px;
 }
-.banner-partners .banner-partners1 {
+.banner-partners-p .banner-partners1 {
   background-position: 0px 0px;
   color: #000000;
   display: flex;
@@ -2946,7 +2946,7 @@ am-text-bold .section-title {
   line-height: 24.4286px;
   margin-left: 5%;
 }
-.banner-partners .banner-partners1 .font-title {
+.banner-partners-p .banner-partners1 .font-title {
   background-position: 0px 0px;
   font-family: "Open Sans";
   font-size: 60px;
@@ -2955,7 +2955,7 @@ am-text-bold .section-title {
   margin: 70px 0px 0px;
   margin-top: 15%;
 }
-.banner-partners .banner-partners1 .font-subtitle {
+.banner-partners-p .banner-partners1 .font-subtitle {
   background-position: 0px 0px;
   font-size: 28px;
   line-height: 28.8px;
@@ -2969,6 +2969,7 @@ am-text-bold .section-title {
   font-size: 15px;
   position: relative;
   top: -75px;
+  margin: 30px;
 }
 .wrapper-archive .portfolio-archive {
   background-position: 0px 0px;
@@ -3049,6 +3050,11 @@ am-text-bold .section-title {
 .wrapper-archive .portfolio-archive .portfolio-btn a:hover {
   color: white;
   background-color: #666666;
+}
+
+.portfolio-sample-full-image img {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 /* .portfolio-btn a{
@@ -3155,6 +3161,7 @@ am-text-bold .section-title {
   font-size: 18px;
   line-height: 1.61;
   color: #000000;
+  line-height: 30px;
 }
 .section-text-image .text-wrp p {
   font-style: normal;
@@ -3165,39 +3172,10 @@ am-text-bold .section-title {
   padding-bottom: 24px;
   margin-bottom: 0 !important;
 }
-
-.section-wrapper {
-  grid-template-areas: "text image";
-}
-
-.image-content {
-  grid-area: image;
-  max-width: 552px;
-  width: 100%;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.image-wrapper img {
-  /* max-width: 552px; */
-  width: 100%;
-  max-height: 552px;
-  object-fit: cover;
-  padding: 20px;
-}
-
-.description {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.33;
-  color: #616D7E;
-}
-
-.text-wrp ul.a {
+.section-text-image .text-wrp .text-wrp ul.a {
   list-style-type: square;
 }
-
-ul li::before {
+.section-text-image .text-wrp .text-wrp ul.a ul li::before {
   content: "■";
   color: red;
   font-weight: bold;
@@ -3205,42 +3183,63 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-
-.text-wrp li {
+.section-text-image .text-wrp .text-wrp ul.a .b {
   position: relative;
   color: #000000 !important;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
 }
+.section-text-image .section-wrapper {
+  grid-template-areas: "text image";
+  margin: 30px;
+}
+.section-text-image .section-wrapper .image-content {
+  grid-area: image;
+  max-width: 552px;
+  width: 100%;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.section-text-image .section-wrapper .image-content .image-wrapper img {
+  /* max-width: 552px; */
+  width: 100%;
+  max-height: 552px;
+  object-fit: cover;
+  padding: 20px;
+}
+.section-text-image .section-wrapper .image-content .description {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #616D7E;
+}
 
 .banner-partners {
-  margin: 80px 0;
   padding: 92px 0 105px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   color: white;
+  background-image: url("../../images/web-application-for-charities.jpg.webp");
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
 }
-
-.row-sec8 {
+.banner-partners .row-sec8 {
   width: 982px;
   max-width: 96%;
   margin: 0 auto;
 }
-
-.icon-content {
+.banner-partners .row-sec8 .section-wrapper1 {
+  padding: 0 94px;
+  position: relative;
+}
+.banner-partners .row-sec8 .section-wrapper1 .icon-content {
   position: absolute;
   top: 0;
   left: 0;
 }
-
-.section-wrapper1 {
-  padding: 0 94px;
-  position: relative;
-}
-
-.txt {
+.banner-partners .row-sec8 .section-wrapper1 .txt {
   font-size: 27px;
   line-height: 1.75;
   padding-top: 20px;
@@ -3251,14 +3250,12 @@ ul li::before {
   margin: 60px 0;
   padding: 24px 0;
 }
-
-.sub-contact {
+.contact-us .sub-contact {
   width: 738px;
   max-width: 96%;
   margin: 0 auto;
 }
-
-.question {
+.contact-us .sub-contact .question {
   font-size: 32px;
   line-height: 1.375;
   display: flex;
@@ -3267,8 +3264,7 @@ ul li::before {
   color: #1E1E21;
   margin-bottom: 32px;
 }
-
-.btn-contact {
+.contact-us .sub-contact .btn-contact {
   display: flex;
   justify-content: center;
 }
