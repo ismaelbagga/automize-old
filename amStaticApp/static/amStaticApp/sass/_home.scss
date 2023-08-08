@@ -98,6 +98,7 @@
 }
 
 .section_home_two {
+    @include mixins.fullwidth;
     margin-top: 10%;
     background-color: #fff5f5;
     height: 745px;
@@ -306,6 +307,7 @@
 }
 
 .section_home_four {
+    @include mixins.fullwidth;
     position: relative;
     margin-top: 20px;
     width: 100%;
