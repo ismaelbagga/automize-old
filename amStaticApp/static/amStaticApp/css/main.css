@@ -2123,7 +2123,7 @@ body {
 }
 
 .backgroud {
-  background-image: url("../images/hero-image.webp");
+  background-image: url("../../images/hero-image.webp");
   width: 100%;
   height: 600px;
   background-repeat: no-repeat;
@@ -2163,7 +2163,12 @@ body {
   position: relative;
   justify-content: center;
 }
-.section .section-text p {
+.section .section1 h1 {
+  margin: 40px;
+  font-size: 46px;
+  text-align: left;
+}
+.section .section1 .section-text p {
   font-size: 23px;
   line-height: 36px;
   color: #666666;
@@ -2242,24 +2247,24 @@ body {
 }
 
 /*.send{
-    background-position:0px 0px;
+    background-position:0px 0px; 
     color:#687177;
     font-size:15px;
     line-height:24.4286px;
     margin:12px 20px 0px 0px;
 }*/
 .row {
-  background-image: url("../images/back.webp");
+  background-image: url("../../images/back.webp");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   font-size: 15px;
-  line-height: 24.4286px;
+  line-height: 30px;
 }
 .row h3 {
-  color: white;
+  color: #ffffff;
   padding: 30px;
   text-align: center;
 }
@@ -2267,6 +2272,11 @@ body {
   display: block;
   /*width: 100%;*/
   max-width: 100%;
+  border-style: solid;
+  border-bottom-width: 4px;
+  border-color: rgb(221, 51, 51);
+  width: 450px;
+  margin: 0px auto;
 }
 .row .par-column {
   display: flex;
@@ -2384,6 +2394,11 @@ body {
 .section-se .sec5 {
   text-align: center;
 }
+.section-se .sec5 hr {
+  width: 10%;
+  border: 5px solid #db0e07;
+  margin-left: 730px;
+}
 .section-se .section-sec-mx {
   display: flex;
   justify-content: center;
@@ -2453,16 +2468,16 @@ body {
   background-color: #666666;
 }
 
-.banner-partners {
-  background-image: url("../images/banner-portfolio.webp");
+.banner-partners-p {
+  background-image: url("../../images/banner-portfolio.webp");
   width: 100%;
-  height: 350px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   top: -100px;
 }
-.banner-partners .banner-partners1 {
+.banner-partners-p .banner-partners1 {
   background-position: 0px 0px;
   color: #000000;
   display: flex;
@@ -2472,7 +2487,7 @@ body {
   line-height: 24.4286px;
   margin-left: 5%;
 }
-.banner-partners .banner-partners1 .font-title {
+.banner-partners-p .banner-partners1 .font-title {
   background-position: 0px 0px;
   font-family: "Open Sans";
   font-size: 60px;
@@ -2481,7 +2496,7 @@ body {
   margin: 70px 0px 0px;
   margin-top: 15%;
 }
-.banner-partners .banner-partners1 .font-subtitle {
+.banner-partners-p .banner-partners1 .font-subtitle {
   background-position: 0px 0px;
   font-size: 28px;
   line-height: 28.8px;
@@ -2495,6 +2510,7 @@ body {
   font-size: 15px;
   position: relative;
   top: -75px;
+  margin: 30px;
 }
 .wrapper-archive .portfolio-archive {
   background-position: 0px 0px;
@@ -2577,6 +2593,11 @@ body {
   background-color: #666666;
 }
 
+.portfolio-sample-full-image img {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
 /* .portfolio-btn a{
     background-color:#dd170f;
     color:#ffffff;
@@ -2621,8 +2642,8 @@ body {
   font-family: "Open sans";
 }
 .single-portfolio .description-banner-single-portfolio1 {
-  margin-right: 60px;
-  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 .single-portfolio .description-banner-single-portfolio1 .top-content {
   font-style: normal;
@@ -2681,8 +2702,9 @@ body {
   font-size: 18px;
   line-height: 1.61;
   color: #000000;
+  line-height: 30px;
 }
-.section-text-image .text-wrp p {
+.section-text-image .text-wrp pre {
   font-style: normal;
   font-weight: 400;
   font-size: 18px !important;
@@ -2691,27 +2713,31 @@ body {
   padding-bottom: 24px;
   margin-bottom: 0 !important;
 }
-
-.section-wrapper {
-  grid-template-areas: "text image";
+.section-text-image .text-wrp ul li {
+  line-height: 40px;
+  list-style-type: square;
 }
-
-.image-content {
+.section-text-image .text-wrp ul li::marker {
+  color: #dc170f;
+}
+.section-text-image .section-wrapper {
+  grid-template-areas: "text image";
+  margin: 30px;
+}
+.section-text-image .section-wrapper .image-content {
   grid-area: image;
   max-width: 552px;
   width: 100%;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-.image-wrapper img {
+.section-text-image .section-wrapper .image-content .image-wrapper img {
   /* max-width: 552px; */
   width: 100%;
   max-height: 552px;
   object-fit: cover;
   padding: 20px;
 }
-
-.description {
+.section-text-image .section-wrapper .image-content .description {
   font-style: italic;
   font-weight: 400;
   font-size: 18px;
@@ -2719,54 +2745,32 @@ body {
   color: #616D7E;
 }
 
-.text-wrp ul.a {
-  list-style-type: square;
-}
-
-ul li::before {
-  content: "■";
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.text-wrp li {
-  position: relative;
-  color: #000000 !important;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-}
-
 .banner-partners {
-  margin: 80px 0;
   padding: 92px 0 105px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   color: white;
+  background-image: url("../../images/web-application-for-charities.jpg.webp");
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
 }
-
-.row-sec8 {
+.banner-partners .row-sec8 {
   width: 982px;
   max-width: 96%;
   margin: 0 auto;
 }
-
-.icon-content {
+.banner-partners .row-sec8 .section-wrapper1 {
+  padding: 0 94px;
+  position: relative;
+}
+.banner-partners .row-sec8 .section-wrapper1 .icon-content {
   position: absolute;
   top: 0;
   left: 0;
 }
-
-.section-wrapper1 {
-  padding: 0 94px;
-  position: relative;
-}
-
-.txt {
+.banner-partners .row-sec8 .section-wrapper1 .txt {
   font-size: 27px;
   line-height: 1.75;
   padding-top: 20px;
@@ -2777,14 +2781,12 @@ ul li::before {
   margin: 60px 0;
   padding: 24px 0;
 }
-
-.sub-contact {
+.contact-us .sub-contact {
   width: 738px;
   max-width: 96%;
   margin: 0 auto;
 }
-
-.question {
+.contact-us .sub-contact .question {
   font-size: 32px;
   line-height: 1.375;
   display: flex;
@@ -2793,8 +2795,7 @@ ul li::before {
   color: #1E1E21;
   margin-bottom: 32px;
 }
-
-.btn-contact {
+.contact-us .sub-contact .btn-contact {
   display: flex;
   justify-content: center;
 }

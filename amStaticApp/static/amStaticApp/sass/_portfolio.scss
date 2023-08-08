@@ -1,7 +1,7 @@
-.banner-partners {
-    background-image: url('../images/banner-portfolio.webp');
+.banner-partners-p {
+    background-image: url('../../images/banner-portfolio.webp');
     width: 100%;
-    height: 350px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -37,8 +37,6 @@
 }
 
 
-
-
 .wrapper-archive {
     background-color: #ffffff;
     background-position: 0px 0px;
@@ -46,6 +44,7 @@
     font-size: 15px;
     position: relative;
     top: -75px;
+    margin: 30px;
 
     .portfolio-archive {
         background-position: 0px 0px;
@@ -138,6 +137,13 @@
                 background-color: #666666;
             }
         }
+    }
+}
+
+.portfolio-sample-full-image{
+    img {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
     }
 }
 
