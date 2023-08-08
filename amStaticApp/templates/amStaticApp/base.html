@@ -17,8 +17,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent col-12">
         <div class="header-container">
-          <div class="header-row">
-            <div class="col-6">
+          <div class="header-row left-header">
+            <div class="header-logo">
               <!-- Logo -->
               <a class="navbar-brand" href="{% url 'home' %}"
                 ><img
@@ -26,7 +26,7 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-6 d-flex justify-content-end">
+            <div class="toggeled-navbar d-flex justify-content-end">
               <!-- Toggle Button -->
               <button
                 class="navbar-toggler"
@@ -41,68 +41,71 @@
               </button>
             </div>
           </div>
-          <div class="header-row">
-            <div class="col">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item dropdown mx-2 mega-menu">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="{% url 'services' %}"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Services
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <!-- Mega Menu Content -->
-                      <div class="row col-12">
-                        <div class="col-md-4">
-                          <h5 class="my-2">Category 1</h5>
-                          <a class="dropdown-item" href="#">Service 1</a>
-                          <a class="dropdown-item" href="#">Service 2</a>
-                          <a class="dropdown-item" href="#">Service 3</a>
-                        </div>
-                        <div class="col-md-4">
-                          <h5 class="my-2">Category 2</h5>
-                          <a class="dropdown-item" href="#">Service 4</a>
-                          <a class="dropdown-item" href="#">Service 5</a>
-                          <a class="dropdown-item" href="#">Service 6</a>
-                        </div>
-                        <div class="col-md-4">
-                          <h5 class="my-2">Category 3</h5>
-                          <a class="dropdown-item" href="#">Service 7</a>
-                          <a class="dropdown-item" href="#">Service 8</a>
-                          <a class="dropdown-item" href="#">Service 9</a>
-                        </div>
+          <div class="header-row right-header ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto header-menu">
+                <li class="nav-item dropdown mx-2 mega-menu">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="{% url 'services' %}"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- Mega Menu Content -->
+                    <div class="row col-12">
+                      <div class="col-md-4">
+                        <h5 class="my-2">Category 1</h5>
+                        <a class="dropdown-item" href="#">Service 1</a>
+                        <a class="dropdown-item" href="#">Service 2</a>
+                        <a class="dropdown-item" href="#">Service 3</a>
+                      </div>
+                      <div class="col-md-4">
+                        <h5 class="my-2">Category 2</h5>
+                        <a class="dropdown-item" href="#">Service 4</a>
+                        <a class="dropdown-item" href="#">Service 5</a>
+                        <a class="dropdown-item" href="#">Service 6</a>
+                      </div>
+                      <div class="col-md-4">
+                        <h5 class="my-2">Category 3</h5>
+                        <a class="dropdown-item" href="#">Service 7</a>
+                        <a class="dropdown-item" href="#">Service 8</a>
+                        <a class="dropdown-item" href="#">Service 9</a>
                       </div>
                     </div>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="{% url 'portfolio' %}"> Portfolio </a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="{% url 'blog' %}"> Blog </a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="{% url 'about' %}">About</a>
-                  </li>
-                </ul>
-                <button class="base-btn am-btn-primary" type="submit">
-                  Search
-                </button>
-              </div>
+                  </div>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="{% url 'portfolio' %}"> Portfolio </a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="{% url 'blog' %}"> Blog </a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+              </ul>
+              <a class="base-btn am-btn-primary" href="{% url 'contact' %}">
+                Contact
+              </a>
             </div>
+           
           </div>
         </div>
       </nav>
     </header>
 
 
-        {% block content %} {% endblock %}
+    <div class="container">
+      {% block content %} {% endblock %}
+
+    </div>
+
 
 
     <div class="footer">
