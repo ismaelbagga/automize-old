@@ -1,5 +1,6 @@
 
 @use "variables";
+@use "mixins";
 
 
 .body {
@@ -236,4 +237,6 @@
 }
 
 
-
+.portfolio-sample-full-image {
+    @include mixins.fullwidth;
+}

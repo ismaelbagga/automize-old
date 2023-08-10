@@ -1,79 +1,59 @@
-.banner-partners-p {
+@use 'mixins';
+
+.portfolio-section-header {
+    @include mixins.fullwidth;
     background-image: url('../../images/banner-portfolio.webp');
-    width: 100%;
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    top: -100px;
+    // margin-bottom: 100px;
 
-    .banner-partners1 {
-        background-position: 0px 0px;
+    .content-container {
         color: #000000;
         display: flex;
         flex-direction: column;
         font-size: 15px;
         justify-content: center;
-        line-height: 24.4286px;
-        margin-left: 5%;
+        align-items: flex-start;
+        height: 100%;
+        width: 75%;
+        margin: 0 auto;
 
-        .font-title {
-            background-position: 0px 0px;
-            font-family: "Open Sans";
+        h2 {
             font-size: 60px;
-            letter-spacing: -2px;
-            line-height: 56px;
-            margin: 70px 0px 0px;
-            margin-top: 15%;
+            margin: 30px 0;
+            font-weight: bold;
         }
 
-        .font-subtitle {
-            background-position: 0px 0px;
+        p {
             font-size: 28px;
-            line-height: 28.8px;
-            margin: 10px 0px 0px;
+            font-weight: 500;
         }
     }
 }
 
 
 .wrapper-archive {
-    background-color: #ffffff;
-    background-position: 0px 0px;
-    color: #687177;
-    font-size: 15px;
-    position: relative;
-    top: -75px;
-    margin: 30px;
 
     .portfolio-archive {
-        background-position: 0px 0px;
-        color: #687177;
-        font-size: 15px;
-        line-height: 24.4286px;
         display: flex;
         flex-direction: column;
 
-        .portfolio-type {
-            background-position: 0px 0px;
-            color: #687177;
+        .portfolio-types-container {
             display: flex;
             flex-wrap: wrap;
             font-size: 15px;
             justify-content: center;
-            line-height: 24.4286px;
-            margin: 0px 0px 30px;
+            margin: 100px 0 50px 0;
 
             .link-wrapper {
-                background-position: 0px 0px;
-                color: #687177;
                 font-size: 15px;
                 line-height: 24.4286px;
 
-                a {
+                a { 
                     color: #888888;
                     display: inline-block;
-                    font-family: Open Sans;
+                    // font-family: Open Sans;
                     font-size: 12px;
                     line-height: 12px;
                     margin: 0px 10px 10px 0px;
@@ -86,21 +66,16 @@
             }
         }
 
-        .portfolio {
-            background-position: 0px 0px;
-            color: #687177;
+        .portfolio-cards {
             display: grid;
-            font-size: 15px;
             gap: 40px;
-            grid-template-columns: 353.333px 353.333px 353.333px;
-            grid-template-rows: 318.333px 318.333px 318.333px;
+            grid-template-columns: 1fr 1fr 1fr;
             margin: auto;
 
             h5 {
-                color: #000000;
                 font-size: 14px;
                 font-weight: 700;
-                margin: 5px 0 0 0;
+                margin-top: 5px;
                 text-align: left;
                 line-height: 30px;
             }
@@ -109,59 +84,16 @@
                 color: #888888;
                 font-size: 14px;
                 text-align: left;
-                position: relative;
-                top: -15px;
-                line-height: 50px;
             }
 
             
         }
-        .portfolio-btn {
-            margin-left: 0px;
-            margin-top: 70px;
+        .loadmore-btn {
+            height: 100px;
+            margin: 50px 0;
             display: flex;
             justify-content: center;
 
-
-            a {
-                text-transform: uppercase;
-                text-decoration: none;
-                background-color: #db0e07;
-                color: white;
-                font-size: 16px;
-                padding: 12px;
-            }
-
-            a:hover {
-                color: white;
-                background-color: #666666;
-            }
         }
     }
 }
-
-.portfolio-sample-full-image{
-    img {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-    }
-}
-
-
-
-
-
-
-
-
-
-/* .portfolio-btn a{
-    background-color:#dd170f;
-    color:#ffffff;
-    font-family:"Open Sans";
-    font-weight:700;
-    line-height:16px;
-    padding:17px 37.5px;
-    text-align:center;
-    text-transform:uppercase;
-} */

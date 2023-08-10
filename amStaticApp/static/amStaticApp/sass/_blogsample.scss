@@ -1,7 +1,8 @@
 @use "variables";
 @use "typography";
-
+@use "mixins";
 .blog-sample-header {
+    @include mixins.fullwidth;
     position: relative;
     text-align: left;
 

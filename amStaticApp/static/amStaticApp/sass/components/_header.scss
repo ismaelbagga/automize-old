@@ -18,18 +18,6 @@
   /* Create a Flexbox layout for the row */
 }
 
-// .header-row {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   > div {
-//     width: calc(100% / 3); /* Adjust the width as needed */
-//     flex: 0 0 auto; /* Prevent flex items from shrinking */
-//   }
-// }
-
-
 .header-container {
   display: flex;
   flex-direction: row;
@@ -82,6 +70,8 @@ header {
             li {
               display: flex;
               align-items: center;
+              color: black;
+              font-weight: 400;
               a {
               // color: white !important;
               transition: color 0.3s ease;

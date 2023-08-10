@@ -3,6 +3,7 @@
 @use "mixins";
 
 .blog-header {
+    @include mixins.fullwidth;
     text-align: left;
 
     img {

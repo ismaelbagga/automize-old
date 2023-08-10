@@ -1,5 +1,6 @@
 @use "variables";
 @use "typography";
+@use "mixins";
 
 
 
@@ -60,15 +61,14 @@
 
 
 .help-section {
-    margin-top: 20px;
+    margin: 20px auto ;
 
     .help-box {
         display: grid;
         grid-template-columns: auto auto auto;
         width: 1140px;
         gap: 6%;
-        margin-top: 50px;
-        margin-left: 15%;
+        margin: 0 auto;
     }
 
     .help-box-item {
@@ -117,14 +117,15 @@
 
 
 .logo_partner {
-    width: 50%;
-    margin-bottom: 10%;
+    // width: 50%;
+    margin: 0;
 
     .logo_box {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         width: 70%;
         gap: 7%;
+        margin: 0 auto;
 
         .logo_item {
             width: 100%;
@@ -145,6 +146,7 @@
 
 
 .banner-services {
+    @include mixins.fullwidth;
     width: 100%;
     margin: 10% 0 0 0;
     position: relative;
@@ -316,6 +318,7 @@
 }
 
 .langages-section {
+    @include mixins.fullwidth;
     background-color: variables.$section-background;
     position: relative;
     color: black;
@@ -389,6 +392,7 @@
 
 
 .agile-section {
+    @include mixins.fullwidth;
     position: relative;
     color: black;
     margin: 5% 0 0 0;
@@ -483,7 +487,7 @@
 
 
 .title-block-section {
-    margin: 100px 0 0;
+    margin: 100px auto;
     text-align: center;
     align-self: center;
     width: 800px;
@@ -511,7 +515,7 @@
 
 
 .services-block-section {
-    margin: 130px 0 0;
+    margin: 130px auto;
     text-align: center;
     align-self: center;
     width: 800px;
