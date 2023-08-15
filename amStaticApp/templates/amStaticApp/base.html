@@ -1,392 +1,276 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="{% static 'amStaticApp/css/bootstrap.min.css' %}"
-    />
-    <link rel="stylesheet" href="{% static 'amStaticApp/css/main.css' %}" />
-    <link rel="stylesheet" href="{% block style %} {% endblock %}">    <!-- Additional CSS or other meta tags can be added here -->
-    <title>{% block title %}My App{% endblock %}</title>
 
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent col-12">
-        <div class="header-container">
-          <div class="header-row">
-            <div class="col-6">
-              <!-- Logo -->
-              <a class="navbar-brand" href="{% url 'home' %}"
-                ><img
-                  src="{% static 'images/logo -primary -transparent -horizontal.png' %}"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col-6 d-flex justify-content-end">
-              <!-- Toggle Button -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'amStaticApp/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'amStaticApp/css/main.css' %}" />
+  <link rel="stylesheet" href="{% block style %} {% endblock %}">
+  <!-- Additional CSS or other meta tags can be added here -->
+  <title>{% block title %}My App{% endblock %}</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent col-12">
+      <div class="header-container">
+        <div class="header-row left-header">
+          <div class="header-logo">
+            <!-- Logo -->
+            <a class="navbar-brand" href="{% url 'home' %}">
+              <img src="{% static 'images/logo -white -transparent -horizontal.png' %}" alt="" />
+            </a>
           </div>
-          <div class="header-row">
-            <div class="col">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item dropdown mx-2 mega-menu">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="{% url 'services' %}"
-                      id="navbarDropdown"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Services
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <!-- Mega Menu Content -->
-                      <div class="row col-12">
-                        <div class="col-md-4">
-                          <h5 class="my-2">Category 1</h5>
-                          <a class="dropdown-item" href="#">Service 1</a>
-                          <a class="dropdown-item" href="#">Service 2</a>
-                          <a class="dropdown-item" href="#">Service 3</a>
-                        </div>
-                        <div class="col-md-4">
-                          <h5 class="my-2">Category 2</h5>
-                          <a class="dropdown-item" href="#">Service 4</a>
-                          <a class="dropdown-item" href="#">Service 5</a>
-                          <a class="dropdown-item" href="#">Service 6</a>
-                        </div>
-                        <div class="col-md-4">
-                          <h5 class="my-2">Category 3</h5>
-                          <a class="dropdown-item" href="#">Service 7</a>
-                          <a class="dropdown-item" href="#">Service 8</a>
-                          <a class="dropdown-item" href="#">Service 9</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="{% url 'portfolio' %}"> Portfolio </a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="{% url 'blog' %}"> Blog </a>
-                  </li>
-                  <li class="nav-item mx-2">
-                    <a class="nav-link" href="{% url 'about' %}">About</a>
-                  </li>
-                </ul>
-                <button class="base-btn am-btn-primary" type="submit">
-                  Search
-                </button>
-              </div>
-            </div>
+          <div class="toggeled-navbar d-flex justify-content-end">
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
         </div>
-      </nav>
-    </header>
-
-
-        {% block content %} {% endblock %}
-
-
-    <div class="footer">
-      <div id="big_footer">
-        <div id="primary_footer">
-          <div class="footer-container">
-            <div class="footer-top-wrapper">
-              <div class="footer-menu-wrp">
-                <div class="footer-middle-block">
-                  <div class="footer-sidebar footer__about">
-                    <h4>About Digiteum</h4>
-                    <hr />
-                    <div class="textwidget">
-                      <p>
-                        Digiteum is a custom software development and IT
-                        consulting company founded in 2010. We design and
-                        develop customer-centric solutions for web, mobile,
-                        cloud, and IoT.
-                      </p>
+        <div class="header-row right-header">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto header-menu">
+              <li class="nav-item dropdown mx-2 mega-menu">
+                <a class="nav-link darken-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- Mega Menu Content -->
+                  <div class="row col-12">
+                    <div class="col-md-4">
+                      <h5 class="my-2">Category 1</h5>
+                      <a class="dropdown-item" href="#">Service 1</a>
+                      <a class="dropdown-item" href="#">Service 2</a>
+                      <a class="dropdown-item" href="#">Service 3</a>
                     </div>
-                  </div>
-                  <div class="footer-sidebar footer__menu two-column">
-                    <div class="left-nav">
-                      <h4 class="footer-title-widget">
-                        <a>Design and Engineering</a>
-                      </h4>
-                      <nav role="navigation">
-                        <ul class="list-menu two-column">
-                          <li class="txt-underline">
-                            <a href="/web-development-services/"
-                              >Web development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/web-application-development-services/"
-                              >Web App development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/web-portal-development/"
-                              >Web Portal Development</a
-                            >
-                          </li>
-                          <li class="mr-2">
-                            <a href="/mobile-app-development-services/"
-                              >Mobile development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/website-design-development-service/"
-                              >UX/UI development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/iot-development/"
-                              >IoT software development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/big-data-services/">Big data services</a>
-                          </li>
-                          <li>
-                            <a href="/mvp-development-services/"
-                              >MVP development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/chatbot-development/"
-                              >Chatbot development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/microservices-development/"
-                              >Microservices development</a
-                            >
-                          </li>
-                        </ul>
-                      </nav>
+                    <div class="col-md-4">
+                      <h5 class="my-2">Category 2</h5>
+                      <a class="dropdown-item" href="#">Service 4</a>
+                      <a class="dropdown-item" href="#">Service 5</a>
+                      <a class="dropdown-item" href="#">Service 6</a>
                     </div>
-                    <div class="right-nav">
-                      <h4 class="footer-title-widget">
-                        <a>TECHNOLOGIES</a>
-                      </h4>
-                      <nav role="navigation">
-                        <ul class="list-menu">
-                          <li>
-                            <a href="/reactjs-development-services/"
-                              >React development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/angular-development-services/"
-                              >Angular development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/net-development-services/"
-                              >.NET development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/java-development-services/"
-                              >Java development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/ios-app-development-services/"
-                              ><span class="lowercase">i</span>OS development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/android-app-development-services/"
-                              >Android development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/nodejs-development-services/"
-                              >Node.js Development</a
-                            >
-                          </li>
-                          <li>
-                            <a href="/python-software-development-services/"
-                              >Python Development</a
-                            >
-                          </li>
-                        </ul>
-                      </nav>
+                    <div class="col-md-4">
+                      <h5 class="my-2">Category 3</h5>
+                      <a class="dropdown-item" href="#">Service 7</a>
+                      <a class="dropdown-item" href="#">Service 8</a>
+                      <a class="dropdown-item" href="#">Service 9</a>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="footer-sidebar footer__clutch clutch">
-                <div class="clutch__image">
-                  <a target="_blank" href="https://clutch.co/profile/digiteum">
-                    <img
-                      src="https://www.digiteum.com/wp-content/themes/blake/images/clutch.svg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div class="clutch__text">
-                  They are technically excellent, have an agile process in place
-                  and are always looking for "win/win" opportunities. The team
-                  is incredibly honest, hard working and has been a source of
-                  new ideas and improvements.
-                </div>
-                <div class="footer-sidebar footer__career">
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link darken-link" href="{% url 'portfolio' %}"> Portfolio </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link darken-link" href="{% url 'blog' %}"> Blog </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link darken-link" href="{% url 'about' %}">About</a>
+              </li>
+            </ul>
+            <a class="base-btn am-btn-primary" href="{% url 'contact' %}">
+              Contact
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    {% block content %} {% endblock %}
+
+  </div>
+
+
+
+  <div class="footer">
+    <div id="big_footer">
+      <div id="primary_footer">
+        <div class="footer-container">
+          <div class="footer-top-wrapper">
+            <div class="footer-menu-wrp">
+              <div class="footer-middle-block">
+                <div class="footer-sidebar footer__about">
+                  <h4>About Digiteum</h4>
+                  <hr />
                   <div class="textwidget">
+                    <p>
+                      Digiteum is a custom software development and IT
+                      consulting company founded in 2010. We design and
+                      develop customer-centric solutions for web, mobile,
+                      cloud, and IoT.
+                    </p>
+                  </div>
+                </div>
+                <div class="footer-sidebar footer__menu two-column">
+                  <div class="left-nav">
                     <h4 class="footer-title-widget">
-                      <a href="/career/">Career</a>
+                      <a>Design and Engineering</a>
                     </h4>
-                    <p>
-                      We are always looking for talented people.<br />
-                      <a href="/career/">CHECK OPEN POSITIONS…</a>
-                    </p>
+                    <nav role="navigation">
+                      <ul class="list-menu two-column">
+                        <li class="txt-underline">
+                          <a href="/web-development-services/">Web development</a>
+                        </li>
+                        <li>
+                          <a href="/web-application-development-services/">Web App development</a>
+                        </li>
+                        <li>
+                          <a href="/web-portal-development/">Web Portal Development</a>
+                        </li>
+                        <li class="mr-2">
+                          <a href="/mobile-app-development-services/">Mobile development</a>
+                        </li>
+                        <li>
+                          <a href="/website-design-development-service/">UX/UI development</a>
+                        </li>
+                 
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="right-nav">
+                    <h4 class="footer-title-widget">
+                      <a>TECHNOLOGIES</a>
+                    </h4>
+                    <nav role="navigation">
+                      <ul class="list-menu">
+                        <li>
+                          <a href="/reactjs-development-services/">React development</a>
+                        </li>
+                        <li>
+                          <a href="/angular-development-services/">Angular development</a>
+                        </li>
+                        <li>
+                          <a href="/net-development-services/">.NET development</a>
+                        </li>
+                        <li>
+                          <a href="/java-development-services/">Java development</a>
+                        </li>
+    
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-
-              <div class="footer-sidebar footer__location">
-                <h4>location</h4>
-                <hr />
+            </div>
+            <div class="footer-sidebar footer__clutch clutch">
+              <div class="clutch__image">
+                <a target="_blank" href="https://clutch.co/profile/digiteum">
+                  <img src="https://www.digiteum.com/wp-content/themes/blake/images/clutch.svg" alt="" />
+                </a>
+              </div>
+              <div class="clutch__text">
+                They are technically excellent, have an agile process in place
+                and are always looking for "win/win" opportunities. The team
+                is incredibly honest, hard working and has been a source of
+                new ideas and improvements.
+              </div>
+              <div class="footer-sidebar footer__career">
                 <div class="textwidget">
-                  <div class="textwidget">
-                    <div>Digiteum Sp. z o.o.</div>
-                    <div>
-                      Szafarnia 11/F8<br />
-                      80-755
-                    </div>
-                    <div>Gdańsk</div>
-                    <div><b>Poland</b></div>
-                    <p>
-                      <a href="mailto:hello@digiteum.pl">hello@digiteum.pl</a>
-                    </p>
-                  </div>
+                  <h4 class="footer-title-widget">
+                    <a href="/career/">Career</a>
+                  </h4>
+                  <p>
+                    We are always looking for talented people.<br />
+                    <a href="/career/">CHECK OPEN POSITIONS…</a>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div id="secondary_footer">
-          <div class="footer-container">
-            <div class="col-xs-12 col-md-3">
-              <a
-                class="footer_logo align-left"
-                href="https://www.digiteum.com/"
-                tabindex="-1"
-              >
-                <img
-                  class="footer_logo_normal notalone"
-                  style="position: relative"
-                  src="../src/images/logo -white -primay -square.png"
-                  alt=""
-                  title=""
-                />
-                <img
-                  class="footer_logo_retina"
-                  style="display: none; position: relative"
-                  src="../src/images/logo -white -primay -square.png"
-                  alt=""
-                  title=""
-                />
-              </a>
-              <span class="b-copyright">Digiteum © 2010-2023.</span>
-            </div>
-            <div class="col-xs-12 col-md-5">
-              <div class="footer_custom_text left">
-                <div class="area-footer-left">
-                  <div class="b-right">
-                    <a href="/privacy-policy/" data-mce-href="/privacy-policy/"
-                      >Privacy Policy</a
-                    >|
-                    <a
-                      href="/terms-conditions/"
-                      data-mce-href="/terms-conditions/"
-                      >Terms &amp; Conditions</a
-                    >|
-                    <a
-                      href="https://www.digiteum.com/gdpr-compliance/"
-                      data-mce-href="https://www.digiteum.com/gdpr-compliance/"
-                      >GDPR compliance</a
-                    >
-                    <br />
-                    <i
-                      >We do not knowingly collect information from the users
-                      under 16 years old</i
-                    >
+
+            <div class="footer-sidebar footer__location">
+              <h4>location</h4>
+              <hr />
+              <div class="textwidget">
+                <div class="textwidget">
+                  <div>Digiteum Sp. z o.o.</div>
+                  <div>
+                    Szafarnia 11/F8<br />
+                    80-755
                   </div>
+                  <div>Gdańsk</div>
+                  <div><b>Poland</b></div>
+                  <p>
+                    <a href="mailto:hello@digiteum.pl">hello@digiteum.pl</a>
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="social-icons-fa align-right">
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/Digiteum"
-                      target="_blank"
-                      class="facebook"
-                      title="Facebook"
-                    >
-                      <i class="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/digiteum_us"
-                      target="_blank"
-                      class="twitter"
-                      title="Twitter"
-                    >
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/company/digiteum"
-                      target="_blank"
-                      class="linkedin"
-                      title="LinkedIn"
-                    >
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://youtu.be/R1ZyzMFSNC4"
-                      target="_blank"
-                      class="youtube"
-                      title="Youtube"
-                    >
-                      <i class="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="secondary_footer">
+        <div class="footer-container">
+          <div class="col-xs-12 col-md-3">
+            <a class="footer_logo align-left" href="https://www.digiteum.com/" tabindex="-1">
+              <img class="footer_logo_normal notalone" style="position: relative"
+                src="../src/images/logo -white -primay -square.png" alt="" title="" />
+              <img class="footer_logo_retina" style="display: none; position: relative"
+                src="../src/images/logo -white -primay -square.png" alt="" title="" />
+            </a>
+            <span class="b-copyright">Digiteum © 2010-2023.</span>
+          </div>
+          <div class="col-xs-12 col-md-5">
+            <div class="footer_custom_text left">
+              <div class="area-footer-left">
+                <div class="b-right">
+                  <a href="/privacy-policy/" data-mce-href="/privacy-policy/">Privacy Policy</a>|
+                  <a href="/terms-conditions/" data-mce-href="/terms-conditions/">Terms &amp; Conditions</a>|
+                  <a href="https://www.digiteum.com/gdpr-compliance/"
+                    data-mce-href="https://www.digiteum.com/gdpr-compliance/">GDPR compliance</a>
+                  <br />
+                  <i>We do not knowingly collect information from the users
+                    under 16 years old</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="social-icons-fa align-right">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/Digiteum" target="_blank" class="facebook" title="Facebook">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/digiteum_us" target="_blank" class="twitter" title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/digiteum" target="_blank" class="linkedin" title="LinkedIn">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://youtu.be/R1ZyzMFSNC4" target="_blank" class="youtube" title="Youtube">
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="https://kit.fontawesome.com/862b1267d5.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{% static 'amStaticApp/js/bootstrap.min.js' %}"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/862b1267d5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{% static 'amStaticApp/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'amStaticApp/js/main.js' %}"></script>
+
+</body>
+
 </html>
