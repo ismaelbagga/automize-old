@@ -4,11 +4,12 @@
 {% block style %} {% static 'amStaticApp/css/contact.css' %} {% endblock %}
 {% block content %}
 
+<section class="title">
+  <h1>Let's talk about your project</h1>
+</section>
 
-<div class="contactUs">
-  <p id="title-contact">Let's talk about your project</p>
   <div class="center-section">
-    <div class="contact-box">
+    <div class="contact-form-container">
       <!--Contact Form-->
       <div class="contact form-contact">
         <form>
@@ -52,7 +53,10 @@
         </form>
       </div>
       <!--Contact info-->
-      <blockquote>
+      
+    </div>
+    <div class="contact-info">
+      <blockquote>  
         <div class="contact info-contact">
           <div class="info-box">
             <p >
@@ -88,7 +92,6 @@
       </div>
     </div>
   </div>
-</div>
 
 
 {% endblock %}

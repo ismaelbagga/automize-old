@@ -1,34 +1,25 @@
 @use "variables";
 @use "typography";
 
-.contactUs {
 
-  #title-contact {
+  .title {
     font-size: 48px;
     font-weight: 600;
     letter-spacing: -2.4px;
-    margin: 150px 100px 0 250px;
+    margin: 100px 0;
+    text-align: center;
   }
 
   .center-section {
-    margin: 5%;
+    // margin: 5%;
     display: flex;
     justify-content: center;
 
-    .contact-box {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: 5fr 4fr;
-      grid-template-areas: "form info" "form map";
-      grid-gap: 20px;
-      width: 1170px;
-      height: 1050px;
+    .contact-form-container {
+      display: flex;
+      
 
-      .contact {
-        padding: 40px;
-        background-color: white;
-        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
-      }
+     
 
       .form-contact {
         grid-area: form;
@@ -117,6 +108,12 @@
         }
       }
 
+     
+
+     
+    }
+
+    .contact-info{
       blockquote {
         position: relative;
         padding-left: 16px;
@@ -130,6 +127,12 @@
           font-size: 12rem;
           line-height: 1;
           color: variables.$primary-color;
+        }
+
+        .contact {
+          padding: 40px;
+          background-color: white;
+          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
         }
 
         .info-contact {
@@ -169,11 +172,11 @@
         height: 370px;
         grid-area: map;
         color: #333;
-        margin-top: -150px;
+        // margin-top: -150px;
 
         .map-description {
           position: relative;
-          top: -100px;
+          // top: -100px;
 
           .adress-contact {
 
@@ -220,9 +223,10 @@
           }
         }
       }
+
     }
   }
-}
+
 
 .label-check:hover input~.checkmark {
   background-color: #ccc !important;
