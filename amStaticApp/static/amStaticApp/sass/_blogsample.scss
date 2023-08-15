@@ -1,69 +1,73 @@
 @use "variables";
 @use "typography";
 @use "mixins";
+
 .blog-sample-header {
     @include mixins.fullwidth;
-    position: relative;
     text-align: left;
 
-   
-
-        img {
-            width: 100%;
-            height: 650px;
-            opacity: 0.7;
-        }
-
-        .text-header-blogs {
-            position: absolute;
-            top: 50%;
-            left: 34%;
-            color: white;
-            transform: translate(-50%, -50%);
-
-            h2 {
-                letter-spacing: -2px;
-                line-height: 56px;
-                text-align: left;
-                color: #ffffff;
-                font-size: 56px;
-                font-weight: 700;
-                margin: 15px 0px 0px;
-            }
-
-            p {
-                width: 100%;
-                color: #ffffff;
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 38px;
-                text-align: left;
-                margin-top: 45px;
-                margin-bottom: 30px;
-            }
-
-            
-        }
+    img {
+        width: 100%;
+        height: 650px;
+        opacity: 0.7;
     }
 
+    .text-header-blogs {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        color: white;
+        transform: translate(-50%, -50%);
 
-.blogs-container {
+        h2 {
+            letter-spacing: -2px;
+            line-height: 56px;
+            color: #ffffff;
+            font-size: 56px;
+            font-weight: 700;
+            margin: 15px 0px 0px;
+        }
 
-    margin-left: 14%;
+        p {
+            width: 100%;
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+            margin-top: 45px;
+            margin-bottom: 30px;
+        }
 
-    .breadcrumb_bs {
-        margin-left: 25px;
-        margin-top: 30px;
+
+    }
+}
+
+
+
+
+.blog-sample-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+
+
+    .breadcrumb-blog-sample {
+        width: 100%;
+        line-height: 30px;
+        margin: 2% 0 5% 4%;
 
         ul {
             list-style: none;
-            
+
 
             li {
                 font-size: 12px;
                 display: inline;
-                
-                a{
+
+                a {
                     margin: 0 10px 0 10px;
 
                     &:hover {
@@ -81,45 +85,44 @@
         }
     }
 
-    .art_header {
-        margin-top: 75px;
-        margin-left: 40px;
+    .informations-article-blog-sample {
+        width: 100%;
+        line-height: 30px;
+        margin: 2% 0 0 4%;
+
 
         ul {
             list-style: none;
 
             li {
-                color:#3a3939; 
-                display: inline; 
-                font-size: 12px; 
-                font-weight: 700 ;
-                line-height: 21px ;
-                text-align: left ;
+                color: #3a3939;
+                display: inline;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 21px;
+
                 .fa-solid {
                     margin: 0 15px 0 10px;
-                    color: #757979;
                 }
 
                 .fa-regular {
                     margin: 0 15px 0 10px;
-                    color: #757979;
                 }
             }
         }
     }
 
-    .article_blog {
-        margin-left: 40px;
+    .article-blog-sample {
         width: 55%;
 
-        .head {
+        .head-blog-sample {
+            width: 100%;
             h1 {
-                font-family: 'Open Sans';
                 font-size: 36px;
                 font-weight: 700;
                 letter-spacing: -2px;
                 line-height: 54px;
-                margin: 30px 0 0 0;
+                margin: 3% 0 0 0;
             }
 
             p {
@@ -128,19 +131,19 @@
                 font-size: 16px;
                 font-style: italic;
                 margin-top: 25px;
-                width: 723px;
+               
             }
 
-     
 
-            img {
-                width: 723px;
-                height: 1810px;
-                margin-top: 5%;
-            }
+
+            
+        }
+        img {
+            width: 100%;
+            margin-top: 5%;
         }
 
-        .body_bs {
+        .body-blog-sample {
             margin-top: 5%;
 
             h3 {
@@ -153,6 +156,7 @@
                 margin-top: 30px;
                 margin-left: 25px;
                 list-style-type: decimal;
+
                 li {
                     color: #666666;
                     line-height: 32px;
@@ -173,7 +177,7 @@
             }
         }
 
-        .conclusion {
+        .conclusion-blog-sample {
             margin-top: 5%;
 
             h3 {
@@ -205,9 +209,8 @@
 
         }
 
-        .social_media {
-            margin-top: 15%;
-            margin-bottom: 15%;
+        .social-media {
+            margin: 15% 0;
 
             ul {
                 list-style: none;
@@ -226,6 +229,7 @@
                         margin: 15px 5px 0 10px;
                         color: #757979;
                     }
+
                     .fa-envelope {
                         margin: 15px 5px 0 10px;
                         color: #757979;
@@ -234,4 +238,41 @@
             }
         }
     }
+
+    .table-content{
+        width: 25%;
+        height: 50vh;
+        box-shadow: 5px 5px 5px 5px #d0d3d4;
+        padding: 2%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20%;
+
+        h3{
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        hr{
+            width: 50%;
+            border: 2px solid variables.$primary-color;
+        }
+
+        ul{
+            li{
+                
+                a{
+                    font-size: 12px;
+                    color: #3a3939;
+                    line-height: 24px;
+
+                    &:hover{
+                        text-decoration: none;
+                        color: variables.$primary-color;
+                    }
+                }
+            }
+        }
+    }
 }
+
