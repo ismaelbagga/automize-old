@@ -4,150 +4,101 @@
 {% block style %} {% static 'amStaticApp/css/about.css' %} {% endblock %}
 {% block content %}
 
-
-<!--header section of about page-->
 <div class="header-banner">
-    <img src="{% static 'images/About-us-header-image.jpg' %}" />
-    <div class="center-text">
-        <h2>about automize</h2>
-        <div class="banner-text">
-            <p>
-                A cross-functional team united by the belief in the transformative power of digital technology
-            </p>
+    <h2>about automize</h2>
+    <p>
+        A cross-functional team united by the belief in the transformative power of digital technology
+    </p>
+</div>
+<div class="about-container">
+    <div class="about-block-section">
+        <h1>Lorem ipsum dolor</h1>
+        <hr />
+        <section>
+            <p>Digiteum is a custom software development company. We design and develop
+                digital systems for SMB
+                and enterprise clients across the globe and follow these simple, yet profound principles of
+                successful collaboration:</p>
+            <p><span>Responsibility.</span>Your goals are also
+                our goals. We stand by our words and take
+                responsibility for every deadline, decision and choice we make.</p>
+            <p><span>Proactivity.</span>We know when to step in,
+                lead, suggest and leverage our experience for
+                responsibility for every deadline, decision and choice we make.</p>
+            <p><span>Trust.</span>Trust is a solid ground for
+                successful collaboration. We nurture it through
+                transparent communication, commitment and full understanding between clients and teams.</p>
+            <p><span>Best practices.</span> We are strong
+                advocates of functional design, efficient engineering
+                practices and technical excellence.</p>
+        </section>
+    </div>
+    <div class="about-facts">
+        <h3>automize facts</h3>
+        <img src="{% static 'images/digiteum-about-facts-2023-1.png' %}">
+    </div>
+    <div class="about-block-section">
+        <h1>automize team</h1>
+        <hr />
+        <section>
+            <P>Digiteum is a full-stack team with a diverse skill set. We cover all aspects of the
+                software
+                development cycle, including business analysis, software architecture, design, development and
+                testing as well as project management. More than half of our team are senior engineers with 10+
+                years of experience in software development. We live and operate in Poland, one of the major tech
+                hubs in Europe, and frequently travel to our clients and partners when possible.
+            </P>
+        </section>
+        <img src="{% static 'images/about us -image.png' %}" id="img-team-about">
+    </div>
+    <div class="leadership-grid-about">
+        <h3>leadership</h3>
+        <div class="leadership-articles">
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
+            <div class="card-about">
+                <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="">
+                <label>lorem ipsum</label>
+                <p>Some text</p>
+            </div>
         </div>
     </div>
-</div>
-<!-- end -->
-
-
-
-<!--block section of about page-->
-<div class="about-block-section">
-    <h1>Lorem ipsum dolor</h1>
-    <div class="about-center-hr">
-        <hr/>
-    </div>
-    <section>
-        <p>Digiteum is a custom software development company. We design and develop
-            digital systems for SMB
-            and enterprise clients across the globe and follow these simple, yet profound principles of
-            successful collaboration:</p>
-        <p><span>Responsibility.</span>Your goals are also
-            our goals. We stand by our words and take
-            responsibility for every deadline, decision and choice we make.</p>
-        <p><span>Proactivity.</span>We know when to step in,
-            lead, suggest and leverage our experience for
-            responsibility for every deadline, decision and choice we make.</p>
-        <p><span>Trust.</span>Trust is a solid ground for
-            successful collaboration. We nurture it through
-            transparent communication, commitment and full understanding between clients and teams.</p>
-        <p><span>Best practices.</span> We are strong
-            advocates of functional design, efficient engineering
-            practices and technical excellence.</p>
-    </section>
-</div>
-<!-- end -->
-
-<div class="about-facts">
-    <h3 id="h2-about">automize facts</h3>
-    <img src="{% static 'images/digiteum-about-facts-2023-1.png' %}" >
-</div>
-
-
-
-
-<div class="about-block-section">
-    <h1>automize team</h1>
-    <div class="about-center-hr">
-        <hr/>
-    </div>
-    <section>
-        <P>Digiteum is a full-stack team with a diverse skill set. We cover all aspects of the
-            software
-            development cycle, including business analysis, software architecture, design, development and
-            testing as well as project management. More than half of our team are senior engineers with 10+
-            years of experience in software development. We live and operate in Poland, one of the major tech
-            hubs in Europe, and frequently travel to our clients and partners when possible.</P>
-    </section>
-    <img src="{% static 'images/about us -image.png' %}" id="img-team-about">
-</div>
-
-
-
-
-<div class="leadership-grid-about">
-    <h3>leadership</h3>
-    <div class="leadership-articles">
-
-        <div class="row-about">
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-
-            <div class="column-about">
-                <div class="card-about">
-                    <img src="{% static 'images//Maxim_about-us.jpg' %}" alt="" >
-                    <label>lorem ipsum</label>
-                    <p>Some text</p>
-                </div>
-            </div>
-        </div>
+    <div class="section-help-about">
         <h2>LET'S SEE HOW WE CAN HELP</h2>
         <button class="base-btn am-btn-secondary">TALK TO AUTOMIZE TEAM</button>
-
     </div>
 </div>
 
