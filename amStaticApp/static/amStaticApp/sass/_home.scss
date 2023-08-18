@@ -2,102 +2,52 @@
 @use "typography";
 @use "mixins";
 
-
 //styling header part of home page//
 .home-section-header {
-
-    // @include mixins.fullwidth;  
-    // position: relative; 
-    // text-align: center;
-    // margin: 0;
-    // background-color: variables.$primary-color;
-    // height: 780px;
-
-    // img {
-    //     width: 85%;
-    //     height: 780px;
-    //     margin-left: 253px;
-    // }
-
-    // .title-banner-home {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 25%;
-    //     color: white;
-    //     transform: translate(-50%, -50%);
-
-
-    //     #so_text {
-    //         line-height: 37px;
-    //         font-size: 22px;
-    //         color: #454747;
-    //         text-align: center;
-    //         position: relative;
-    //         top: -50px;
-    //     }
-    // }
-
     // youssef code
     @include mixins.fullwidth;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: variables.$primary-color;
     height: 100vh;
-    padding: 0px;
+
     .image-container {
-        width: 50% ;
+        width: 50%;
         height: 100%;
-        background-image: url('../../images/home-top-image-2.png');
+        background-image: url("../../images/home-top-image-2.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
-
-
     }
-    .home-text-content{
-        width: 50% ;
+
+    .home-text-content {
+        width: 50%;
         display: flex;
-        align-items: center;
+        align-items: last baseline;
         justify-content: center;
         flex-direction: column;
-        gap: 60px;
+        gap: 30px;
 
         .title-banner-home {
-            // display: block;
-            // max-width: 720px;
-            font-size: 34px;
+            font-size: 45px;
             font-weight: 700;
             color: #fff;
             line-height: 1.2;
-
+            width: 80%;
         }
 
         .info-banner-home {
-                // display: block;
-    // max-width: 450px;
-    // margin: 35px 0;
-    font-size: 22px;
-    color: #fff;
-    // position: relative;
-    line-height: 1.5;
-    // right: -50px;
-    // transition: .5s all;
-    // opacity: 0;
-
+            font-size: 22px;
+            color: #fff;
+            line-height: 1.5;
+            word-break: break-word;
+            width: 80%;
         }
-
-        .btn-header-home {
-            a {
-                margin: 0 20px;
-            }
-        }
-
     }
-
 }
+
 .section_home_two {
     @include mixins.fullwidth;
     margin-top: 10%;
@@ -155,7 +105,6 @@
             font-weight: 600;
         }
 
-
         #p_home_box {
             font-size: 16px;
             line-height: 28px;
@@ -174,7 +123,6 @@
             cursor: pointer;
         }
     }
-
 }
 
 .desck_article_home {
@@ -229,37 +177,26 @@
     }
 }
 
-//end//
-
-
-//styling the services section of page home//
 .services-section-home {
     @include mixins.fullwidth;
     background-color: variables.$section-background;
-    height: 745px;
-    padding: 70px 0 30px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 95vh;
     width: 100%;
 
-    .center-section {
-        display: flex;
-        justify-content: center;
-
-        .box-home {
-            display: grid;
-            place-items: center;
-            grid-template-columns: auto auto auto auto;
-            gap: 10px;
-            margin-top: 70px;
-            width: 1170px;
-        }
+    .box-home {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 75%;
+        margin-top: 2%;
 
         .item-box-home {
-            width: 280px;
-            height: 380px;
-
             img {
-                width: 90px;
+                width: 28%;
                 height: 75px;
                 margin-bottom: 30px;
             }
@@ -274,175 +211,176 @@
             p {
                 font-size: 18px;
                 line-height: 28px;
-                margin-top: 15px;
+                margin-top: 3%;
             }
 
-            #btn-box-home {
+            button {
                 margin-top: 16%;
             }
         }
     }
 }
 
-//end//
-
-
-
-//start//
-.bloquote-section-home {
+.blockquote-section-home {
+    @include mixins.fullwidth;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 180px;
-    width: 100%;
+    height: 140vh;
 
-    .center-section {
+    .section-home {
         display: flex;
+        flex-flow: row wrap;
         justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        width: 80%;
+        height: 100vh;
+        gap: 5%;
+        margin-top: 5%;
 
-        .section-home {
-            display: grid;
-            grid-template-columns: 5fr 5fr;
-            grid-template-areas: "auto auto";
-            grid-gap: 50px;
-            text-align: left;
-            width: 1170px;
-            height: 1125px;
+        .left-section {
+            width: 45%;
+            line-height: 30px;
 
-            .right-section {
-                width: 545px;
-                line-height: 50px;
-                margin-top: 40px;
-
-                span {
-                    font-size: 22px;
-                    font-weight: 700;
-                }
-
-                p {
-                    font-size: 18px;
-                    line-height: 27px;
-                    margin: 10px 0 30px 0;
-                }
+            span {
+                font-size: 22px;
+                font-weight: 700;
             }
 
-            .right-blockquote-home {
-                margin-top: 55px;
-                width: 545px;
-                height: 520px;
-                box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+            p {
+                font-size: 18px;
+                line-height: 27px;
+                margin: 2%;
+            }
+        }
+
+        .right-blockquote-home {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 40%;
+            height: 65%;
+            box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+
+            blockquote {
+                position: relative;
+                padding-left: 16px;
+
+                &::before {
+                    content: "\201C"; // Unicode for the opening double quotation mark
+                    position: absolute;
+                    top: -13%;
+                    left: -6%;
+                    font-size: 12rem;
+                    color: variables.$primary-color;
+                }
 
                 .text-blockquote-home {
                     font-size: 20px;
                     line-height: 38px;
                     font-style: italic;
-                    padding: 65px 90px 0 40px;
+                    padding: 15% 10% 0 7%;
                 }
-
 
                 .author-blockquote-home {
                     display: flex;
-                    width: 65%;
-                    padding-left: 50px;
-                    margin-top: 45px;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    width: 70%;
+                    margin: 15% 0 0 3%;
 
                     img {
-                        width: 80px;
-                        height: 80px;
+                        width: 25%;
+                        height: 25%;
                     }
 
                     .descr-author-blockquote-home {
-                        padding-left: 20px;
-                        width: 500px;
-                        margin-top: 5px;
-                        
-                        h5{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: left;
+                        align-items: flex-end;
+                        width: 70%;
+                        margin-left: 3%;
+
+                        h5 {
                             font-size: 18px;
                             font-weight: 600;
+                            line-height: 35px;
                         }
 
-                        p{
+                        p {
                             font-size: 14px;
-                            margin-top: 10px;
                             line-height: 28px;
                         }
                     }
                 }
-
             }
         }
     }
 }
 
-//end//
-
-
 
 #line {
+    @include mixins.fullwidth;
     color: #aba7a7;
-    margin-top: -210px;
 }
 
 
-
-
-//start//
 
 .steps-section-home {
     @include mixins.fullwidth;
     background-color: variables.$information-light-color;
-    height: 985px;
-    padding: 70px 0 30px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
+    height: 120vh;
+    
 
-    .center-section {
+    .steps-card-home {
         display: flex;
+        flex-flow: row wrap;
         justify-content: center;
-        margin-top: 30px;
+        align-items: center;
+        width: 80%;
+        margin-top: 5%;
 
-        .steps-card-home {
-            display: grid;
-            place-items: center;
-            grid-template-columns: auto auto auto auto;
-            gap: 10px;
-            margin-top: 25px;
-            width: 1170px;
+        .step-card-home {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            width: 20%;
+            text-align: left;
 
-            .step-card-home {
-                width: 280px;
-                height: 380px;
-                text-align: left;
+            .step-number {
+                font-size: 12px;
+                letter-spacing: -0.24px;
+                line-height: 19px;
+                text-transform: uppercase;
+            }
 
-                .step-number {
-                    font-size: 12px;
-                    letter-spacing: -0.24px;
-                    line-height: 19px;
-                    text-transform: uppercase;
-                }
+            .step-name {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 60px;
+                text-transform: uppercase;
+                color: variables.$text-color;
+                border-bottom: 1px solid variables.$secondary-color;
+                width: 80%;
+            }
 
-                .step-name {
-                    font-size: 18px;
-                    font-weight: 600;
-                    line-height: 29px;
-                    margin: 0px 0px 20px;
-                    padding: 0px 0px 20px;
-                    color: variables.$text-color;
-                    font-weight: 500;
-                    border-bottom: 1px solid variables.$secondary-color;
-                }
-
-                .step-text {
-                    margin-top: 45px;
-                    font-size: 18px;
-                    line-height: 25px;
-                    color: #454747;
-                }
-
+            .step-text {
+                margin-top: 45px;
+                font-size: 18px;
+                line-height: 25px;
+                color: #454747;
             }
         }
-    }
-
-    #line-steps {
-        margin-top: -50px;
     }
 
     .steps-bottom-text {
@@ -450,49 +388,39 @@
         font-size: 18px;
         font-style: italic;
         color: variables.$secondary-color;
-        margin-top: 30px;
+        margin: 5% 0 3% 0;
     }
 }
 
-//end//
 
 
-
-.block-section {
-    margin: 100px auto;
+.home-block-section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    align-self: center;
-    width: 75%;
-    
+    height: 70vh;
 }
 
 .block-title {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 36px;
+    font-weight: 600;
     text-transform: uppercase;
-    align-self: center;
 }
 
 .center-hr {
-    display: flex;
-    justify-content: center;
-
-    .line-block-title {
-        border: 2px solid variables.$primary-color;
-        margin-top: 25px;
-        width: 150px;
-    }
+    border: 2px solid variables.$primary-color;
+    width: 15%;
 }
 
 .text-block-section {
-    margin-top: 25px;
     line-height: 36px;
     font-size: 22px;
     color: variables.$text-color;
-    align-self: center;
-    text-align: center;
+    width: 65%;
 }
 
-#btn-block-home {
-    margin-top: 50px;
+.btn-block-home {
+    margin-top: 5%;
 }
