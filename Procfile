@@ -1,0 +1,1 @@
+web gunicorn automize.wsgi:application --log-file -
