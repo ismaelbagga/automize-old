@@ -1,1 +1,1 @@
-web: gunicorn automize.wsgi:application --log-file -
+web: gunicorn automize.wsgi
