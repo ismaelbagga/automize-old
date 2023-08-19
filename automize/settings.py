@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-78*eznw67^i@=y9e@b#$5c%t8%-8wx0=9@s+q#-dvzv(v&9vwz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -135,11 +135,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     BASE_DIR / "static",
 # ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, '/amStaticApp/static'))
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-
-django_heroku.settings(locals())
