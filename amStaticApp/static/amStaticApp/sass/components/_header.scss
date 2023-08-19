@@ -1,0 +1,101 @@
+@use "../reset";
+@use "../variables";
+@use "../typography";
+@use "../buttons";
+
+
+
+.dropdown-menu {
+  width: variables.$half-screen-width;
+  border: 1px solid rgba(169, 169, 169, 0.5);
+  border-radius: 1px;
+  top: 61px;
+  padding: 50px 25px;
+  left: 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  /* Create a Flexbox layout for the row */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+     /* Smooth transition effect */
+  nav {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 113px;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    .header-container {
+      .header-row{
+        display: flex;
+        align-items: center;
+      }
+      .left-header{
+        .header-logo{
+          a.navbar-brand {
+            img {
+              max-width: 151px;
+
+              @media screen and (max-width: 1440px) {
+                max-width: 120px;
+              }
+            }
+          }
+        }
+
+        .toggeled-navbar{
+
+        }
+
+      }
+      .right-header{
+        div{
+          ul{
+            li {
+              display: flex;
+              align-items: center;
+              color: black;
+              font-weight: 400;
+              a {
+              // color: white !important;
+              transition: color 0.3s ease;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Styling for the header when scrolled */
+.navbar-scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lighten-link{
+  color: white !important;
+}
+
+.darken-link{
+  color: variables.$text-color !important;
+}
+

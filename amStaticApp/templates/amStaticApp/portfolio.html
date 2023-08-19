@@ -1,0 +1,125 @@
+{% extends 'amStaticApp/base.html' %}
+{% load static %}
+{% block title %} Portfolio | Automize {%endblock %}
+{% block style %} {% static 'amStaticApp/css/portfolio.css' %} {% endblock %}
+{% block content %}
+
+    <div class="portfolio-section-header">
+        <div class="content-container">
+            <h2>Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur<br>adipiscing elit
+            </p>
+        </div>
+    </div>
+
+    <div class="wrapper-archive">
+       <div class="portfolio-archive">
+            <div class="portfolio-types-container">
+                <div class="link-wrapper">
+                    <a href="#">All</a>
+                    <a href="#">Big Data</a>
+                    <a href="#">Chatbots</a>
+                    <a href="#">cloud</a>
+                    <a href="#">Digital Transformation</a>
+                    <a href="#">eHealth</a>
+                    <a href="#">Lot</a>
+                    <a href="#">Mobile</a>
+                    <a href="#">Team Augmentation</a>
+                    <a href="#">UX/UI</a>
+                    <a href="#">Web</a>
+                </div>
+            </div>
+
+
+            <section class="portfolio-cards">
+                <!-- <div class="card">
+                    <div >
+                        <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    </div>
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div> -->
+
+                <div class="card">
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card" >
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="{% url 'portfolio_sample' %}"><img src="{% static 'images/portfolio -item -example.png' %}" alt=""></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div>
+                </div>
+
+            </section>
+            
+            <div class="loadmore-btn">
+                <a class="base-btn am-btn-secondary" href="">LOAD MORE</a>
+           </div>
+            
+       </div>
+    </div>
+
+{% endblock %}

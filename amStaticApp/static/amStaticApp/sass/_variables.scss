@@ -1,0 +1,31 @@
+//========== Colors ==========
+$primary-color: #dc170f;
+$secondary-color: #666666;
+$light-grey-color: #dadada;
+$silver-color: #acacad;
+
+// Semantic colors
+$danger-color: #bb0000;
+$warning-color: #e9730c;
+$success-color: #107e3e;
+$neutal-color: #6a6d70;
+$information-color: #0a6ed1;
+$danger-light-color: #ffebeb;
+$warning-light-color: #fef7f1;
+$success-light-color: #f1fdf6;
+$neutal-light-color: #f4f4f4;
+$information-light-color: #dff0fc;
+
+// Scaffolding
+// -------------------------
+$bodyBackground: white;
+$text-color: #000000;
+$link-color: $primary-color;
+$link-color-hover: darken($primary-color, 15%);
+$section-background: #fff5f5;
+
+// Typography
+$fontFamily: "Open Sans";
+
+//spacing
+$half-screen-width: calc(50vw);
