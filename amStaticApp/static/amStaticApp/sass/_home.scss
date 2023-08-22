@@ -60,7 +60,7 @@
 
     .home-section {
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -84,15 +84,15 @@
             color: variables.$text-color;
             width: 65%;
         }
-
     }
 
     .box-home {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        width: 65%;
+        width: 70%;
         margin-top: 2%;
         height: 65%;
+        gap: 5%;
 
         .item-box-home {
             img {
@@ -122,7 +122,6 @@
 }
 
 .blockquote-section-home {
-    @include mixins.fullwidth;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -133,7 +132,7 @@
 
     .home-section {
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -161,12 +160,11 @@
 
     .section-home {
         display: flex;
-        flex-flow: column wrap;
-        align-items: flex-start;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
         text-align: left;
-        width: 80%;
+        width: 100%;
         height: 85%;
-        gap: 5%;
         margin-top: 5%;
 
         .left-section {
@@ -186,16 +184,12 @@
         }
 
         .right-blockquote-home {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
             width: 40%;
             height: 50%;
             box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 
             blockquote {
                 position: relative;
-                padding-left: 16px;
 
                 &::before {
                     content: "\201C"; // Unicode for the opening double quotation mark
@@ -207,33 +201,32 @@
                 }
 
                 .text-blockquote-home {
-                    font-size: 20px;
-                    line-height: 38px;
+                    font-size: 18px;
+                    line-height: 34px;
                     font-style: italic;
-                    padding: 15% 10% 0 7%;
+                    padding: 4rem 3rem;
+
                 }
 
                 .author-blockquote-home {
                     display: flex;
-                    justify-content: flex-end;
-                    align-items: flex-end;
+                    justify-content: center;
+                    align-items: center;
                     width: 70%;
-                    margin: 15% 0 0 3%;
+                    height: 40%;
+                    padding-left: 3rem;
 
                     img {
-                        width: 25%;
-                        height: 25%;
+                        width: 20%;
+                        height: 20%;
                     }
 
                     .descr-author-blockquote-home {
                         display: flex;
-                        flex-flow: row wrap;
-                        justify-content: left;
-                        align-items: flex-end;
-                        width: 70%;
-                        margin-left: 3%;
+                        flex-direction: column; 
+                        margin-left: 1rem;
 
-                        h5 {
+                        span {
                             font-size: 18px;
                             font-weight: 600;
                             line-height: 35px;
@@ -259,46 +252,50 @@
     @include mixins.fullwidth;
     background-color: variables.$information-light-color;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column ;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 120vh;
+    height: 140vh;
 
-    .block-title {
-        font-size: 36px;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
 
-    .center-hr {
-        border: 2px solid variables.$primary-color;
-        width: 15%;
-    }
+        .block-title {
+            font-size: 36px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
 
-    .text-block-section {
-        line-height: 36px;
-        font-size: 22px;
-        color: variables.$text-color;
-        width: 65%;
+        .center-hr {
+            border: 2px solid variables.$primary-color;
+            width: 15%;
+        }
+
+        .text-block-section {
+            line-height: 36px;
+            font-size: 22px;
+            color: variables.$text-color;
+            width: 55%;
+        }
     }
 
     .steps-card-home {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        text-align: left;
         width: 80%;
-        margin-top: 5%;
+        padding: 5%;
+        gap: 3%;
 
         .step-card-home {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            width: 20%;
-            text-align: left;
-
             .step-number {
                 font-size: 12px;
                 letter-spacing: -0.24px;
@@ -313,30 +310,41 @@
                 text-transform: uppercase;
                 color: variables.$text-color;
                 border-bottom: 1px solid variables.$secondary-color;
-                width: 80%;
             }
 
             .step-text {
-                margin-top: 45px;
-                font-size: 18px;
-                line-height: 25px;
+                font-size: 16px;
+                line-height: 28px;
                 color: #454747;
             }
         }
     }
 
     .steps-bottom-text {
-        line-height: 36px;
-        font-size: 18px;
-        font-style: italic;
-        color: variables.$secondary-color;
-        margin: 5% 0 3% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        hr {
+            width: 100%;
+        }
+
+        p {
+            line-height: 36px;
+            font-size: 18px;
+            font-style: italic;
+            color: variables.$secondary-color;
+            width: 55%;
+            margin-bottom: 2%;
+        }
     }
 }
 
 .home-block-section {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -346,6 +354,7 @@
         font-size: 36px;
         font-weight: 600;
         text-transform: uppercase;
+        line-height: 26px;
     }
 
     .center-hr-home {
@@ -365,26 +374,28 @@
     }
 }
 
-@media (max-width: 900px) {
+
+
+
+@media (max-width: 990px) {
+
     .home-section-header {
         height: 50vh;
-        width: 100%;
-
-        .image-container {}
 
         .home-text-content {
-            width: 100%;
-            height: 100%;
-
+            
+    
             .title-banner-home {
-                font-size: 14px;
-                width: 90%;
-            }
+                font-size: 18px;
 
-            .info-banner-home {
-                font-size: 10px;
             }
+    
+            .info-banner-home {
+                font-size: 14px;
+            }
+           
         }
+
     }
 
     .home-block-section {
@@ -411,11 +422,12 @@
 
     .services-section-home {
         flex-flow: row wrap;
-        height: 270vh;
+        height: 200vh;
+        padding: 5%;
 
         .home-section {
-            flex-flow: column wrap;
-            width: 85%;
+            flex-direction: column;
+            width: 95%;
             height: 10%;
 
             .block-title {
@@ -431,7 +443,6 @@
                 line-height: 20px;
                 width: 85%;
             }
-
         }
 
         .box-home {
@@ -441,6 +452,7 @@
             width: 100%;
             height: 90%;
             margin-top: 0;
+            gap: 0;
 
             .item-box-home {
                 width: 80%;
@@ -465,18 +477,16 @@
                 }
 
                 button {
-                    margin-top: 16%;
+                    margin-top: 10%;
                 }
             }
         }
     }
 
-
     .blockquote-section-home {
-        height: 210vh;
+        height: 200vh;
 
         .home-section {
-            height: 5%;
 
             .block-title {
                 font-size: 20px;
@@ -490,9 +500,8 @@
         .section-home {
             flex-flow: row wrap;
             align-items: center;
-            width: 85%;
-            height: 95%;
-            gap: 0;
+            width: 90%;
+            height: 80%;
             margin-top: 0;
 
             .left-section {
@@ -512,10 +521,9 @@
 
             .right-blockquote-home {
                 width: 35rem;
-                height: 30%;
+                height: 25rem;
 
                 blockquote {
-
                     &::before {
                         top: -10%;
                         left: 0;
@@ -525,19 +533,22 @@
                     .text-blockquote-home {
                         font-size: 14px;
                         line-height: 22px;
+                        padding: 3rem 2rem;
                     }
 
                     .author-blockquote-home {
-                        img{
-                            width: 5rem;
-                            height: 5rem;
-                        }
                         width: 100%;
+                        img {
+                            width: 4rem;
+                            height: 4rem;
+                        }
+
                         .descr-author-blockquote-home {
-                            h5{
+                            span {
                                 font-size: 16px;
                             }
-                            p{
+
+                            p {
                                 font-size: 12px;
                                 line-height: 20px;
                             }
@@ -547,5 +558,48 @@
             }
         }
     }
-}
 
+    .steps-section-home {
+        height: 270vh;
+        flex-flow: row wrap;
+        .home-section {
+            flex-direction: column;
+            width: 100%;
+            height: 15%;
+
+            .block-title {
+                font-size: 20px;
+            }
+
+            .center-hr {
+                width: 40%;
+            }
+
+            .text-block-section {
+                font-size: 14px;
+                line-height: 20px;
+                width: 85%;
+            }
+        }
+
+        .steps-card-home {
+            grid-template-columns: none;
+            grid-template-rows: auto auto auto auto;
+            place-items: center;
+            width: 100%;
+            height: 60%;
+            gap: 5%;
+        }
+
+        .steps-bottom-text {
+            height: 25%;
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                padding: 5%;
+                width: 100%;
+            }
+        }
+    }
+   
+}

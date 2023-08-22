@@ -1,7 +1,7 @@
 {% extends 'amStaticApp/base.html' %} {% load static %} {% block title %} Home
 |Automize {%endblock %} {% block content %}
 
-<!---
+
 <div class="home-section-header">
   <div class="image-container"></div>
   <div class="home-text-content">
@@ -13,7 +13,7 @@
       <a href="#" class="base-btn am-btn-white btn-responsive">our work</a>
     </div>
   </div>
-</div>-->
+</div>
 
 <div class="home-block-section">
   <h1 class="block-title-home">Lorem ipsum dolor</h1>
@@ -32,8 +32,7 @@
     <hr class="center-hr" />
     <p class="text-block-section">
       Achieve your business goals with custom software solutions perfectly
-      tailored <br />
-      to your business goals, expectations and scale.
+      tailored to your business goals, expectations and scale.
     </p>
   </div>
   <div class="box-home">
@@ -75,9 +74,7 @@
     </div>
   </div>
 </div>
-<!-- end -->
 
-<!-- start -->
 <div class="blockquote-section-home">
   <div class="home-section">
     <h1 class="block-title">what you get</h1>
@@ -121,7 +118,7 @@
         <div class="author-blockquote-home">
           <img src="{% static 'images/profile.png' %}" />
           <div class="descr-author-blockquote-home">
-            <h5>Lorem dolor</h5>
+            <span>Lorem dolor</span>
             <p>Head of Software Development,T&F Technology</p>
           </div>
         </div>
@@ -130,9 +127,10 @@
   </div>
 </div>
 
-<hr id="line" />
+<hr id="line">
 
 <div class="home-block-section">
+  
   <h1 class="block-title-home">hire top tech experts on demand</h1>
   <button class="base-btn am-btn-secondary btn-block-home">
     let's talk about your project
@@ -140,18 +138,21 @@
 </div>
 
 <div class="steps-section-home">
-  <h1 class="block-title">what you get</h1>
-  <hr class="center-hr" />
-  <p class="text-block-section">
-    Meet your one-stop provider of software development and consulting services.
-    Your cross-functional team of designers, software architects, engineers and
-    managers working together to create digital systems that bring value to you
-    and your customers.
-  </p>
+
+  <div class="home-section">
+    <h1 class="block-title">what you get</h1>
+    <hr class="center-hr" />
+    <p class="text-block-section">
+      Meet your one-stop provider of software development and consulting services.
+      Your cross-functional team of designers, software architects, engineers and
+      managers working together to create digital systems that bring value to you
+      and your customers.
+    </p>
+  </div>
 
   <div class="steps-card-home">
     <div class="step-card-home">
-      <span class="step-number">Step 1</span>
+      <p class="step-number">Step 1</p>
       <span class="step-name">BUSINESS ANALYSIS</span>
       <p class="step-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -161,7 +162,7 @@
       </p>
     </div>
     <div class="step-card-home">
-      <span class="step-number">Step 2</span>
+      <p class="step-number">Step 2</p>
       <span class="step-name">BUSINESS ANALYSIS</span>
       <p class="step-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -171,7 +172,7 @@
       </p>
     </div>
     <div class="step-card-home">
-      <span class="step-number">Step 3</span>
+      <p class="step-number">Step 3</p>
       <span class="step-name">BUSINESS ANALYSIS</span>
       <p class="step-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -181,7 +182,7 @@
       </p>
     </div>
     <div class="step-card-home">
-      <span class="step-number">Step 4</span>
+      <p class="step-number">Step 4</p>
       <span class="step-name">BUSINESS ANALYSIS</span>
       <p class="step-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -191,15 +192,18 @@
       </p>
     </div>
   </div>
-  <hr id="line-steps" />
-  <p class="steps-bottom-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididuntut labore <br />dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris.
-  </p>
-  <button class="base-btn am-btn-secondary" id="btn-block-home">
-    Lorem ipsum dolor
-  </button>
+  
+  <div class="steps-bottom-text">
+    <hr>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididuntut labore dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris.
+    </p>
+    <button class="base-btn am-btn-secondary">Contact Automize</button>
+  </div>
+
+
 </div>
 <!-- end -->
 
