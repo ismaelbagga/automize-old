@@ -1,238 +1,223 @@
 @use "variables";
 @use "typography";
 
+.contact-container {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  margin-bottom: 15%;
 
-.title-contact {
   h1 {
     font-size: 48px;
     font-weight: 600;
     letter-spacing: -2.4px;
-    margin: 5% 0;
+    margin: 5% 0 0 5% ;
   }
-}
 
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-  gap: 5%;
-  margin: 15% 0;
-
-  .form-contact {
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 100%;
-    width: 60%;
+    margin-top: 5%;
+    gap: 5%;
 
-    .contact-row {
-      display: flex;
-      gap: 5%;
-    }
+    .form-contact {
+      height: 100%;
+      width: 60%;
 
-    .inputBox-contact {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 10px;
-      width: 100%;
-
-      span {
-        color: #6f6f6f;
-        margin-top: 10px;
-        margin-bottom: 5px;
+      .contact-row {
+        display: flex;
+        gap: 5%;
       }
 
-      input {
-        height: 60px;
-        padding: 10px;
-        font-size: 1.1em;
-        outline: none;
-        border: 1px solid #eee9e9;
-        background-color: #f9f9f9;
-      }
-    }
-
-
-    .inputBox-contact {
-      width: 100%;
-
-      textarea {
-        padding: 10px;
-        font-size: 1.1em;
-        outline: none;
-        border: 1px solid #ede8e8;
-        resize: none;
-        min-height: 220px;
+      .inputBox-contact {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 10px;
-        background-color: #f9f9f9;
-      }
-    }
+        width: 100%;
 
-    .checkbox-contact {
-      margin-bottom: 15px;
-
-      label {
-        display: block;
-        position: relative;
-        padding-left: 35px;
-        margin: 20px 0px 17px 0px;
-        cursor: pointer;
-        font-size: 16px;
-        line-height: 21px;
-        color: #6f6f6f;
-        user-select: none;
+        span {
+          color: #6f6f6f;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
 
         input {
-          opacity: 0;
-          cursor: pointer;
-          height: 0;
-          width: 0;
-        }
-
-        .checkmark {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 20px;
-          width: 20px;
-          background-color: #eee;
+          height: 60px;
+          padding: 2%;
+          font-size: 1.1em;
+          outline: none;
+          border: 1px solid #eee9e9;
+          background-color: #f9f9f9;
         }
       }
-    }
-  }
-}
 
-.contact {
-  padding: 3%;
-  background-color: white;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 
-}
+      .inputBox-contact {
+        width: 100%;
 
-.contact-info {
-  width: 25%;
-  height: 100%;
-
-  blockquote {
-    position: relative;
-    font-style: italic;
-    width: 100%;
-    height: 50%;
-    padding: 10% 8% 0 8%;
-
-    &::before {
-      content: "\201C"; // Unicode for the opening double quotation mark
-      position: absolute;
-      top: -50px;
-      left: -15%;
-      font-size: 12rem;
-      color: variables.$primary-color;
-    }
-
-    .info-box {
-      padding: 10% 5% 0 5% ;
-      p {
-        font-style: italic;
-        line-height: 35px;
-        font-size: 18px;
+        textarea {
+          padding: 10px;
+          font-size: 1.1em;
+          outline: none;
+          border: 1px solid #ede8e8;
+          resize: none;
+          min-height: 220px;
+          margin-bottom: 10px;
+          background-color: #f9f9f9;
+        }
       }
 
-      .desc-contact {
-        margin-top: 15%;
-        span {
-          font-weight: 600;
-          font-size: 20px;
+      .form-check {
+        margin-bottom: 5%;
+
+        label {
+          line-height: 22px;
         }
       }
     }
   }
 
+  .contact {
+    padding: 3%;
+    background-color: white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
 
-  .map-contact {
-    height: 370px;
-    grid-area: map;
-    color: #333;
-    // margin-top: -150px;
+  }
 
-    .map-description {
+  .contact-info {
+    width: 25%;
+    height: 100%;
+
+    blockquote {
       position: relative;
-      // top: -100px;
+      font-style: italic;
+      width: 100%;
+      height: 50%;
+      padding: 10% 8% 0 8%;
 
-      .adress-contact {
-
-        .local-contact {
-          position: relative;
-          top: 75px;
-          left: 20px;
-        }
-
-        .adress {
-          margin-left: 120px;
-          line-height: 24px;
-          font-size: 14px;
-        }
-
-        .country-adress {
-          margin-left: 120px;
-          line-height: 24px;
-          font-size: 14px;
-          font-weight: 800;
-        }
-
-        .email-adress {
-          color: variables.$primary-color;
-          margin-left: 120px;
-          line-height: 24px;
-          font-size: 14px;
-        }
+      &::before {
+        content: "\201C"; // Unicode for the opening double quotation mark
+        position: absolute;
+        top: -50px;
+        left: -15%;
+        font-size: 12rem;
+        color: variables.$primary-color;
       }
 
-      ul {
-        margin: 40px 20px 20px 20px;
+      .info-box {
+        padding: 10% 5% 0 5%;
 
-        li {
-          list-style-type: square;
-          line-height: 40px;
-          margin-left: 40px;
+        p {
+          font-style: italic;
+          line-height: 35px;
           font-size: 18px;
+        }
 
-          &::marker {
-            color: variables.$primary-color;
+        .desc-contact {
+          margin-top: 15%;
+
+          span {
+            font-weight: 600;
+            font-size: 20px;
           }
         }
       }
     }
+
+
+    .map-contact {
+      height: 50%;
+      color: #333;
+      .map-description {
+        .adress-contact {
+
+          .local-contact {
+            position: relative;
+            top: 75px;
+            left: 20px;
+          }
+
+          .adress {
+            margin-left: 30%;
+            line-height: 24px;
+            font-size: 14px;
+          }
+
+          .country-adress {
+            margin-left: 30%;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: 800;
+          }
+
+          .email-adress {
+            color: variables.$primary-color;
+            margin-left: 30%;
+            line-height: 24px;
+            font-size: 14px;
+          }
+        }
+
+        ul {
+          margin: 5%;
+
+          li {
+            list-style-type: square;
+            line-height: 40px;
+            margin-left: 40px;
+            font-size: 18px;
+
+            &::marker {
+              color: variables.$primary-color;
+            }
+          }
+        }
+      }
+    }
+
   }
 
 }
 
 
-.label-check:hover input~.checkmark {
-  background-color: #ccc !important;
-}
 
-.label-check input:checked~.checkmark {
-  background-color: variables.$primary-color !important;
-}
+@media(max-width: 900px) {
+  .contact-container {
+    h1{
+      margin-bottom: 8%;
+    }
+    .contact-details {
+      flex-direction: column;
+      margin: 0;
+      height: 150vh;
 
-.checkmark:after {
-  content: "" !important;
-  position: absolute !important;
-  display: none !important;
-}
+      .form-contact {
+        width: 100%;
+        height: 80vh;
 
-.label-check #checkbox:checked~.checkmark:after {
-  display: block !important;
-}
+        .contact-row {
+          gap: 0;
+          flex-direction: column;
+        }
+      }
+    }
 
-.label-check .checkmark:after {
-  left: 10px !important;
-  top: 7px !important;
-  width: 2px !important;
-  height: 4px !important;
-  border: solid white !important;
-  border-width: 0 3px 3px 0 !important;
-  border-width: 1px solid white;
-  -webkit-transform: rotate(45deg) !important;
-  -ms-transform: rotate(45deg) !important;
-  transform: rotate(45deg) !important;
+    .contact-info {
+      width: 100%;
+      height: 60vh;
+
+      blockquote {
+        padding: 3% 1% 0 1%;
+
+        &::before {
+          left: -5%;
+        }
+      }
+    }
+  }
 }
