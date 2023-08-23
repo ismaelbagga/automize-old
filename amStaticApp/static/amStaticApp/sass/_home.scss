@@ -22,28 +22,44 @@
     }
 
     .home-text-content {
-        width: 50%;
         display: flex;
-        align-items: last baseline;
+        flex-flow: column wrap;
         justify-content: center;
-        flex-direction: column;
-        gap: 30px;
-
-        .title-banner-home {
-            font-size: 45px;
-            font-weight: 700;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        gap: 5%;
+        .text-header-home {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 30%;
             color: #fff;
-            line-height: 1.2;
+            gap: 5%;
+            h1 {
+                font-size: 45px;
+                font-weight: 700;
+                line-height: 1.2;
+                width: 80%;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 1.5;
+                width: 80%;
+            }
+        }
+        .btn-header-home{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
             width: 80%;
+            gap: 3%
         }
 
-        .info-banner-home {
-            font-size: 22px;
-            color: #fff;
-            line-height: 1.5;
-            word-break: break-word;
-            width: 80%;
-        }
     }
 }
 
@@ -89,16 +105,16 @@
     .box-home {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        width: 70%;
+        width: 90%;
         margin-top: 2%;
         height: 65%;
-        gap: 5%;
-
+        gap: 3%;
         .item-box-home {
+            width: 100%;
             img {
-                width: 28%;
-                height: 75px;
-                margin-bottom: 30px;
+                width: 6rem;
+                height: 4rem;
+                margin-bottom: 8%;
             }
 
             span {
@@ -223,7 +239,7 @@
 
                     .descr-author-blockquote-home {
                         display: flex;
-                        flex-direction: column; 
+                        flex-direction: column;
                         margin-left: 1rem;
 
                         span {
@@ -252,7 +268,7 @@
     @include mixins.fullwidth;
     background-color: variables.$information-light-color;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -377,23 +393,41 @@
 
 
 
-@media (max-width: 990px) {
+@media (max-width: 900px) {
 
     .home-section-header {
         height: 50vh;
+        flex-flow: column wrap;
+
+        .image-container {
+            width: 100%;
+            height: 45%;
+        }
 
         .home-text-content {
-            
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 55%;
+            .text-header-home {
+                flex-flow: row wrap;
+                width: 100%;
+                height: 40%;
+                h1 {
+                    font-size: 20px;
+                }
     
-            .title-banner-home {
-                font-size: 18px;
-
+                p {
+                    font-size: 16px;
+                }
+            }
+            .btn-header-home{
+                width: 90%;
+                height: 15%;
             }
     
-            .info-banner-home {
-                font-size: 14px;
-            }
-           
         }
 
     }
@@ -484,7 +518,7 @@
     }
 
     .blockquote-section-home {
-        height: 200vh;
+        height: 70rem;
 
         .home-section {
 
@@ -501,12 +535,12 @@
             flex-flow: row wrap;
             align-items: center;
             width: 90%;
-            height: 80%;
+            height: 70rem;
             margin-top: 0;
 
             .left-section {
                 width: 100%;
-                height: 70%;
+                height: 50rem;
 
                 span {
                     font-size: 18px;
@@ -521,7 +555,7 @@
 
             .right-blockquote-home {
                 width: 35rem;
-                height: 25rem;
+                height: 20rem;
 
                 blockquote {
                     &::before {
@@ -537,7 +571,8 @@
                     }
 
                     .author-blockquote-home {
-                        width: 100%;
+                        width: 80%;
+
                         img {
                             width: 4rem;
                             height: 4rem;
@@ -562,6 +597,7 @@
     .steps-section-home {
         height: 270vh;
         flex-flow: row wrap;
+
         .home-section {
             flex-direction: column;
             width: 100%;
@@ -593,6 +629,7 @@
 
         .steps-bottom-text {
             height: 25%;
+
             p {
                 font-size: 14px;
                 line-height: 24px;
@@ -601,5 +638,5 @@
             }
         }
     }
-   
+
 }
