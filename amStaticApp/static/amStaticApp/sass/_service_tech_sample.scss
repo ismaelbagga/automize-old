@@ -17,8 +17,7 @@
 
   h2 {
     text-transform: uppercase;
-    font-size: 60px;
-    line-height: 78px;
+    font-size: 4rem;
   }
 
   p {
@@ -129,6 +128,7 @@
 
     .heading-line {
       margin: 30px auto;
+      width: 35%;
     }
 
     .description {
@@ -215,6 +215,7 @@
 
     .heading-line {
       margin: 40px auto 80px;
+      width: 35%;
     }
 
     .description {
@@ -391,6 +392,7 @@
 
         img {
           width: 100%;
+          height: 12vh;
         }
       }
     }
@@ -461,10 +463,212 @@
         margin: 2% 0;
       }
     }
-    button{
+
+    button {
       margin-top: 5%;
       width: 20%;
     }
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .services-tech-header-banner {
+    width: 100%;
+    height: 40rem;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      width: 60%;
+      line-height: 20px;
+    }
+  }
+
+
+  .services-tech-container {
+    .services-tech-text-section {
+      width: 100%;
+
+      h1 {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      section {
+        width: 80%;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .services-section-icons {
+      height: 80vh;
+
+      .icons-text-wrapper {
+        flex-direction: column;
+
+        .choices-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-top: 5%;
+
+          img {
+            height: 8vh;
+          }
+
+          p {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .service-tech-sample-section-methodology {
+      height: 180vh;
+      padding: 5% 0;
+      margin-top: 10%;
+      h1 {
+        font-size: 22px;
+      }
+
+      .description {
+        width: 80%;
+        margin: 0 0 2% 0;
+
+        p {
+          font-size: 16px;
+          line-height: 32px;
+          text-align: left;
+          margin-bottom: 2%;
+        }
+      }
+
+      .cards-container {
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        gap: 7%;
+        margin-top: 25%;
+
+        .card {
+          width: 100%;
+          height: 18vh;
+
+          img {
+            width: 5vh;
+            height: 5vh;
+
+          }
+
+        }
+      }
+
+      button {
+        margin-top: 20%;
+      }
+    }
+
+    .service-tech-sample-section-technologies {
+      flex-direction: column;
+      height: 140vh;
+      width: 100%;
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .description {
+        width: 80%;
+        margin: 0 0 2% 0;
+
+        p {
+          font-size: 16px;
+          line-height: 32px;
+          text-align: left;
+          margin-bottom: 2%;
+        }
+      }
+
+      .lists-container {
+        flex-direction: column;
+        width: 80%;
+      }
+    }
+
+    .service-tech-sample-section-clients-comments {
+      flex-direction: column;
+    }
+
+
+    .service-tech-sample-section-paragraph {
+      width: 85%;
+    }
+
+    .service-tech-sample-section-partners-logos {
+      width: 85%;
+      height: 80vh;
+
+      .logo_box {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2%;
+        width: 100%;
+
+        .logo_item {
+          width: 100%;
+
+        }
+      }
+    }
+
+    .service-tech-sample-section-articles {
+      height: 200vh;
+      width: 100%;
+
+      .section-articles {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+
+        .section-article {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+
+    .services-tech-text-bottom-section {
+      height: 50rem;
+      h1 {
+        font-size: 22px;
+      }
+
+      section {
+        width: 80%;
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      button {
+        margin-top: 10%;
+        width: 60%;
+      }
+    }
+
   }
 
 }
