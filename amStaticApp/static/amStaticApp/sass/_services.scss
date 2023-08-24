@@ -345,3 +345,88 @@
 nav {
   box-shadow: none !important;
 }
+
+@media screen and (max-width:977px){
+  .services-section-header{
+    .text-container{
+      h2{
+        font-size: 35px;
+      }
+      h4{
+        font-size: 30px;
+      }
+    }
+  }
+
+  .services-section-custom-development{
+    padding: 0 80px;
+    margin: 40px 0;
+    .text-content {
+      width: 80%;
+      h1 {
+        font-size: 38px;
+      }
+      div {
+        p {
+          font-size: 15px;
+          line-height: 25px;
+          font-weight: 200;
+        }
+      }
+    }
+    .call-to-action {
+      width: 60%;
+      h5 {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .contact-container {
+        font-size: 12px;
+        padding: 18px;
+
+        div {
+          font-size: 12px;
+  
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+}
+
+.services-section-technologies{
+  h3 {
+    font-size: 21px;
+  }
+  .cards-column {
+    width: 80%;
+    margin: 35px auto;
+
+    .card {
+      font-size: 12px;
+      line-height: 20px;
+
+      h4 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:0){
+  .services-section-header{
+    .text-container{
+      h2{
+        font-size: 30px;
+      }
+      h4{
+        font-size: 19px;
+      }
+    }
+  }
+}}
