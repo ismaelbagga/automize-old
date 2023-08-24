@@ -90,7 +90,7 @@
         width: 100%;
 
         img {
-          height: 10vh;
+          height: 90px;
         }
 
         p {
@@ -117,8 +117,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-
+    padding: 50px 0;
     h1 {
       font-size: 32px;
       font-weight: 600;
@@ -156,16 +155,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 30vh;
         background-color: white;
         text-align: center;
         border: none;
-
+      
 
         img {
-          width: 7vh;
-          height: 7vh;
-          margin-top: -8%;
+          width: 50px;
+          height: 50px;
+          //margin-top: -10%;
         }
 
         .text-content {
@@ -174,7 +172,7 @@
           justify-content: center;
           align-items: center;
           width: 100%;
-          height: 100%;
+          padding: 35px 0;
 
           h5 {
             color: #454747;
@@ -186,7 +184,7 @@
           p {
             font-size: 14px;
             line-height: 24px;
-            padding: 5%;
+            padding: 10px;
           }
         }
       }
@@ -205,8 +203,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
-
+    padding: 50px 0;
     h1 {
       font-size: 32px;
       font-weight: 600;
@@ -473,11 +470,11 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
 
   .services-tech-header-banner {
     width: 100%;
-    height: 40rem;
+    height: 100vh;
 
     h2 {
       font-size: 30px;
@@ -510,22 +507,15 @@
     }
 
     .services-section-icons {
-      height: 80vh;
-
+      padding: 25px 0;
       .icons-text-wrapper {
         flex-direction: column;
 
         .choices-box {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
+          
           margin-top: 5%;
 
-          img {
-            height: 8vh;
-          }
+         
 
           p {
             font-size: 22px;
@@ -535,11 +525,10 @@
     }
 
     .service-tech-sample-section-methodology {
-      height: 180vh;
-      padding: 5% 0;
-      margin-top: 10%;
+      padding: 100px 0;
       h1 {
         font-size: 22px;
+        line-height: 36px;
       }
 
       .description {
@@ -557,32 +546,20 @@
       .cards-container {
         flex-direction: column;
         width: 80%;
-        height: 100vh;
-        gap: 7%;
-        margin-top: 25%;
+        padding: 20px 0 0 0;
 
         .card {
           width: 100%;
-          height: 18vh;
-
-          img {
-            width: 5vh;
-            height: 5vh;
-
-          }
-
         }
       }
 
-      button {
-        margin-top: 20%;
-      }
+      
     }
 
     .service-tech-sample-section-technologies {
       flex-direction: column;
-      height: 140vh;
       width: 100%;
+      padding: 50px 0;
 
       h1 {
         font-size: 22px;
@@ -633,8 +610,8 @@
     }
 
     .service-tech-sample-section-articles {
-      height: 200vh;
       width: 100%;
+      padding: 100px 0;
 
       .section-articles {
         grid-template-columns: none;
@@ -650,7 +627,7 @@
 
 
     .services-tech-text-bottom-section {
-      height: 50rem;
+      padding: 100px 0;      
       h1 {
         font-size: 22px;
       }
