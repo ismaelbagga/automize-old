@@ -36,10 +36,10 @@
 }
 
 .blog-sample-container {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-flow: row-reverse wrap;
+  width: 100%;
 
   .breadcrumb-blog-sample {
     width: 100%;
@@ -234,7 +234,7 @@
   .faq-section {
     margin: 15% 0;
     border: 1px solid #bdc0c0;
-    padding: 3%;
+    padding: 5%;
 
     h3 {
       font-size: 22px;
@@ -273,11 +273,11 @@
 .automize-team-section {
   @include mixins.fullwidth;
   background-color: variables.$information-light-color;
-  height: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 
   .team-section {
     display: flex;
@@ -285,7 +285,6 @@
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 100%;
 
     .left-automize-team {
       display: flex;
@@ -294,8 +293,8 @@
       width: 50%;
 
       img {
-        width: 10rem;
-        height: 10rem;
+        width: 150px;
+        height: 150px;
       }
 
       .info-team {
@@ -355,8 +354,8 @@
 
     .article-blog-sample {
       img {
-        width: 22rem;
-        height: 10rem;
+        width: 350px;
+        height: 180px;
       }
 
       p {
@@ -410,10 +409,11 @@
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .blog-sample-header {
     height: 30rem;
     padding: 2%;
+
     .text-header-blog-sample {
       display: flex;
       flex-flow: column wrap;
@@ -455,59 +455,55 @@
   }
 
 
+  .automize-team-section {
+    @include mixins.fullwidth;
+    background-color: variables.$information-light-color;
+    margin: 5% 0;
+    
 
-  
-.automize-team-section {
-  @include mixins.fullwidth;
-  background-color: variables.$information-light-color;
-  height: 60vh;
-  margin: 5% 0;
-  .team-section {
-    flex-direction: column;
-    .left-automize-team {
-      width: 100%;
+    .team-section {
+      flex-direction: column;
 
-      img {
-        width: 10rem;
-        height: 10rem;
+      .left-automize-team {
+        width: 100%;
+
+        
+
+        .info-team {
+          a {
+            font-size: 22px;
+          }
+
+          p {
+            line-height: 36px;
+            font-size: 20px;
+          }
+        }
       }
 
-      .info-team {
-        a {
-          font-size: 22px;
-        }
+      .right-automize-team {
+        width: 100%;
+        margin: 5% 0 0 0;
 
         p {
-          line-height: 36px;
-          font-size: 20px;
+          font-size: 18px;
+          line-height: 30px;
         }
       }
     }
+  }
 
-    .right-automize-team {
-      width: 100%;
-      margin: 5% 0 0 0;
-      p {
-        font-size: 18px;
-        line-height: 30px;
-      }
+
+  .related-articles-section {
+    margin: 5% 0;
+    padding: 20px 0;
+    .articles-blog-sample {
+      grid-template-rows: auto auto auto;
+      grid-template-columns: none;
     }
   }
-}
 
-
-.related-articles-section {
-  margin: 5% 0;
-  height: 80vh;
-
-  .articles-blog-sample {
-    grid-template-rows: auto auto auto;
-    grid-template-columns: none;
-    gap: 10%;
-   
+  .social-media {
+    margin: 10% 0;
   }
-}
-.social-media{
-  margin: 10% 0;
-}
 }
