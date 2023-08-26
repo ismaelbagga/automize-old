@@ -1,0 +1,247 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="docs-section">
+  <h1>Header 1</h1>
+  <iframe
+    id="myIframe"
+    src="{% url 'header1' %}"
+    style="width: 90%; height: 150px"
+  ></iframe>
+
+  <div class="code-tabs">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
+      <button class="tablinks" onclick="openTab(event, 'css')">SASS</button>
+      <button class="tablinks" onclick="openTab(event, 'js')">
+        JavaScript
+      </button>
+    </div>
+
+    <div id="html" class="tabcontent">
+      <button
+        class="copy-button btn btn-secondary"
+        data-clipboard-target="#code-block-html"
+      >
+        Copy Code
+      </button>
+
+      <pre
+        class="shadow-lg rounded"
+      ><code class="json hljs" id="code-block-html">
+        
+        &lt;header&gt;
+        &lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-transparent col-12&quot;&gt;
+          &lt;div class=&quot;header-container&quot;&gt;
+            &lt;div class=&quot;header-row left-header&quot;&gt;
+              &lt;div class=&quot;header-logo&quot;&gt;
+                &lt;!-- Logo --&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;{% url 'home' %}&quot;&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;toggeled-navbar d-flex justify-content-end&quot;&gt;
+                &lt;!-- Toggle Button --&gt;
+                &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarSupportedContent&quot;
+                  aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                  &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;header-row right-header&quot;&gt;
+              &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;
+                &lt;ul class=&quot;navbar-nav mr-auto header-menu&quot;&gt;
+                  &lt;li class=&quot;nav-item dropdown mx-2 mega-menu&quot;&gt;
+                    &lt;a class=&quot;nav-link darken-link dropdown-toggle&quot; href=&quot;{% url 'services' %}&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot;
+                      data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                      Services
+                    &lt;/a&gt;
+                    &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;
+                      &lt;!-- Mega Menu Content --&gt;
+                      &lt;div class=&quot;row col-12&quot;&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                          &lt;h5 class=&quot;my-2&quot;&gt;Category 1&lt;/h5&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 1&lt;/a&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 2&lt;/a&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 3&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                          &lt;h5 class=&quot;my-2&quot;&gt;Category 2&lt;/h5&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 4&lt;/a&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 5&lt;/a&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 6&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4&quot;&gt;
+                          &lt;h5 class=&quot;my-2&quot;&gt;Category 3&lt;/h5&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 7&lt;/a&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 8&lt;/a&gt;
+                          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Service 9&lt;/a&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-item mx-2&quot;&gt;
+                    &lt;a class=&quot;nav-link darken-link&quot; href=&quot;{% url 'portfolio' %}&quot;&gt; Portfolio &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-item mx-2&quot;&gt;
+                    &lt;a class=&quot;nav-link darken-link&quot; href=&quot;{% url 'blog' %}&quot;&gt; Blog &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;nav-item mx-2&quot;&gt;
+                    &lt;a class=&quot;nav-link darken-link&quot; href=&quot;{% url 'about' %}&quot;&gt;About&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;a class=&quot;base-btn am-btn-primary&quot; href=&quot;{% url 'contact' %}&quot;&gt;
+                  Contact
+                &lt;/a&gt;
+              &lt;/div&gt;
+    
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt;
+
+
+      </code></pre>
+    </div>
+
+    <div id="css" class="tabcontent">
+      <button
+        class="copy-button btn btn-secondary"
+        data-clipboard-target="#code-block-sass"
+      >
+        Copy Code
+      </button>
+      <pre
+        class="shadow-lg rounded"
+      ><code class="json hljs" id="code-block-sass">
+        @use "../reset";
+@use "../variables";
+@use "../typography";
+@use "../buttons";
+
+
+
+.dropdown-menu {
+  width: variables.$half-screen-width;
+  border: 1px solid rgba(169, 169, 169, 0.5);
+  border-radius: 1px;
+  top: 61px;
+  padding: 50px 25px;
+  left: 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  /* Create a Flexbox layout for the row */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.am-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+     /* Smooth transition effect */
+  nav {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 113px;
+    background-color: transparent !important;
+    border-color: transparent !important;
+
+    .header-container {
+      .header-row{
+        display: flex;
+        align-items: center;
+      }
+      .left-header{
+        .header-logo{
+          a.navbar-brand {
+            img {
+              max-width: 151px;
+
+              @media screen and (max-width: 1440px) {
+                max-width: 120px;
+              }
+            }
+          }
+        }
+
+        .toggeled-navbar{
+
+        }
+
+      }
+      .right-header{
+        div{
+          ul{
+            li {
+              display: flex;
+              align-items: center;
+              color: black;
+              font-weight: 400;
+              a {
+              // color: white !important;
+              transition: color 0.3s ease;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Styling for the header when scrolled */
+.navbar-scrolled {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lighten-link{
+  color: white !important;
+}
+
+.darken-link{
+  color: variables.$text-color !important;
+}
+
+
+      </code></pre>
+    </div>
+
+    <div id="js" class="tabcontent">
+      <pre
+        class="shadow-lg rounded"
+      ><code class="json hljs" id="code-block-sass">
+        //Header scrolling 
+const header = document.querySelector('header');
+let navbar_logo = document.querySelector('.header-logo img');
+const navLinks = document.querySelectorAll('.nav-link');
+
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    header.classList.add('navbar-scrolled');
+    navbar_logo.src = "static/images/logo%20-primary%20-transparent%20-horizontal.png";
+
+  } else {
+    header.classList.remove('navbar-scrolled');
+    navbar_logo.src = "static/images/logo%20-white%20-transparent%20-horizontal.png"
+  }
+}); 
+      </code></pre>
+    </div>
+  </div>
+
+  <!--//docs-code-block-->
+</section>
+
+{% endblock %}

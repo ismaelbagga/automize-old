@@ -32,11 +32,11 @@
   background-color: $primary-color;
   color: white;
   border: 2px solid $primary-color;
-}
-.am-btn-primary:hover {
-  background-color: white;
-  border: 2px solid $primary-color;
-  color: $primary-color;
+  &:hover {
+    background-color: white;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+  }
 }
 
 .am-btn-secondary {

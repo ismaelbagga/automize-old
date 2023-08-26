@@ -1,0 +1,110 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="docs-section">
+  <h1>Cards</h1>
+  <h3>Info Card</h3>
+  <iframe
+    id="myIframe"
+    src="{% url 'info-card' %}"
+    style="width: 90%; height: 400px"
+  ></iframe>
+
+  <div class="code-tabs">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
+      <button class="tablinks" onclick="openTab(event, 'css')">SASS</button>
+      <button class="tablinks" onclick="openTab(event, 'js')">
+        JavaScript
+      </button>
+    </div>
+
+    <div id="html" class="tabcontent">
+      <button
+        class="copy-button btn btn-secondary"
+        data-clipboard-target="#code-block-html"
+      >
+        Copy Code
+      </button>
+
+      <pre
+        class="shadow-lg rounded"
+      ><code class="json hljs" id="code-block-html">
+          
+        &lt;section class=&quot;services-text-block-section&quot;&gt;
+        &lt;h1&gt;Lorem ipsum dolor&lt;/h1&gt;
+        &lt;hr class=&quot;short-heading-line&quot; /&gt;
+        &lt;div&gt;
+          &lt;p&gt;
+            Meet your one-stop provider of software development and consulting
+            services. Your cross-functional team of designers, software architects,
+            engineers and managers working together to create digital systems that
+            bring value to you and your customers.
+          &lt;/p&gt;
+          &lt;button class=&quot;base-btn am-btn-secondary&quot;&gt;click here&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+        </code></pre>
+    </div>
+
+    <div id="css" class="tabcontent">
+      <button
+        class="copy-button btn btn-secondary"
+        data-clipboard-target="#code-block-sass"
+      >
+        Copy Code
+      </button>
+      <pre
+        class="shadow-lg rounded"
+      ><code class="json hljs" id="code-block-sass">
+
+        .services-text-block-section {
+            margin: 100px auto;
+            text-align: center;
+            //   align-self: center;
+            width: 60%;
+            //   width: 800px;
+          
+            h1 {
+              font-size: 32px;
+              font-weight: bold;
+              line-height: 32px;
+              text-transform: uppercase;
+              align-self: center;
+            }
+          
+            .short-heading-line {
+              border: 2px solid variables.$primary-color;
+              margin: 25px auto;
+              width: 150px;
+              opacity: 100%;
+            }
+          
+            div {
+              margin-top: 50px;
+              text-align: left;
+          
+              p {
+                font-size: 18px;
+                line-height: 32px;
+                margin-top: 15px;
+          
+                span {
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+  
+  
+        </code></pre>
+    </div>
+
+    <div id="js" class="tabcontent">
+      <p>Javascript</p>
+    </div>
+  </div>
+
+  <!--//docs-code-block-->
+</section>
+
+{% endblock %}
