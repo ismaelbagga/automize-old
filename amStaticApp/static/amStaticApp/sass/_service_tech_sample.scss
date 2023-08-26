@@ -365,10 +365,10 @@
   width: 80%;
   text-align: center;
   margin: 100px auto;
-    p {
-      font-size: 18px;
-      line-height: 32px;
-    }
+  p {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
 .service-tech-sample-section-partners-logos {
@@ -400,8 +400,8 @@
       img {
         width: 100%;
         // width: inherit;
-      // width: 190px;
-      // width: 100%;
+        // width: 190px;
+        // width: 100%;
         // width: 155px;
         // height: 110px;
       }
@@ -410,59 +410,55 @@
 }
 
 .service-tech-sample-section-articles {
-    // position: relative;
-    // color: black;
-    // margin: à;
+  // position: relative;
+  // color: black;
+  // margin: à;
+  width: 100%;
+  margin: 0 auto;
+
+  .section-articles {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    gap: 6%;
+    // margin-top: 35px;
+    // margin-left: 13%;
+  }
+
+  .section-article {
     width: 100%;
-    margin: 0 auto;
+    padding: 8%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    float: left;
 
+    span {
+      margin-top: 15px;
+      width: 360px;
 
-    .section-articles {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        width: 70%;
-        gap: 6%;
-        // margin-top: 35px;
-        // margin-left: 13%;
+      a {
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 24px;
+        font-weight: 600;
+
+        &:hover {
+          color: #454747;
+          text-decoration: none;
+        }
+      }
     }
 
-    .section-article {
-        width: 100%;
-        padding: 8%;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid white;
-        background-color: white;
-        float: left;
-
-        span {
-            margin-top: 15px;
-            width: 360px;
-
-            a {
-                font-size: 16px;
-                text-transform: uppercase;
-                line-height: 24px;
-                font-weight: 600;
-
-
-                &:hover {
-                    color: #454747;
-                    text-decoration: none;
-                }
-            }
-        }
-
-        p {
-            font-size: 15px;
-            line-height: 24px;
-            margin-top: 10px;
-            width: 360px;
-        }
+    p {
+      font-size: 15px;
+      line-height: 24px;
+      margin-top: 10px;
+      width: 360px;
     }
+  }
 }
-
-
 
 // .section_six {
 //   width: 100%;
@@ -505,5 +501,3 @@
 //   width: 50%;
 //   left: 25%;
 // }
-
-
