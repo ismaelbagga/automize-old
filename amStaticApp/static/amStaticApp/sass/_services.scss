@@ -3,9 +3,10 @@
 
 .services-section-header {
   @include mixins.fullwidth;
-  padding-top: 100px;
+  padding-top: 30px;
   .text-container {
     background-image: url("../../images/hero-image.webp");
+    width: 100%;
     height: 400px;
     padding-top: 100px !important;
     background-repeat: no-repeat;
@@ -75,12 +76,9 @@
       color: #000000;
       border: 1px solid #e0e0e0;
       font-size: 15px;
-      //   line-height: 24.4286px;
       padding: 20px;
       text-align: center;
-      width: 409.988px;
-      //   height: 383.704px;
-
+      // width: 409.988px;
       width: 100%; /* Set width to 100% */
       max-height: 100%; /* Set max-height to 100% */
 
@@ -159,10 +157,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 0;
-
-  //   background-position: 50% 50%;
   font-size: 15px;
-  //   line-height: 30px;
+
 
   h3 {
     color: #ffffff;
@@ -182,7 +178,6 @@
     .card {
       font-size: 15px;
       line-height: 30px;
-      padding: 30px;
       background-color: white;
       padding: 20px;
 
@@ -289,7 +284,7 @@
 
     .am-card {
       margin: 10px 50px;
-      padding: 60px;
+      padding: 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -344,4 +339,177 @@
 //remove header shadow
 nav {
   box-shadow: none !important;
+}
+
+@media screen and (max-width:980px){
+  .services-section-header{
+    .text-container{
+      h2{
+        font-size: 45px;
+      }
+      h4{
+        font-size: 35px;
+      }
+    }
+  }
+
+  .services-section-custom-development{
+    padding: 0;
+    .text-content{
+      h1{
+        font-size: 35px;
+      }
+
+      div{
+        p{
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .call-to-action{
+  
+      .contact-container{
+        font-size: 12px;
+        padding: 5px;
+        div{
+          font-size: 8px;
+        }
+      }
+    }
+  }
+
+  .services-section-technologies{
+    font-size: 12px;
+    .cards-column{
+      .card{
+        font-size: 10px;
+        line-height: 20px;
+        // padding: 15px;
+        margin: 5px;
+
+        h4{
+          font-size: 20px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .services-section-services{
+    margin: 0;
+    .content-container{
+      margin: 0;
+      .cards{
+        .card{
+          margin: 0 5px;
+          padding: 20px 15px;
+          h3{
+            padding:5px;
+          }
+          p{
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .section-big-cards{
+    .cards-container{
+      margin: 0;
+      .am-card{
+        padding: 40px;
+        margin: 10px ;
+        p{
+          // font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+    p{
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width:800px){
+  .services-section-header{
+    .text-container{
+      height: auto;
+      h2{
+        font-size: 38px;
+      }
+      h4{
+        font-size: 28px;
+      }
+    }
+  }
+
+  .services-section-custom-development{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .text-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 90%;
+      text-align: center;
+    }
+    .call-to-action{
+      width: 90%;
+    }
+  }
+
+  .services-section-technologies{
+    .cards-column{
+      flex-direction: column;
+      .card{
+        text-align: center;
+        h4{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .services-section-services{
+    height: 290vh;
+    .cards{
+      flex-direction: column;
+      width: 50%;
+      margin: 15px ;
+    }
+  }
+
+  .section-big-cards{
+    .cards-container{
+      flex-direction: column;
+    }
+  }
+  .heading-line{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:400px){
+  .services-section-header{
+    .text-container{
+      height: auto;
+      h2{
+        font-size: 28px;
+      }
+      h4{
+        font-size: 18px;
+      }
+    }
+  }
+  .services-section-services{
+    height: 100vh;
+  }
 }

@@ -293,3 +293,131 @@
     }
   }
 }
+
+.footer-10{
+  font-size: 16px;
+  background-color: #222222;
+  color: #ffffff;
+  .container {
+
+    a{
+      text-decoration: none;
+      color: gray;
+      &:hover{
+          color: variables.$primary-color;
+      }
+    }
+    
+    .list-unstyled{
+
+      li{
+        color: #373536;
+        text-decoration: none !important;
+        line-height: 30px;
+      }
+    }
+
+
+    .row{
+        .con-1{
+          background-color: #1E1E1E;
+        }
+        .con-2{
+          background-color: #1C1C1C;
+        }
+        .con-3{
+          background-color: #252525;
+        }
+      
+   
+
+      .col-md-4{
+        padding: 0;
+        h2{
+          font-size: 1.5rem;
+          margin: 20px 0;
+        }
+        
+      }
+      .icon{
+        background-color: variables.$primary-color;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 1rem;
+        border-radius: 1rem;
+          margin-bottom: 20px;
+
+        .icons{
+          // margin-bottom: 20px;
+          font-size: 1.5rem;
+         
+        }
+      }
+    }
+
+    .footer-heading{
+      font-size: 1.5rem;
+    }
+
+    .form-control{
+      margin: 30px 0 0 0;
+    }
+
+    .email{
+      background: white !important;
+      border: none !important;
+      font-size: 1rem;
+      border-radius: 0;
+      width: 450px;
+      height: 50px;
+    }
+
+    .sub{
+      color: #fff !important;
+      font-size: 1rem;
+      background: variables.$primary-color !important;
+      border: none;
+      border-radius: 0;
+      width: 130px;
+    }
+
+    // .form-control input{
+    //   background: white !important;
+    //   border: none !important;
+    //   outline: none !important;
+    //   color: rgba(0, 0, 0, 0.3) !important;
+    //   font-size: 1rem;
+    //   border-radius: 0;
+    //   height: 70%;
+    
+    // }
+
+    // .form-control submit{
+    //   color: #fff !important;
+    //   font-size: 1rem;
+    //   background: #1089ff !important;
+    //   border: none;
+    //   border-radius: 0;
+    //   height: 30%;
+    // }
+
+    .subheading{
+      margin: 30px 0;
+      display: block;
+    }
+
+    .border-top{
+      margin: 30px 0; 
+    }
+  }
+}
+
+// @media screen and (max-width:600px){
+//   .footer-10{
+//   //   .col-md-4{
+//   //     padding-left: 100px;
+//   //   }
+//   // }
+  
+// }
+

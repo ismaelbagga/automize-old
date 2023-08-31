@@ -1,0 +1,284 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      CoderDocs - Bootstrap Documentation Template For Software Projects
+    </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Bootstrap 4 Template For Software Startups"
+    />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/icons8-code-office-l-32.png' %}"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="{% static '/fontawesome/js/all.min.js' %}"></script>
+
+    <!-- Plugins CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+    />
+    <link rel="stylesheet" href="/plugins/simplelightbox/simple-lightbox.css" />
+
+    <!-- Theme CSS -->
+    <link
+      id="theme-style"
+      rel="stylesheet"
+      href="{% static '/css/theme.css' %}"
+    />
+
+    <style>
+      /* Style the tab buttons */
+      .tab {
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+      }
+
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 20px;
+        border-top: 1px solid #ddd;
+      }
+    </style>
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- <link rel="stylesheet" href="{% static "amStaticApp/css/main.css" %}"> -->
+  </head>
+
+  <body class="docs-page">
+    <header class="header fixed-top">
+      <div class="branding docs-branding">
+        <div class="container-fluid position-relative py-2">
+          <div class="docs-logo-wrapper">
+            <button
+              id="docs-sidebar-toggler"
+              class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+              type="button"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="site-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  class="logo-icon me-2"
+                  src="{% static '/images/coderdocs-logo.svg' %}"
+                  alt="logo"
+                /><span class="logo-text"
+                  >Coder<span class="text-alt">Docs</span></span
+                ></a
+              >
+            </div>
+          </div>
+          <!--//docs-logo-wrapper-->
+          <div
+            class="docs-top-utilities d-flex justify-content-end align-items-center"
+          >
+            <div class="top-search-box d-none d-lg-flex">
+              <form class="search-form">
+                <input
+                  type="text"
+                  placeholder="Search the docs..."
+                  name="search"
+                  class="form-control search-input"
+                />
+                <button type="submit" class="btn search-btn" value="Search">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+
+            <ul
+              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+            >
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-github fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-slack fa-fw"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-product-hunt fa-fw"></i></a>
+              </li>
+            </ul>
+            <!--//social-list-->
+            <a href="{% url 'home' %}" class="btn btn-primary d-none d-lg-flex"
+              >Automize</a
+            >
+          </div>
+          <!--//docs-top-utilities-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
+
+    <div class="docs-wrapper">
+      <div id="docs-sidebar" class="docs-sidebar">
+        <div class="top-search-box d-lg-none p-3">
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="Search the docs..."
+              name="search"
+              class="form-control search-input"
+            />
+            <button type="submit" class="btn search-btn" value="Search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <nav id="docs-nav" class="docs-nav navbar">
+          <ul class="section-items list-unstyled nav flex-column pb-3">
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link" href="#"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-accessible-icon"></i></span
+                >UI</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'headers' %}">Headers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'footers' %}">Footer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'cards' %}">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'buttons' %}">Buttons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'typography' %}">Typography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'headings' %}">Haeding</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'components' %}">Componenets</a>
+            </li>
+            <li class="nav-item section-title mt-3">
+              <a class="nav-link" href="#"
+                ><span class="theme-icon-holder me-2"
+                  ><i class="fas fa-box"></i></span
+                >Page Componenets</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'portfolio-components' %}"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog-components' %}">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'services-components' %}"
+                >Services</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!--//docs-nav-->
+      </div>
+      <!--//docs-sidebar-->
+      <div class="docs-content">
+        <div class="container">
+          <article class="docs-article">
+            {% block content %} {% endblock %}
+          </article>
+        </div>
+      </div>
+    </div>
+    <!--//docs-wrapper-->
+
+    <!-- Javascript -->
+    <script src="{% static '/plugins/popper.min.js' %}"></script>
+    <script src="{% static '/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Page Specific JS -->
+    <script src="{% static '/plugins/smoothscroll.min.js' %}"></script>
+    <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js' %}"></script>
+    <script src="{% static '/js/highlight-custom.js' %}"></script>
+    <script src="{% static '/plugins/simplelightbox/simple-lightbox.min.js' %}"></script>
+    <script src="{% static '/plugins/gumshoe/gumshoe.polyfills.min.js' %}"></script>
+    <script src="{% static '/js/docs.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <script>
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var clipboard = new ClipboardJS(".copy-button");
+
+        clipboard.on("success", function (e) {
+          e.clearSelection();
+          alert("Code copied to clipboard!");
+        });
+
+        clipboard.on("error", function (e) {
+          alert(
+            "Failed to copy code. You can still manually select and copy it."
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

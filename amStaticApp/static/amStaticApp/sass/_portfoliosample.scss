@@ -74,8 +74,7 @@
       .title {
         font-weight: 400;
         font-size: 36px;
-
-        padding-bottom: 24px;
+        margin: 20px;
       }
 
       .text-wrp {
@@ -175,5 +174,88 @@
 .portfolio-sample-full-image {
   img {
     @include mixins.fullwidth;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .banner-partners {
+    .content-wrapper{
+      .wrapper{
+        .txt {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .content-text{
+    .text-wrp{
+     line-height: 20px;
+     ul{
+      li{
+        line-height: 20px;
+      }
+     }
+    }
+  }
+}
+
+@media screen and (max-width: 835px){
+  .section-text-image{
+    .sec-row{
+      flex-direction: column;
+      .content-text{
+        width: 100%;
+      }
+      .section-wrapper{
+        width: 100%;
+      }
+    }
+  }
+
+  .banner-partners {
+    .content-wrapper{
+      width: auto;
+      .wrapper{
+        padding: 0;
+        .icon{
+          display: none !important;
+        }
+        .txt {
+          font-size:15px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .section-text-image{
+    .sec-row{
+      flex-direction: column;
+      .content-text{
+        margin: 15px;
+        width: 100%;
+      }
+      .section-wrapper{
+        width: 100%;
+      }
+    }
+  }
+
+  .banner-partners {
+    .content-wrapper{
+      .wrapper{
+        .icon{
+          display: none !important;
+        
+        }
+        .txt {
+          font-size:15px;
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }

@@ -3,7 +3,7 @@
 .portfolio-section-header {
     @include mixins.fullwidth;
     background-image: url('../../images/banner-portfolio.webp');
-    height: 600px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     // margin-bottom: 100px;
@@ -67,25 +67,31 @@
         }
 
         .portfolio-cards {
-            display: grid;
-            gap: 40px;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            h5 {
-                font-size: 14px;
-                font-weight: 700;
-                margin-top: 5px;
-                text-align: left;
-                line-height: 30px;
+            
+            .card{
+                border: none;
+                width: 270px ;
+                margin: 10px 30px;
+
+                img{
+                    width: 100%;
+                }
+
+                .card-title{
+                    font-weight: 700;
+                    color: #000000;
+                    font-size: 16px;
+                }
+                .card-text{
+                    font-size: 16px;
+                }
             }
-
-            p {
-                color: #888888;
-                font-size: 14px;
-                text-align: left;
-            }
-
             
         }
         .loadmore-btn {
@@ -94,6 +100,26 @@
             display: flex;
             justify-content: center;
 
+        }
+    }
+}
+
+@media screen and (max-width: 1151px){
+    .portfolio-cards{
+        justify-content: center;
+        align-items: centre;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .portfolio-section-header{
+        .content-container{
+            h2{
+                font-size: 30px;
+            }
+            p{
+                font-size: 18px;
+            }
         }
     }
 }

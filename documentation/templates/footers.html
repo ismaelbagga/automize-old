@@ -1,0 +1,527 @@
+{% extends 'base.html' %} {% block content %}
+
+<section class="docs-section">
+  <h1>Footer 1</h1>
+  <iframe
+    id="myIframe"
+    src="{% url 'footer1' %}"
+    style="width: 100%; height: 500px"
+  ></iframe>
+
+  <div class="docs-code-block">hi</div>
+  <!--//docs-code-block-->
+
+  <h5>Sass Linking</h5>
+  <p>
+    You can found styling of footer in this location
+    amStaticApp/static/sass/components/_footer.scss
+  </p>
+
+  <div class="code-tabs">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'html')">HTML</button>
+      <button class="tablinks" onclick="openTab(event, 'css')">SASS</button>
+      <button class="tablinks" onclick="openTab(event, 'js')">
+        JavaScript
+      </button>
+    </div>
+
+    <div id="html" class="tabcontent">
+      <button
+        class="copy-button btn btn-secondary"
+        data-clipboard-target="#code-block-html"
+      >
+        Copy Code
+      </button>
+
+      <pre
+        class="shadow-lg rounded"
+      ><code class="json hljs" id="code-block-html">
+        &lt;div class=&quot;footer&quot;&gt;
+          &lt;div id=&quot;big_footer&quot;&gt;
+            &lt;div id=&quot;primary_footer&quot;&gt;
+              &lt;div class=&quot;footer-container&quot;&gt;
+                &lt;div class=&quot;footer-top-wrapper&quot;&gt;
+                  &lt;div class=&quot;footer-menu-wrp&quot;&gt;
+                    &lt;div class=&quot;footer-middle-block&quot;&gt;
+                      &lt;div class=&quot;footer-sidebar footer__about&quot;&gt;
+                        &lt;h4&gt;About Digiteum&lt;/h4&gt;
+                        &lt;hr /&gt;
+                        &lt;div class=&quot;textwidget&quot;&gt;
+                        &lt;div class=&quot;textwidget&quot;&gt;
+                          &lt;p&gt;
+                            Digiteum is a custom software development and IT
+                            consulting company founded in 2010. We design and
+                            develop customer-centric solutions for web, mobile,
+                            cloud, and IoT.
+                          &lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;footer-sidebar footer__menu two-column&quot;&gt;
+                        &lt;div class=&quot;left-nav&quot;&gt;
+                          &lt;h4 class=&quot;footer-title-widget&quot;&gt;
+                            &lt;a&gt;Design and Engineering&lt;/a&gt;
+                          &lt;/h4&gt;
+                          &lt;nav role=&quot;navigation&quot;&gt;
+                            &lt;ul class=&quot;list-menu two-column&quot;&gt;
+                              &lt;li class=&quot;txt-underline&quot;&gt;
+                                &lt;a href=&quot;/web-development-services/&quot;&gt;Web development&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;/web-application-development-services/&quot;&gt;Web App development&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;/web-portal-development/&quot;&gt;Web Portal Development&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class=&quot;mr-2&quot;&gt;
+                                &lt;a href=&quot;/mobile-app-development-services/&quot;&gt;Mobile development&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;/website-design-development-service/&quot;&gt;UX/UI development&lt;/a&gt;
+                              &lt;/li&gt;
+      
+                            &lt;/ul&gt;
+                          &lt;/nav&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;right-nav&quot;&gt;
+                          &lt;h4 class=&quot;footer-title-widget&quot;&gt;
+                            &lt;a&gt;TECHNOLOGIES&lt;/a&gt;
+                          &lt;/h4&gt;
+                          &lt;nav role=&quot;navigation&quot;&gt;
+                            &lt;ul class=&quot;list-menu&quot;&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;/reactjs-development-services/&quot;&gt;React development&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;/angular-development-services/&quot;&gt;Angular development&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;/net-development-services/&quot;&gt;.NET development&lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;/java-development-services/&quot;&gt;Java development&lt;/a&gt;
+                              &lt;/li&gt;
+      
+                              &lt;/li&gt;
+                            &lt;/ul&gt;
+                          &lt;/nav&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;footer-sidebar footer__clutch clutch&quot;&gt;
+                    &lt;div class=&quot;clutch__image&quot;&gt;
+                      &lt;a target=&quot;_blank&quot; href=&quot;https://clutch.co/profile/digiteum&quot;&gt;
+                        &lt;img src=&quot;https://www.digiteum.com/wp-content/themes/blake/images/clutch.svg&quot; alt=&quot;&quot; /&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;clutch__text&quot;&gt;
+                      They are technically excellent, have an agile process in place
+                      and are always looking for &quot;win/win&quot; opportunities. The team
+                      is incredibly honest, hard working and has been a source of
+                      new ideas and improvements.
+                    &lt;/div&gt;
+                    &lt;div class=&quot;footer-sidebar footer__career&quot;&gt;
+                      &lt;div class=&quot;textwidget&quot;&gt;
+                        &lt;h4 class=&quot;footer-title-widget&quot;&gt;
+                          &lt;a href=&quot;/career/&quot;&gt;Career&lt;/a&gt;
+                        &lt;/h4&gt;
+                        &lt;p&gt;
+                          We are always looking for talented people.&lt;br /&gt;
+                          &lt;a href=&quot;/career/&quot;&gt;CHECK OPEN POSITIONS&hellip;&lt;/a&gt;
+                        &lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+      
+                  &lt;div class=&quot;footer-sidebar footer__location&quot;&gt;
+                    &lt;h4&gt;location&lt;/h4&gt;
+                    &lt;hr /&gt;
+                    &lt;div class=&quot;textwidget&quot;&gt;
+                      &lt;div class=&quot;textwidget&quot;&gt;
+                        &lt;div&gt;Digiteum Sp. z o.o.&lt;/div&gt;
+                        &lt;div&gt;
+                          Szafarnia 11/F8&lt;br /&gt;
+                          80-755
+                        &lt;/div&gt;
+                        &lt;div&gt;Gda&#324;sk&lt;/div&gt;
+                        &lt;div&gt;&lt;b&gt;Poland&lt;/b&gt;&lt;/div&gt;
+                        &lt;p&gt;
+                          &lt;a href=&quot;mailto:hello@digiteum.pl&quot;&gt;hello@digiteum.pl&lt;/a&gt;
+                        &lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;secondary_footer&quot;&gt;
+              &lt;div class=&quot;footer-container&quot;&gt;
+                &lt;div class=&quot;col-xs-12 col-md-3&quot;&gt;
+                  &lt;a class=&quot;footer_logo align-left&quot; href=&quot;https://www.digiteum.com/&quot; tabindex=&quot;-1&quot;&gt;
+                    &lt;img class=&quot;footer_logo_normal notalone&quot; style=&quot;position: relative&quot;
+                      src=&quot;../src/images/logo -white -primay -square.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;
+                    &lt;img class=&quot;footer_logo_retina&quot; style=&quot;display: none; position: relative&quot;
+                      src=&quot;../src/images/logo -white -primay -square.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;
+                  &lt;/a&gt;
+                  &lt;span class=&quot;b-copyright&quot;&gt;Digiteum &copy; 2010-2023.&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-xs-12 col-md-5&quot;&gt;
+                  &lt;div class=&quot;footer_custom_text left&quot;&gt;
+                    &lt;div class=&quot;area-footer-left&quot;&gt;
+                      &lt;div class=&quot;b-right&quot;&gt;
+                        &lt;a href=&quot;/privacy-policy/&quot; data-mce-href=&quot;/privacy-policy/&quot;&gt;Privacy Policy&lt;/a&gt;|
+                        &lt;a href=&quot;/terms-conditions/&quot; data-mce-href=&quot;/terms-conditions/&quot;&gt;Terms &amp; Conditions&lt;/a&gt;|
+                        &lt;a href=&quot;https://www.digiteum.com/gdpr-compliance/&quot;
+                          data-mce-href=&quot;https://www.digiteum.com/gdpr-compliance/&quot;&gt;GDPR compliance&lt;/a&gt;
+                        &lt;br /&gt;
+                        &lt;i&gt;We do not knowingly collect information from the users
+                          under 16 years old&lt;/i&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-xs-12 col-md-4&quot;&gt;
+                  &lt;div class=&quot;social-icons-fa align-right&quot;&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;https://www.facebook.com/Digiteum&quot; target=&quot;_blank&quot; class=&quot;facebook&quot; title=&quot;Facebook&quot;&gt;
+                          &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;https://twitter.com/digiteum_us&quot; target=&quot;_blank&quot; class=&quot;twitter&quot; title=&quot;Twitter&quot;&gt;
+                          &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;https://www.linkedin.com/company/digiteum&quot; target=&quot;_blank&quot; class=&quot;linkedin&quot; title=&quot;LinkedIn&quot;&gt;
+                          &lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li&gt;
+                        &lt;a href=&quot;https://youtu.be/R1ZyzMFSNC4&quot; target=&quot;_blank&quot; class=&quot;youtube&quot; title=&quot;Youtube&quot;&gt;
+                          &lt;i class=&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      
+      </code></pre>
+    </div>
+
+    <div id="css" class="tabcontent">
+      <button
+        class="copy-button btn btn-secondary"
+        data-clipboard-target="#code-block-sass"
+      >
+        Copy Code
+      </button>
+      <pre
+        class="shadow-lg rounded"
+      ><code class="json hljs" id="code-block-sass">
+        .footer {
+          background-color: #242427;
+        
+          margin-top: auto;
+          #big_footer {
+            #primary_footer {
+              background-position: calc(100% - 30px);
+              color: variables.$silver-color;
+              background-repeat: no-repeat;
+              background-image: url("https://www.digiteum.com/wp-content/themes/blake/images/footer-map.svg");
+              font-size: 15px;
+              max-height: 450px;
+              .footer-container {
+                width: 70%;
+                margin: 0 auto;
+                background-repeat: no-repeat;
+                background-image: url("https://www.digiteum.com/wp-content/themes/blake/images/footer-top-logo.svg");
+                background-position: 0px 169px;
+                color: variables.$silver-color;
+                font-size: 15px;
+                margin: 0px auto;
+                padding: 43px 0px;
+                .footer-top-wrapper {
+                  display: flex;
+                  row-gap: 100px;
+                  column-gap: 100px;
+                  .footer-menu-wrp {
+                    color: variables.$silver-color;
+                    display: flex;
+                    font-size: 15px;
+                    justify-content: space-between;
+                    flex: 5;
+                    .footer-middle-block {
+                      color: variables.$silver-color;
+                      font-size: 15px;
+                      .footer-sidebar.footer__about {
+                        color: variables.$silver-color;
+                        font-size: 15px;
+                        text-align: left;
+                        h4 {
+                          color: #ffffff;
+                          font-family: "Open Sans";
+                          font-size: 12px;
+                          line-height: 12px;
+                          margin: 0px 0px 10px;
+                          text-transform: uppercase;
+                        }
+                        p {
+                          color: variables.$light-grey-color;
+                          font-family: "Open Sans";
+                          font-size: 12px;
+                          letter-spacing: 0.2px;
+                          line-height: 20.4px;
+                        }
+                      }
+                      .footer-sidebar.footer__menu.two-column {
+                        color: variables.$silver-color;
+                        display: flex;
+                        font-size: 15px;
+                        margin: 40px 0px 0px;
+                        .left-nav {
+                          color: variables.$silver-color;
+                          font-size: 15px;
+                          text-align: left;
+                          width: 300px;
+                          .list-menu.two-column {
+                            height: 300px;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            li {
+                              color: #666666;
+                              display: list-item;
+                              font-family: "Open Sans";
+                              line-height: 24px;
+                              margin: 0px 0px 4px;
+                              padding: 0px 0px 6px;
+                              text-align: left;
+                              a {
+                                color: variables.$light-grey-color;
+                                display: inline;
+                                text-decoration: none;
+                                font-size: 12px;
+                                line-height: 21px;
+                                text-align: left;
+                                text-transform: capitalize;
+                              }
+                            }
+                          }
+                          h4.footer-title-widget {
+                            color: #ffffff;
+                            display: inline;
+                            font-size: 12px;
+                            line-height: 12px;
+                            text-transform: uppercase;
+                          }
+                        }
+                        .right-nav {
+                          text-align: left;
+                          color: variables.$silver-color;
+                          font-size: 15px;
+                          margin: 0px 0px 0px 54px;
+                          h4.footer-title-widget {
+                            color: #ffffff;
+                            font-size: 12px;
+                            line-height: 12px;
+                            margin: 0px 0px 9px;
+                            text-transform: uppercase;
+                          }
+                          .list-menu {
+                            color: variables.$silver-color;
+                            font-size: 15px;
+                            li {
+                              color: #666666;
+                              display: list-item;
+                              line-height: 24px;
+                              margin: 0px 0px 4px;
+                              text-align: left;
+                              a {
+                                color: variables.$light-grey-color;
+                                display: inline;
+                                font-family: Open Sans;
+                                font-size: 12px;
+                                line-height: 21px;
+                                text-align: left;
+                                text-transform: capitalize;
+                                text-decoration: none;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .footer-sidebar.footer__clutch {
+                    color: variables.$silver-color;
+                    font-size: 15px;
+                    flex: 3;
+                    text-align: left;
+                    img {
+                      color: variables.$primary-color;
+                      display: inline;
+                      line-height: 28px;
+                    }
+                    .clutch__text {
+                      color: variables.$light-grey-color;
+                      font-size: 12px;
+                      font-weight: 300;
+                      letter-spacing: 0.2px;
+                      line-height: 20px;
+                      margin: 17px 0px 0px;
+                    }
+                    .footer-sidebar.footer__career {
+                      .textwidget {
+                        color: variables.$silver-color;
+                        font-size: 12px;
+                        letter-spacing: 0.2px;
+                        line-height: 20.4px;
+                        .footer-title-widget {
+                          color: #ffffff;
+                          font-size: 12px;
+                          letter-spacing: 0.2px;
+                          line-height: 12px;
+                          margin: 0px 0px 5px;
+                          text-transform: uppercase;
+                          a {
+                            color: inherit;
+                            text-decoration: none;
+                            color: #ffffff;
+                            display: inline;
+                            font-size: 12px;
+                            line-height: 12px;
+                            text-transform: uppercase;
+                          }
+                        }
+                        p {
+                          color: variables.$light-grey-color;
+                          font-size: 12px;
+                          letter-spacing: 0.2px;
+                          line-height: 20.4px;
+                          a {
+                            color: variables.$primary-color;
+                            font-size: 12px;
+                            letter-spacing: 0.2px;
+                            line-height: 20.4px;
+                            margin: 5px 0px 0px;
+                            &:hover {
+                              text-decoration: none;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .footer-sidebar.footer__location {
+                    color: variables.$silver-color;
+                    font-size: 15px;
+                    margin: 55px 0px 0px;
+                    flex: 2;
+                    text-align: left;
+                    h4 {
+                      color: #ffffff;
+                      font-size: 12px;
+                      line-height: 12px;
+                      margin: 0px 0px 10px;
+                      text-transform: uppercase;
+                    }
+                    .textwidget {
+                      div {
+                        color: variables.$silver-color;
+                        font-size: 14px;
+                        letter-spacing: 0.2px;
+                        line-height: 23.8px;
+                      }
+                      b {
+                        color: variables.$silver-color;
+                        display: inline;
+                        font-size: 14px;
+                        font-weight: 700;
+                        letter-spacing: 0.2px;
+                        line-height: 23.8px;
+                      }
+                      p {
+                        color: variables.$light-grey-color;
+                        font-size: 12px;
+                        letter-spacing: 0.2px;
+                      }
+                      a {
+                        color: variables.$silver-color;
+                        text-decoration: none;
+                        display: inline;
+                        font-size: 12px;
+                        letter-spacing: 0.2px;
+                        &:hover {
+                          color: variables.$primary-color;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            #secondary_footer {
+              background-color: #1e1e21;
+              .footer-container {
+                width: 70%;
+                margin: 0 auto;
+                background-color: #1e1e21;
+                color: #687177;
+                font-size: 15px;
+                line-height: 24.4286px;
+                padding: 20px 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .col-xs-12.col-md-3 {
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+                }
+                .col-xs-12.col-md-5 {
+                  padding: 0px 15px;
+                  a {
+                    color: inherit;
+                    text-decoration: none;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                      color: variables.$primary-color;
+                    }
+                  }
+                }
+                .col-xs-12.col-md-4 {
+                  padding: 0px 15px;
+                  ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 20px;
+                    a {
+                      color: white;
+                      transition: 0.2s ease-in-out;
+                      &:hover {
+                        color: variables.$primary-color;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      </code></pre>
+    </div>
+
+    <div id="js" class="tabcontent">
+      <p>Javascript</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
