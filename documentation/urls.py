@@ -21,8 +21,10 @@ urlpatterns = [
     path('test', views.test_view, name="test"),
     # headers
     path('header1', views.header1_view, name="header1"),
+    path('header2', views.header2_view, name="header2"),
     # footers
     path('footer1', views.footer1_view, name="footer1"),
+    path('footer2', views.footer2_view, name="footer2"),
     # cards
     path('info-card', views.info_card_view, name="info-card"),
     # buttons

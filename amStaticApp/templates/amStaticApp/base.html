@@ -12,9 +12,70 @@
     <link rel="stylesheet" href="{% block style %} {% endblock %}" />
     <!-- Additional CSS or other meta tags can be added here -->
     <title>{% block title %}My App{% endblock %}</title>
+    
+    </script>
   </head>
 
   <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="{% url 'home' %}">Automize</a></div>
+        <ul class="nav-links">
+          <li class="has-dropdown">
+            <a href="{% url 'services' %}">Services </a>
+            <i class="fa-solid fa-chevron-down" id="services-dropdown-btn"></i>
+            <div class="mega-box">
+              <div class="content">
+                <div class="nav-row">
+                  <header>Design & Engineering</header>
+                  <ul class="mega-links">
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-row">
+                  <header>Technologies</header>
+                  <ul class="mega-links">
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'service_tech_sample' %}">Sample</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li>
+            <a href="{% url 'contact' %}" class="base-btn am-btn-primary"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-menu-icon" id="mobileMenuToggle">&#9776;</div>
+      </div>
+    </nav>
+
     <div class="container">{% block content %} {% endblock %}</div>
 
     <footer class="footer-10">
@@ -170,6 +231,31 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        mobileMenuToggle.addEventListener("click", function () {
+          navLinks.classList.toggle("open");
+        });
+      });
+
+      let servicesDropdownBtn = document.querySelector(
+        "#services-dropdown-btn"
+      );
+      let megaBox = document.querySelector(".mega-box");
+      servicesDropdownBtn.addEventListener("click", function () {
+        if(megaBox.style.display == 'none'){
+          megaBox.style.display = "block";
+
+        } else {
+        megaBox.style.display = "none";
+
+        }
+      });
+      </script>
 
     <script
       src="https://kit.fontawesome.com/862b1267d5.js"

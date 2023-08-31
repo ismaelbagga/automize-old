@@ -1,30 +1,30 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>
-      CoderDocs - Bootstrap Documentation Template For Software Projects
+        CoderDocs - Bootstrap Documentation Template For Software Projects
     </title>
 
     <!-- Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <meta
-      name="description"
-      content="Bootstrap 4 Template For Software Startups"
+            name="description"
+            content="Bootstrap 4 Template For Software Startups"
     />
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media"/>
     <link
-      rel="shortcut icon"
-      href="{% static 'images/icons8-code-office-l-32.png' %}"
+            rel="shortcut icon"
+            href="{% static 'images/icons8-code-office-l-32.png' %}"
     />
 
     <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+            rel="stylesheet"
     />
 
     <!-- FontAwesome JS-->
@@ -32,46 +32,21 @@
 
     <!-- Plugins CSS -->
     <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
+            rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
     />
-    <link rel="stylesheet" href="/plugins/simplelightbox/simple-lightbox.css" />
+    <link rel="stylesheet" href="/plugins/simplelightbox/simple-lightbox.css"/>
 
     <!-- Theme CSS -->
     <link
-      id="theme-style"
-      rel="stylesheet"
-      href="{% static '/css/theme.css' %}"
+            id="theme-style"
+            rel="stylesheet"
+            href="{% static '/css/theme.css' %}"
     />
-
-    <style>
-      /* Style the tab buttons */
-      .tab {
-        overflow: hidden;
-        background-color: #f1f1f1;
-      }
-
-      .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-      }
-
-      .tab button:hover {
-        background-color: #ddd;
-      }
-
-      /* Style the tab content */
-      .tabcontent {
-        display: none;
-        padding: 20px;
-        border-top: 1px solid #ddd;
-      }
-    </style>
+    <link
+        rel="stylesheet"
+        href="{% static 'css/base.css' %}"
+    />
 
     <!-- <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -80,205 +55,426 @@
     ></script> -->
 
     <!-- <link rel="stylesheet" href="{% static "amStaticApp/css/main.css" %}"> -->
-  </head>
+</head>
 
-  <body class="docs-page">
-    <header class="header fixed-top">
-      <div class="branding docs-branding">
+<body class="docs-page">
+<header class="header fixed-top">
+    <div class="branding docs-branding">
         <div class="container-fluid position-relative py-2">
-          <div class="docs-logo-wrapper">
-            <button
-              id="docs-sidebar-toggler"
-              class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
-              type="button"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <div class="site-logo">
-              <a class="navbar-brand" href="index.html"
-                ><img
-                  class="logo-icon me-2"
-                  src="{% static '/images/coderdocs-logo.svg' %}"
-                  alt="logo"
-                /><span class="logo-text"
-                  >Coder<span class="text-alt">Docs</span></span
-                ></a
-              >
-            </div>
-          </div>
-          <!--//docs-logo-wrapper-->
-          <div
-            class="docs-top-utilities d-flex justify-content-end align-items-center"
-          >
-            <div class="top-search-box d-none d-lg-flex">
-              <form class="search-form">
-                <input
-                  type="text"
-                  placeholder="Search the docs..."
-                  name="search"
-                  class="form-control search-input"
-                />
-                <button type="submit" class="btn search-btn" value="Search">
-                  <i class="fas fa-search"></i>
+            <div class="docs-logo-wrapper">
+                <button
+                        id="docs-sidebar-toggler"
+                        class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+                        type="button"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-              </form>
+                <div class="site-logo">
+                    <a class="navbar-brand" href="index.html"
+                    ><img
+                            class="logo-icon me-2"
+                            src="{% static '/images/coderdocs-logo.svg' %}"
+                            alt="logo"
+                    /><span class="logo-text"
+                    >Coder<span class="text-alt">Docs</span></span
+                    ></a
+                    >
+                </div>
             </div>
+            <!--//docs-logo-wrapper-->
+            <div
+                    class="docs-top-utilities d-flex justify-content-end align-items-center"
+            >
+                <div class="top-search-box d-none d-lg-flex">
+                    <form class="search-form">
+                        <input
+                                type="text"
+                                placeholder="Search the docs..."
+                                name="search"
+                                class="form-control search-input"
+                        />
+                        <button type="submit" class="btn search-btn" value="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
 
-            <ul
-              class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
-            >
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-github fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-slack fa-fw"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-product-hunt fa-fw"></i></a>
-              </li>
-            </ul>
-            <!--//social-list-->
-            <a href="{% url 'home' %}" class="btn btn-primary d-none d-lg-flex"
-              >Automize</a
-            >
-          </div>
-          <!--//docs-top-utilities-->
+                <ul
+                        class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex"
+                >
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-github fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-slack fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-product-hunt fa-fw"></i></a>
+                    </li>
+                </ul>
+                <!--//social-list-->
+                <a href="{% url 'home' %}" class="btn btn-primary d-none d-lg-flex"
+                >Automize</a
+                >
+            </div>
+            <!--//docs-top-utilities-->
         </div>
         <!--//container-->
-      </div>
-      <!--//branding-->
-    </header>
-    <!--//header-->
+    </div>
+    <!--//branding-->
+</header>
+<!--//header-->
 
-    <div class="docs-wrapper">
-      <div id="docs-sidebar" class="docs-sidebar">
+<div class="docs-wrapper">
+    <div id="docs-sidebar" class="docs-sidebar">
         <div class="top-search-box d-lg-none p-3">
-          <form class="search-form">
-            <input
-              type="text"
-              placeholder="Search the docs..."
-              name="search"
-              class="form-control search-input"
-            />
-            <button type="submit" class="btn search-btn" value="Search">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
+            <form class="search-form">
+                <input
+                        type="text"
+                        placeholder="Search the docs..."
+                        name="search"
+                        class="form-control search-input"
+                />
+                <button type="submit" class="btn search-btn" value="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
         </div>
         <nav id="docs-nav" class="docs-nav navbar">
-          <ul class="section-items list-unstyled nav flex-column pb-3">
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link" href="#"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-accessible-icon"></i></span
-                >UI</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'headers' %}">Headers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'footers' %}">Footer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'cards' %}">Cards</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'buttons' %}">Buttons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'typography' %}">Typography</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'headings' %}">Haeding</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'components' %}">Componenets</a>
-            </li>
-            <li class="nav-item section-title mt-3">
-              <a class="nav-link" href="#"
-                ><span class="theme-icon-holder me-2"
-                  ><i class="fas fa-box"></i></span
-                >Page Componenets</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'portfolio-components' %}"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'blog-components' %}">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'services-components' %}"
-                >Services</a
-              >
-            </li>
-          </ul>
+            <ul class="section-items list-unstyled nav flex-column pb-3">
+                <li class="nav-item section-title mt-3">
+                    <a class="nav-link" href="#"
+                    ><span class="theme-icon-holder me-2"
+                    ><i class="fas fa-accessible-icon"></i></span
+                    >UI</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'headers' %}">Headers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'footers' %}">Footer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'cards' %}">Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'buttons' %}">Buttons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'typography' %}">Typography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'headings' %}">Haeding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'components' %}">Componenets</a>
+                </li>
+                <li class="nav-item section-title mt-3">
+                    <a class="nav-link" href="#"
+                    ><span class="theme-icon-holder me-2"
+                    ><i class="fas fa-box"></i></span
+                    >Page Componenets</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'portfolio-components' %}"
+                    >Portfolio</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog-components' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'services-components' %}"
+                    >Services</a
+                    >
+                </li>
+            </ul>
         </nav>
         <!--//docs-nav-->
-      </div>
-      <!--//docs-sidebar-->
-      <div class="docs-content">
-        <div class="container">
-          <article class="docs-article">
-            {% block content %} {% endblock %}
-          </article>
-        </div>
-      </div>
     </div>
-    <!--//docs-wrapper-->
+    <!--//docs-sidebar-->
+    <div class="docs-content">
+        <div class="container">
 
-    <!-- Javascript -->
-    <script src="{% static '/plugins/popper.min.js' %}"></script>
-    <script src="{% static '/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+            <article class="docs-article">
+                {% block content %} {% endblock %}
 
-    <!-- Page Specific JS -->
-    <script src="{% static '/plugins/smoothscroll.min.js' %}"></script>
-    <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js' %}"></script>
-    <script src="{% static '/js/highlight-custom.js' %}"></script>
-    <script src="{% static '/plugins/simplelightbox/simple-lightbox.min.js' %}"></script>
-    <script src="{% static '/plugins/gumshoe/gumshoe.polyfills.min.js' %}"></script>
-    <script src="{% static '/js/docs.js' %}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+            </article>
+            <footer class="footer">
+                <div class="container text-center py-5">
+                    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+                    <small class="copyright"
+                    >Copyright
+                        <a
+                                class="theme-link"
+                                href="{% url 'home' %}"
+                                target="_blank"
+                        >automize.ma</a
+                        >
+                        All Rights Reserved. © 2023</small
+                    >
+                    <ul class="social-list list-unstyled pt-4 mb-0">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-github fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-slack fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-instagram fa-fw"></i></a>
+                        </li>
+                    </ul>
+                    <!--//social-list-->
+                </div>
+            </footer>
 
-    <script>
-      function openTab(evt, tabName) {
+        </div>
+    </div>
+</div>
+<!--//docs-wrapper-->
+
+<div id="messageBlock"></div>
+
+
+<!-- Javascript -->
+<script src="{% static '/plugins/popper.min.js' %}"></script>
+<script src="{% static '/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- Page Specific JS -->
+<script src="{% static '/plugins/smoothscroll.min.js' %}"></script>
+<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js' %}"></script>
+<script src="{% static '/js/highlight-custom.js' %}"></script>
+<script src="{% static '/plugins/simplelightbox/simple-lightbox.min.js' %}"></script>
+<script src="{% static '/plugins/gumshoe/gumshoe.polyfills.min.js' %}"></script>
+<script src="{% static '/js/docs.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+<script>
+    function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+            tabcontent[i].style.display = "none";
         }
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
-      }
-    </script>
+    }
+</script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
+<script>
+
+    function info_messagebox(title, message) {
+
+        // Create the message block
+        let messageBlock = document.createElement("div");
+        messageBlock.className = "callout-block callout-block-info";
+        messageBlock.id = "messageBlock";
+
+        // Create the content div
+        let contentDiv = document.createElement("div");
+        contentDiv.className = "content-m";
+
+        // Create the title element
+        let titleElement = document.createElement("h4");
+        titleElement.className = "callout-title";
+
+        // Create the icon holder span
+        let iconHolderSpan = document.createElement("span");
+        iconHolderSpan.className = "callout-icon-holder me-1";
+
+        // Create the info circle icon
+        let infoCircleIcon = document.createElement("i");
+        infoCircleIcon.className = "fas fa-info-circle";
+
+        // Create the text for the title
+        let titleText = document.createTextNode(title);
+
+        // Append the icon to the icon holder
+        iconHolderSpan.appendChild(infoCircleIcon);
+
+        // Append the icon holder and title text to the title element
+        titleElement.appendChild(iconHolderSpan);
+        titleElement.appendChild(titleText);
+
+        // Create the paragraph element
+        let paragraphElement = document.createElement("p");
+
+        // Create the text for the paragraph
+        let paragraphText = document.createTextNode(message);
+
+        // Append the paragraph text to the paragraph element
+        paragraphElement.appendChild(paragraphText);
+
+        // Append the title element and paragraph element to the content div
+        contentDiv.appendChild(titleElement);
+        contentDiv.appendChild(paragraphElement);
+
+        // Append the content div to the message block
+        messageBlock.appendChild(contentDiv);
+
+        // Append the message block to the body of the page
+        document.body.appendChild(messageBlock);
+
+        // Hide the message after a few seconds (e.g., 3 seconds)
+        setTimeout(function () {
+            {#messageBlock.innerHTML = ""; // Clear the message#}
+            messageBlock.style.visibility = "hidden"
+        }, 5000);
+    }
+
+    function danger_messagebox(title, message) {
+        // Create the danger message block
+        let dangerMessageBlock = document.createElement("div");
+        dangerMessageBlock.className = "callout-block callout-block-danger me-1";
+        dangerMessageBlock.id = "messageBlock";
+
+
+// Create the content div
+        let contentDiv = document.createElement("div");
+        contentDiv.className = "content";
+
+// Create the title element
+        let titleElement = document.createElement("h4");
+        titleElement.className = "callout-title";
+
+// Create the icon holder span
+        let iconHolderSpan = document.createElement("span");
+        iconHolderSpan.className = "callout-icon-holder";
+
+// Create the exclamation triangle icon
+        let exclamationTriangleIcon = document.createElement("i");
+        exclamationTriangleIcon.className = "fas fa-exclamation-triangle";
+
+// Create the text for the title
+        let titleText = document.createTextNode(title);
+
+// Append the icon to the icon holder
+        iconHolderSpan.appendChild(exclamationTriangleIcon);
+
+// Append the icon holder and title text to the title element
+        titleElement.appendChild(iconHolderSpan);
+        titleElement.appendChild(titleText);
+
+// Create the paragraph element
+        let paragraphElement = document.createElement("p");
+
+// Create the text for the paragraph
+        let paragraphText = document.createTextNode(message);
+
+// Append the paragraph text to the paragraph element
+        paragraphElement.appendChild(paragraphText);
+
+// Append the title element and paragraph element to the content div
+        contentDiv.appendChild(titleElement);
+        contentDiv.appendChild(paragraphElement);
+
+// Append the content div to the danger message block
+        dangerMessageBlock.appendChild(contentDiv);
+
+// Append the danger message block wherever you need it in your document
+        // Append the message block to the body of the page
+        document.body.appendChild(dangerMessageBlock);
+
+        // Hide the message after a few seconds (e.g., 3 seconds)
+        setTimeout(function () {
+            {#messageBlock.innerHTML = ""; // Clear the message#}
+            dangerMessageBlock.style.visibility = "hidden"
+        }, 5000);
+
+    }
+
+    function success_messagebox(title, message) {
+        // Create the success message block
+        let successMessageBlock = document.createElement("div");
+        successMessageBlock.className = "callout-block callout-block-success";
+        successMessageBlock.id = "messageBlock";
+
+
+// Create the content div
+        let contentDiv = document.createElement("div");
+        contentDiv.className = "content";
+
+// Create the title element
+        let titleElement = document.createElement("h4");
+        titleElement.className = "callout-title";
+
+// Create the icon holder span
+        let iconHolderSpan = document.createElement("span");
+        iconHolderSpan.className = "callout-icon-holder me-1";
+
+// Create the thumbs-up icon
+        let thumbsUpIcon = document.createElement("i");
+        thumbsUpIcon.className = "fas fa-thumbs-up";
+
+// Create the text for the title
+        let titleText = document.createTextNode(title);
+
+// Append the thumbs-up icon to the icon holder
+        iconHolderSpan.appendChild(thumbsUpIcon);
+
+// Append the icon holder and title text to the title element
+        titleElement.appendChild(iconHolderSpan);
+        titleElement.appendChild(titleText);
+
+// Create the paragraph element
+        let paragraphElement = document.createElement("p");
+
+// Create the text for the paragraph
+        let paragraphText = document.createTextNode(message);
+
+// Append the paragraph text to the paragraph element
+        paragraphElement.appendChild(paragraphText);
+
+// Append the title element and paragraph element to the content div
+        contentDiv.appendChild(titleElement);
+        contentDiv.appendChild(paragraphElement);
+
+// Append the content div to the success message block
+        successMessageBlock.appendChild(contentDiv);
+
+// Append the success message block wherever you need it in your document
+        // Append the message block to the body of the page
+        document.body.appendChild(successMessageBlock);
+
+        // Hide the message after a few seconds (e.g., 3 seconds)
+        setTimeout(function () {
+            {#messageBlock.innerHTML = ""; // Clear the message#}
+            successMessageBlock.style.visibility = "hidden"
+        }, 5000);
+
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
         var clipboard = new ClipboardJS(".copy-button");
 
         clipboard.on("success", function (e) {
-          e.clearSelection();
-          alert("Code copied to clipboard!");
+            e.clearSelection();
+            success_messagebox("Success", "Code copied to clipboard!")
         });
 
         clipboard.on("error", function (e) {
-          alert(
-            "Failed to copy code. You can still manually select and copy it."
-          );
+            danger_messagebox("failed", "Failed to copy code. You can still manually select and copy it.")
         });
-      });
-    </script>
-  </body>
+    });
+</script>
+
+</body>
 </html>
