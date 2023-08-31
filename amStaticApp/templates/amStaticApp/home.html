@@ -1,234 +1,216 @@
-{% extends 'amStaticApp/base.html' %}
-{% load static %}
-{% block title %} Home |Automize {%endblock %}
-{% block content %}
+{% extends 'amStaticApp/base.html' %} {% load static %} {% block title %} Home
+|Automize {%endblock %} {% block content %}
 
-<!--section header of page home-->
+
 <div class="home-section-header">
-  <div class="image-container">
-    <!-- <img src="{% static 'images/home-top-image.png' %}" /> -->
-  </div>
+  <div class="image-container"></div>
   <div class="home-text-content">
-    <p class="title-banner-home">Agile Software Teams <br> and Expertise on Demand</p>
-    <p class="info-banner-home">Engage top-tier engineers to solve your <br> tech needs and reach business goals faster
-    </p>
+    <div class="text-header-home">
+      <h1>Agile Software Teams and Expertise on Demand</h1>
+      <p>Engage top-tier engineers to solve your tech needs and reach business goals faster</p>
+    </div>
     <div class="btn-header-home d-flex justify-content-start">
-      <a href="contact/index.html" class="base-btn am-btn-white">get a quote</a>
-      <a href="#" class="base-btn am-btn-white">our work</a>
+      <a href="contact/index.html" class="base-btn am-btn-white btn-responsive">get a quote</a>
+      <a href="#" class="base-btn am-btn-white btn-responsive">our work</a>
     </div>
   </div>
 </div>
-<!-- end -->
 
-
-<!--block section of page home-->
-<div class="block-section">
-  <h1 class="block-title">Lorem ipsum dolor</h1>
-  <div class="center-hr">
-    <hr class="line-block-title" />
-  </div>
-  <p class="text-block-section">
-    Meet your one-stop provider of software development and consulting
-    services. Your cross-functional team of designers, software
-    architects, engineers and managers working together to create digital
-    systems that bring value to you and your customers.
+<div class="home-block-section">
+  <h1 class="block-title-home">Lorem ipsum dolor</h1>
+  <hr class="center-hr-home" />
+  <p class="text-block-section-home">
+    Meet your one-stop provider of software development and consulting services.
+    Your cross-functional team of designers, software architects, engineers and
+    managers working together to create digital systems that bring value to you
+    and your customers.
   </p>
 </div>
-<!-- end -->
 
-
-
-<!--services section of page home-->
 <div class="services-section-home">
-  <h1 class="block-title">Lorem ipsum dolor</h1>
-  <div class="center-hr">
-    <hr class="line-block-title" />
+  <div class="home-section">
+    <h1>our services</h1>
+    <hr/>
+    <p class="text-block-section">
+      Achieve your business goals with custom software solutions perfectly
+      tailored to your business goals, expectations and scale.
+    </p>
   </div>
-  <p class="text-block-section">Achieve your business goals with custom software solutions perfectly tailored <br> to
-    your business goals, expectations and scale.
-  </p>
-  <div class="center-section">
-    <div class="box-home">
-      <div class="item-box-home">
-        <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
-        <span>lorem ipsum</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button class="base-btn am-btn-white" id="btn-box-home">Learn more</button>
-      </div>
-      <div class="item-box-home">
-        <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
-        <span>lorem ipsum</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button class="base-btn am-btn-white" id="btn-box-home">Learn more</button>
-      </div>
-      <div class="item-box-home">
-        <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
-        <span>lorem ipsum</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button class="base-btn am-btn-white" id="btn-box-home">Learn more</button>
-      </div>
-      <div class="item-box-home">
-        <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
-        <span>lorem ipsum</span>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button class="base-btn am-btn-white" id="btn-box-home">Learn more</button>
-      </div>
+  <div class="box-home">
+    <div class="item-box-home">
+      <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
+      <span>Web Development</span>
+      <p>
+        Elegant, functional and enjoyable user experiences across web, mobile, chat and voice that don’t lose relevance over time.
+      </p>
+      <button class="base-btn am-btn-white">Learn more</button>
+    </div>
+    <div class="item-box-home">
+      <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
+      <span>UX/UI Design</span>
+      <p>
+        Elegant, functional and enjoyable user experiences across web, mobile, chat and voice that don’t lose relevance over time.
+      </p>
+      <button class="base-btn am-btn-white">Learn more</button>
+    </div>
+    <div class="item-box-home">
+      <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
+      <span>IoT Software Development</span>
+      <p>
+        Elegant, functional and enjoyable user experiences across web, mobile, chat and voice that don’t lose relevance over time.
+      </p>
+      <button class="base-btn am-btn-white">Learn more</button>
+    </div>
+    <div class="item-box-home">
+      <img src="{% static 'images/icon-3.png' %}" class="col-2" /><br />
+      <span>Mobile App Development</span>
+      <p>
+        Elegant, functional and enjoyable user experiences across web, mobile, chat and voice that don’t lose relevance over time.
+      </p>
+      <button class="base-btn am-btn-white">Learn more</button>
     </div>
   </div>
 </div>
-<!-- end -->
 
-
-<!-- start -->
-<div class="bloquote-section-home">
-  <h1 class="block-title">what you get</h1>
-  <div class="center-hr">
-    <hr class="line-block-title" />
+<div class="blockquote-section-home">
+  <div class="home-section">
+    <h1>what you get</h1>
+    <hr/>
   </div>
-  <div class="center-section">
-    <div class="section-home">
-      <div class="right-section">
-        <span>Broad tech stack and leading-edge expertise</span>
-        <p>You will work with senior engineers, designers and tech leaders with immense experience
-          and a
-          wide skill set. Being proactive and honest is our thing — we are confident and responsible
-          for every course of action, technology and approach we suggest. Choosing Digiteum you opt
-          for a tech partner who puts your business goals first and knows how to build value
-        </p>
-        <span>Broad tech stack and leading-edge expertise</span>
-        <p>You will work with senior engineers, designers and tech leaders with immense experience
-          and a
-          wide skill set. Being proactive and honest is our thing — we are confident and responsible
-          for every course of action, technology and approach we suggest. Choosing Digiteum you opt
-          for a tech partner who puts your business goals first and knows how to build value
-        </p>
-        <span>Broad tech stack and leading-edge expertise</span>
-        <p>You will work with senior engineers, designers and tech leaders with immense experience
-          and a
-          wide skill set. Being proactive and honest is our thing — we are confident and responsible
-          for every course of action, technology and approach we suggest. Choosing Digiteum you opt
-          for a tech partner who puts your business goals first and knows how to build value
-        </p>
-      </div>
-      <div class="right-blockquote-home">
+  <div class="section-home">
+    <div class="left-section">
+      <span>Broad tech stack and leading-edge expertise</span>
+      <p>
+        You will work with senior engineers, designers and tech leaders with
+        immense experience and a wide skill set. Being proactive and honest is
+        our thing — we are confident and responsible for every course of action,
+        technology and approach we suggest. Choosing Digiteum you opt for a tech
+        partner who puts your business goals first and knows how to build value
+      </p>
+      <span>Broad tech stack and leading-edge expertise</span>
+      <p>
+        You will work with senior engineers, designers and tech leaders with
+        immense experience and a wide skill set. Being proactive and honest is
+        our thing — we are confident and responsible for every course of action,
+        technology and approach we suggest. Choosing Digiteum you opt for a tech
+        partner who puts your business goals first and knows how to build value
+      </p>
+      <span>Broad tech stack and leading-edge expertise</span>
+      <p>
+        You will work with senior engineers, designers and tech leaders with
+        immense experience and a wide skill set. Being proactive and honest is
+        our thing — we are confident and responsible for every course of action,
+        technology and approach we suggest. Choosing Digiteum you opt for a tech
+        partner who puts your business goals first and knows how to build value
+      </p>
+    </div>
+    <div class="right-blockquote-home">
+      <blockquote>
         <p class="text-blockquote-home">
-          They are technically excellent, have an agile process in place and are always looking for
-          ‘win-win’ opportunities. The team is incredibly honest, hard working and has been a source of
-          new ideas and improvements. I cannot recommend them enough.
+          They are technically excellent, have an agile process in place and are
+          always looking for ‘win-win’ opportunities. The team is incredibly
+          honest, hard working and has been a source of new ideas and
+          improvements. I cannot recommend them enough.
         </p>
         <div class="author-blockquote-home">
-          <img src="{% static 'images/profile.png' %}">
+          <img src="{% static 'images/profile.png' %}" />
           <div class="descr-author-blockquote-home">
-            <h5>Lorem dolor</h5>
+            <span>Lorem dolor</span>
             <p>Head of Software Development,T&F Technology</p>
           </div>
         </div>
-      </div>
+      </blockquote>
     </div>
   </div>
 </div>
-<!-- end -->
-
-
-
 
 <hr id="line">
 
-
-
-<!--block section of page home-->
-<div class="block-section">
-  <h1 class="block-title">HIRE TOP TECH EXPERTS ON DEMAND</h1>
-  <button class="base-btn am-btn-secondary" id="btn-block-home">let's talk about your project</button>
+<div class="home-block-section">
+  <h1 class="block-title-home">hire top tech experts on demand</h1>
+  <button class="base-btn am-btn-secondary btn-block-home">
+    let's talk about your project
+  </button>
 </div>
-<!-- end -->
 
-
-
-
-<!-- start -->
 <div class="steps-section-home">
-  <h1 class="block-title">what you get</h1>
-  <div class="center-hr">
-    <hr class="line-block-title" />
+  <div class="home-section">
+    <h1>what you get</h1>
+    <hr/>
+    <p>
+      Meet your one-stop provider of software development and consulting services.
+      Your cross-functional team of designers, software architects, engineers and
+      managers working together to create digital systems that bring value to you
+      and your customers.
+    </p>
   </div>
-  <p class="text-block-section">
-    Meet your one-stop provider of software development and consulting
-    services. Your<br> cross-functional team of designers, software
-    architects, engineers and managers <br>working together to create digital
-    systems that bring <br>value to you and your customers.
-  </p>
-  <div class="center-section">
-    <div class="steps-card-home">
-      <div class="step-card-home">
-        <span class="step-number">Step 1</span><br>
-        <span class="step-name">BUSINESS ANALYSIS</span>
-        <p class="step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut
-          labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip
-          commodo consequat.</p>
-      </div>
-      <div class="step-card-home">
-        <span class="step-number">Step 2</span><br>
-        <span class="step-name">BUSINESS ANALYSIS</span>
-        <p class="step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut
-          labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip
-          commodo consequat.</p>
-      </div>
-      <div class="step-card-home">
-        <span class="step-number">Step 3</span><br>
-        <span class="step-name">BUSINESS ANALYSIS</span>
-        <p class="step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut
-          labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip
-          commodo consequat.</p>
-      </div>
-      <div class="step-card-home">
-        <span class="step-number">Step 4</span><br>
-        <span class="step-name">BUSINESS ANALYSIS</span>
-        <p class="step-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut
-          labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip
-          commodo consequat.</p>
-      </div>
+
+  <div class="steps-card-home">
+    <div class="step-card-home">
+      <p class="step-number">Step 1</p>
+      <span class="step-name">BUSINESS ANALYSIS</span>
+      <p class="step-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo
+        consequat.
+      </p>
+    </div>
+    <div class="step-card-home">
+      <p class="step-number">Step 2</p>
+      <span class="step-name">BUSINESS ANALYSIS</span>
+      <p class="step-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo
+        consequat.
+      </p>
+    </div>
+    <div class="step-card-home">
+      <p class="step-number">Step 3</p>
+      <span class="step-name">BUSINESS ANALYSIS</span>
+      <p class="step-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo
+        consequat.
+      </p>
+    </div>
+    <div class="step-card-home">
+      <p class="step-number">Step 4</p>
+      <span class="step-name">BUSINESS ANALYSIS</span>
+      <p class="step-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi aliquip commodo
+        consequat.
+      </p>
     </div>
   </div>
-  <hr id="line-steps">
-  <p class="steps-bottom-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididuntut labore <br>dolore
-    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-  <button class="base-btn am-btn-secondary" id="btn-block-home">Lorem ipsum dolor</button>
+  
+  <div class="steps-bottom-text">
+    <hr>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididuntut labore dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris.
+    </p>
+    <button class="base-btn am-btn-secondary">Contact Automize</button>
+  </div>
+
+
 </div>
 <!-- end -->
 
-
-<!--block section of page home-->
-<div class="block-section">
-  <h1 class="block-title">amet consectetur</h1>
-  <div class="center-hr">
-    <hr class="line-block-title">
-  </div>
-  <p class="text-block-section">
-    Meet your one-stop provider of software development and consulting
-    services. Your cross-functional team of designers, software
-    architects, engineers and managers working together to create digital
-    systems that bring value to you and your customers.
+<div class="home-block-section">
+  <h1 class="block-title-home">Lorem ipsum dolor</h1>
+  <hr class="center-hr-home" />
+  <p class="text-block-section-home">
+    Meet your one-stop provider of software development and consulting services.
+    Your cross-functional team of designers, software architects, engineers and
+    managers working together to create digital systems that bring value to you
+    and your customers.
   </p>
 </div>
-<!-- end -->
-
 
 {% endblock %}

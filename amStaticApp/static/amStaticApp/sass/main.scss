@@ -16,11 +16,9 @@
 @use "portfolio";
 @use "portfoliosample";
 
-
-
-
 body {
   font-family: "Open Sans";
+  overflow-x: hidden !important;
 }
 
 a {

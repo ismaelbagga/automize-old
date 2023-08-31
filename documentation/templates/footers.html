@@ -1,0 +1,332 @@
+{% extends 'base.html' %} {% block content %}
+
+    <section class="docs-section">
+        <h2 class="section-heading">Footer 2</h2>
+        <h3>Preview</h3>
+        <a
+                class="copy-button btn btn-primary"
+                href="{% url 'footer2' %}"
+                target="_blank"
+        >
+            <i class="fa-solid fa-up-right-from-square"></i> Open in new page
+        </a>
+        <iframe id="myIframe" class="my-3" src="{% url 'footer2' %}" style="height: 578px"></iframe>
+        <div class="my-5"></div>
+        <h3>Code</h3>
+        <div class="code-tabs">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'html2')">HTML</button>
+                <button class="tablinks" onclick="openTab(event, 'css2')">SASS</button>
+                <button class="tablinks" onclick="openTab(event, 'js2')">
+                    JavaScript
+                </button>
+            </div>
+
+            <div id="html2" class="tabcontent">
+                <button
+                        class="copy-button btn btn-secondary"
+                        data-clipboard-target="#code-block-html-2"
+                >
+                    <i class="fa-solid fa-copy"></i> Copy Code
+                </button>
+
+                <pre class="shadow-lg rounded my-2"><code class="json hljs" id="code-block-html-2">
+&lt;footer class=&quot;footer-10&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;div class=&quot;row mb-5 pb-3 no-gutters&quot;&gt;
+                &lt;div class=&quot;col-md-4 mb-md-0 mb-4 d-flex&quot;&gt;
+                    &lt;div class=&quot;con con-1 w-100 py-5&quot;&gt;
+                        &lt;div class=&quot;con-info w-100 text-center&quot;&gt;
+                            &lt;div
+                                    class=&quot;icon d-flex align-items-center justify-content-center&quot;
+                            &gt;
+                                &lt;i class=&quot;fa-solid fa-phone icons&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;span&gt;(+00) 1234 5678&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4 mb-md-0 mb-4 d-flex&quot;&gt;
+                    &lt;div class=&quot;con con-2 w-100 py-5&quot;&gt;
+                        &lt;div class=&quot;con-info w-100 text-center&quot;&gt;
+                            &lt;div
+                                    class=&quot;icon d-flex align-items-center justify-content-center&quot;
+                            &gt;
+                                &lt;i class=&quot;fa-solid fa-envelope icons&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                                &lt;span&gt;info@email.com&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4 mb-md-0 mb-4 d-flex&quot;&gt;
+                    &lt;div class=&quot;con con-3 w-100 py-5&quot;&gt;
+                        &lt;div class=&quot;con-info w-100 text-center&quot;&gt;
+                            &lt;div
+                                    class=&quot;icon d-flex align-items-center justify-content-center&quot;
+                            &gt;
+                                &lt;i class=&quot;fa-solid fa-map-location-dot icons&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;text&quot;&gt;
+                  &lt;span
+                  &gt;203 Fake St. Mountain View, San Francisco, California,
+                    USA&lt;/span
+                  &gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-md-7&quot;&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                        &lt;div class=&quot;col-md-4 mb-md-0 mb-4&quot;&gt;
+                            &lt;h2 class=&quot;footer-heading&quot;&gt;About&lt;/h2&gt;
+                            &lt;ul class=&quot;list-unstyled&quot;&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Out story&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Awards&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Our Team&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Career&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4 mb-md-0 mb-4&quot;&gt;
+                            &lt;h2 class=&quot;footer-heading&quot;&gt;Company&lt;/h2&gt;
+                            &lt;ul class=&quot;list-unstyled&quot;&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Our services&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Clients&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Press&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;col-md-4 mb-md-0 mb-4&quot;&gt;
+                            &lt;h2 class=&quot;footer-heading&quot;&gt;Resources&lt;/h2&gt;
+                            &lt;ul class=&quot;list-unstyled&quot;&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Newsletter&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;d-block&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-5 mb-md-0 mb-4&quot;&gt;
+                    &lt;h2 class=&quot;footer-heading&quot;&gt;Subscribe&lt;/h2&gt;
+                    &lt;form action=&quot;#&quot; class=&quot;subscribe-form&quot;&gt;
+                        &lt;div class=&quot;form-group d-flex&quot;&gt;
+                            &lt;input
+                                    type=&quot;text&quot;
+                                    class=&quot;form-control rounded-left email&quot;
+                                    placeholder=&quot;Enter email address&quot;
+                            /&gt;
+                            &lt;button
+                                    type=&quot;submit&quot;
+                                    class=&quot;form-control submit rounded-right sub&quot;
+                            &gt;
+                                Subscribe
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;span class=&quot;subheading&quot;
+                        &gt;Get digital marketing updates in your mailbox&lt;/span
+                        &gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row mt-5 pt-4 border-top&quot;&gt;
+                &lt;div class=&quot;col-md-6 col-lg-8 mb-md-0 mb-4&quot;&gt;
+                    &lt;p class=&quot;copyright mb-0&quot;&gt;
+                        &lt;!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --&gt;
+                        Copyright &copy;
+                        &lt;script&gt;
+                            document.write(new Date().getFullYear());
+                        &lt;/script&gt;
+                        2023 All rights reserved. | This template is made with
+                        &lt;i class=&quot;ion-ios-heart&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; by
+                        &lt;a href=&quot;https://colorlib.com&quot; target=&quot;_blank&quot;&gt;Colorlib.com&lt;/a&gt;
+                        &lt;!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-6 col-lg-4 text-md-right&quot;&gt;
+                    &lt;ul class=&quot;ftco-footer-social p-0&quot;&gt;
+                        &lt;li class=&quot;ftco-animate&quot;&gt;
+                            &lt;a
+                                    href=&quot;#&quot;
+                                    data-toggle=&quot;tooltip&quot;
+                                    data-placement=&quot;top&quot;
+                                    title=&quot;&quot;
+                                    data-original-title=&quot;Twitter&quot;
+                            &gt;&lt;span class=&quot;ion-logo-twitter&quot;&gt;&lt;/span
+                            &gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;ftco-animate&quot;&gt;
+                            &lt;a
+                                    href=&quot;#&quot;
+                                    data-toggle=&quot;tooltip&quot;
+                                    data-placement=&quot;top&quot;
+                                    title=&quot;&quot;
+                                    data-original-title=&quot;Facebook&quot;
+                            &gt;&lt;span class=&quot;ion-logo-facebook&quot;&gt;&lt;/span
+                            &gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;ftco-animate&quot;&gt;
+                            &lt;a
+                                    href=&quot;#&quot;
+                                    data-toggle=&quot;tooltip&quot;
+                                    data-placement=&quot;top&quot;
+                                    title=&quot;&quot;
+                                    data-original-title=&quot;Instagram&quot;
+                            &gt;&lt;span class=&quot;ion-logo-instagram&quot;&gt;&lt;/span
+                            &gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+                    </code></pre>
+            </div>
+
+            <div id="css2" class="tabcontent">
+                <button class="copy-button btn btn-secondary"
+                        data-clipboard-target="#code-block-sass-2">
+                    <i class="fa-solid fa-copy"></i> Copy Code
+                </button>
+                <pre class="shadow-lg rounded my-2"><code class="json hljs" id="code-block-sass-2">
+    .footer-10{
+      font-size: 16px;
+      background-color: #222222;
+      color: #ffffff;
+      .container {
+
+        a{
+          text-decoration: none;
+          color: gray;
+          &:hover{
+              color: variables.$primary-color;
+          }
+        }
+
+        .list-unstyled{
+
+          li{
+            color: #373536;
+            text-decoration: none !important;
+            line-height: 30px;
+          }
+        }
+
+
+        .row{
+            .con-1{
+              background-color: #1E1E1E;
+            }
+            .con-2{
+              background-color: #1C1C1C;
+            }
+            .con-3{
+              background-color: #252525;
+            }
+
+
+
+          .col-md-4{
+            padding: 0;
+            h2{
+              font-size: 1.5rem;
+              margin: 20px 0;
+            }
+
+          }
+          .icon{
+            background-color: variables.$primary-color;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 1rem;
+            border-radius: 1rem;
+              margin-bottom: 20px;
+
+            .icons{
+              // margin-bottom: 20px;
+              font-size: 1.5rem;
+
+            }
+          }
+        }
+
+        .footer-heading{
+          font-size: 1.5rem;
+        }
+
+        .form-control{
+          margin: 30px 0 0 0;
+        }
+
+        .email{
+          background: white !important;
+          border: none !important;
+          font-size: 1rem;
+          border-radius: 0;
+          width: 450px;
+          height: 50px;
+        }
+
+        .sub{
+          color: #fff !important;
+          font-size: 1rem;
+          background: variables.$primary-color !important;
+          border: none;
+          border-radius: 0;
+          width: 130px;
+        }
+
+        // .form-control input{
+        //   background: white !important;
+        //   border: none !important;
+        //   outline: none !important;
+        //   color: rgba(0, 0, 0, 0.3) !important;
+        //   font-size: 1rem;
+        //   border-radius: 0;
+        //   height: 70%;
+
+        // }
+
+        // .form-control submit{
+        //   color: #fff !important;
+        //   font-size: 1rem;
+        //   background: #1089ff !important;
+        //   border: none;
+        //   border-radius: 0;
+        //   height: 30%;
+        // }
+
+        .subheading{
+          margin: 30px 0;
+          display: block;
+        }
+
+        .border-top{
+          margin: 30px 0;
+        }
+      }
+    }
+                    </code></pre>
+            </div>
+
+            <div id="js2" class="tabcontent">
+                <button
+                        class="copy-button btn btn-secondary"
+                        data-clipboard-target="#code-block-js-2"
+                >
+                    <i class="fa-solid fa-copy"></i> Copy Code
+                </button>
+                <pre
+                        class="shadow-lg rounded my-2"
+                ><code class="json hljs" id="code-block-js-2">
+        <!-- javascript code go here -->
+        </code></pre>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

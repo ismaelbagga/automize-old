@@ -1,27 +1,16 @@
-{% extends 'amStaticApp/base.html' %}
-{% load static %}
-{% block title %} Blog Sample | Automize {%endblock %}
-{% block style %} {% static 'amStaticApp/css/blog.css' %} {% endblock %}
-{% block content %}
-
-
+{% extends 'amStaticApp/base.html' %} {% load static %} {% block title %} Blog
+Sample | Automize {%endblock %} {% block style %} {% static
+'amStaticApp/css/blog.css' %} {% endblock %} {% block content %}
 
 <div class="blog-sample-header">
-
-    <img src="{% static 'images/1.jpg' %}" />
-    <div class="text-header-blogs">
-        <h2>20 Key Stats 2016 <br>You Will Need in 2017</h2>
-        <p>Businesses Won’t Make It <br>Without Tech Partners</p>
-        <button class="base-btn am-btn-white col-2">Contact Automize</button>
+    <div class="text-header-blog-sample">
+        <h1>20 Key Stats 2016 You Will Need in 2017</h1>
+        <p>Businesses Won’t Make It Without Tech Partners</p>
+        <button class="base-btn am-btn-white">Contact Automize</button>
     </div>
-
 </div>
 
-
-
 <div class="blog-sample-container">
-
-
     <div class="breadcrumb-blog-sample">
         <ul>
             <li><a href="#">Home</a></li>
@@ -34,99 +23,215 @@
         <ul>
             <li><i class="fa-solid fa-calendar-days"></i>JAN 06, 2017</li>
             <li><i class="fa-solid fa-user"></i>AUTOMIZE TEAM</li>
-            <li><i class="fa-regular fa-folder-open"></i>TECHNOLOGY FOR BUSINESS GROWTH</li>
+            <li>
+                <i class="fa-regular fa-folder-open"></i>TECHNOLOGY FOR BUSINESS GROWTH
+            </li>
             <li><i class="fa-solid fa-pen-to-square"></i>INFOGRAPHICS, TRENDS</li>
         </ul>
     </div>
-
+    <div class="table-content">
+        <h3>table of contents</h3>
+        <hr />
+        <ul>
+            <li>
+                <a href="#">What is a discovery phase in software development?</a>
+            </li>
+            <li>
+                <a href="#">What is a discovery phase in software development?</a>
+            </li>
+            <li><a href="#">What is a discovery phase in software?</a></li>
+            <li>
+                <a href="#">What is a discovery phase in software development?</a>
+            </li>
+            <li><a href="#">What is a discovery phase in software?</a></li>
+        </ul>
+    </div>
 
     <div class="article-blog-sample">
         <div class="head-blog-sample">
             <h1>The state of technology for business growth</h1>
-            <p>At the beginning of the year, only the lazy would not get down to making a complex analysis of the
-                previous year results. Consider us lazy then, since we don’t want to waste your time with bulky
-                wording. </p>
-            <p>Instead, we rake up the prominent numbers from Deloitte, Statista, WeAreSocial, CompTIA, Clutch and
-                other sources to give you a brief insight on what challenges small and medium businesses came up
-                with at the end of 2016, and how IT industry can help with the technology for business growth.</p>
-            
+            <p>
+                At the beginning of the year, only the lazy would not get down to making
+                a complex analysis of the previous year results. Consider us lazy then,
+                since we don’t want to waste your time with bulky wording.
+            </p>
+            <p>
+                Instead, we rake up the prominent numbers from Deloitte, Statista,
+                WeAreSocial, CompTIA, Clutch and other sources to give you a brief
+                insight on what challenges small and medium businesses came up with at
+                the end of 2016, and how IT industry can help with the technology for
+                business growth.
+            </p>
         </div>
-        <img src="{% static 'images/People-120x300.png' %}">
+        <img src="{% static 'images/People-120x300.png' %}" />
         <div class="body-blog-sample">
             <h3>Half of World Population Browses the Internet and Uses Mobile</h3>
             <ol>
-                <li>Imagine, <strong>3.42 bln</strong> people around the globe are Internet users. This is 46%, or
-                    almost a half of world population.</li>
-                <li>Consider today there are 3.79 bln unique mobile users. In other words, more than a half of all
-                    people on the planet, particularly 51%, own mobile phones.</li>
-                <li>More than 30%, or <strong>2.31 bln</strong> people have at least one social media account, with 1.97
-                    bln using mobile to manage their social media.</li>
-                <li>In comparison with the stats from 2015, the use of the Internet, mobile and social media
-                    <strong>grew by 10%</strong> on average.</li>
+                <li>
+                    Imagine, <strong>3.42 bln</strong> people around the globe are
+                    Internet users. This is 46%, or almost a half of world population.
+                </li>
+                <li>
+                    Consider today there are 3.79 bln unique mobile users. In other words,
+                    more than a half of all people on the planet, particularly 51%, own
+                    mobile phones.
+                </li>
+                <li>
+                    More than 30%, or <strong>2.31 bln</strong> people have at least one
+                    social media account, with 1.97 bln using mobile to manage their
+                    social media.
+                </li>
+                <li>
+                    In comparison with the stats from 2015, the use of the Internet,
+                    mobile and social media <strong>grew by 10%</strong> on average.
+                </li>
             </ol>
             <p>(Based on the report made by WeAreSocial)</p>
-            <h3>Businesses Feel Pressure when Engaging These People and Turning Them into Customers</h3>
+            <h3>
+                Businesses Feel Pressure when Engaging These People and Turning Them
+                into Customers
+            </h3>
             <ol>
-                <li>Imagine, <strong>3.42 bln</strong> people around the globe are Internet users. This is 46%, or
-                    almost a half of world population.</li>
-                <li>Consider today there are 3.79 bln unique mobile users. In other words, more than a half of all
-                    people on the planet, particularly 51%, own mobile phones.</li>
-                <li>More than 30%, or <strong>2.31 bln</strong> people have at least one social media account, with 1.97
-                    bln using mobile to manage their social media.</li>
-                <li>In comparison with the stats from 2015, the use of the Internet, mobile and social media
-                    <strong>grew by 10%</strong> on average.</li>
+                <li>
+                    Imagine, <strong>3.42 bln</strong> people around the globe are
+                    Internet users. This is 46%, or almost a half of world population.
+                </li>
+                <li>
+                    Consider today there are 3.79 bln unique mobile users. In other words,
+                    more than a half of all people on the planet, particularly 51%, own
+                    mobile phones.
+                </li>
+                <li>
+                    More than 30%, or <strong>2.31 bln</strong> people have at least one
+                    social media account, with 1.97 bln using mobile to manage their
+                    social media.
+                </li>
+                <li>
+                    In comparison with the stats from 2015, the use of the Internet,
+                    mobile and social media <strong>grew by 10%</strong> on average.
+                </li>
             </ol>
-            <p>Based on the statistics collected by Blue Corona taken from Statista, CMOSurvey, PRNewsWire,
-                Business2Community, etc.)</p>
-            <h3>Businesses Feel Pressure when Engaging These People and Turning Them into Customers</h3>
+            <p>
+                Based on the statistics collected by Blue Corona taken from Statista,
+                CMOSurvey, PRNewsWire, Business2Community, etc.)
+            </p>
+            <h3>
+                Businesses Feel Pressure when Engaging These People and Turning Them
+                into Customers
+            </h3>
             <ol>
-                <li>Imagine, <strong>3.42 bln</strong> people around the globe are Internet users. This is 46%, or
-                    almost a half of world population.</li>
-                <li>Consider today there are 3.79 bln unique mobile users. In other words, more than a half of all
-                    people on the planet, particularly 51%, own mobile phones.</li>
-                <li>More than 30%, or <strong>2.31 bln</strong> people have at least one social media account, with 1.97
-                    bln using mobile to manage their social media.</li>
-                <li>In comparison with the stats from 2015, the use of the Internet, mobile and social media
-                    <strong>grew by 10%</strong> on average.</li>
+                <li>
+                    Imagine, <strong>3.42 bln</strong> people around the globe are
+                    Internet users. This is 46%, or almost a half of world population.
+                </li>
+                <li>
+                    Consider today there are 3.79 bln unique mobile users. In other words,
+                    more than a half of all people on the planet, particularly 51%, own
+                    mobile phones.
+                </li>
+                <li>
+                    More than 30%, or <strong>2.31 bln</strong> people have at least one
+                    social media account, with 1.97 bln using mobile to manage their
+                    social media.
+                </li>
+                <li>
+                    In comparison with the stats from 2015, the use of the Internet,
+                    mobile and social media <strong>grew by 10%</strong> on average.
+                </li>
             </ol>
-            
         </div>
         <div class="conclusion-blog-sample">
             <h3>Conclusion</h3>
-            <p>Relying on the given numbers that touch upon customers, businesses and tech providers, it’s easy to
-                conclude:</p>
+            <p>
+                Relying on the given numbers that touch upon customers, businesses and
+                tech providers, it’s easy to conclude:
+            </p>
             <ol>
                 <li>Customers heavily rely on online and mobile.</li>
-                <li>Businesses, especially small ones, experience the lack of online presence and have doubts about
-                    investing into web assets.</li>
-                <li>IT industry provides better and more cost-efficient technology for business growth.</li>
-                <li>Both long-term tech partnership and IT outsourcing will meet greater demand in 2017.</li>
+                <li>
+                    Businesses, especially small ones, experience the lack of online
+                    presence and have doubts about investing into web assets.
+                </li>
+                <li>
+                    IT industry provides better and more cost-efficient technology for
+                    business growth.
+                </li>
+                <li>
+                    Both long-term tech partnership and IT outsourcing will meet greater
+                    demand in 2017.
+                </li>
             </ol>
         </div>
-        <div class="social-media">
+
+        <div class="faq-section">
+            <h3>faq</h3>
+            <hr />
             <ul>
-                <li><i class="fa-brands fa-square-facebook"></i><a href="#">Facebook</a></li>
-                <li><i class="fa-brands fa-square-twitter"></i><a href="#">Twitter</a></li>
-                <li><i class="fa-brands fa-linkedin"></i><a href="#">Linkedin</a></li>
-                <li><i class="fa-solid fa-envelope"></i><a href="#">Email</a></li>
+                <li>
+                    <a href="#">Can .NET Framework applications run on .NET Core?</a>
+                </li>
+                <li><a href="#">When not to use .NET Framework?</a></li>
+                <li>
+                    <a href="#">Can .NET Framework applications run on .NET Core?</a>
+                </li>
+                <li><a href="#">When not to use .NET Framework?</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="table-content">
-        <h3>table of contents</h3>
-        <hr>
-        <ul>
-            <li><a href="#">What is a discovery phase in software development?</a></li>
-            <li><a href="#">What is a discovery phase in software development?</a></li>
-            <li><a href="#">What is a discovery phase in software?</a></li>
-            <li><a href="#">What is a discovery phase in software development?</a></li>
-            <li><a href="#">What is a discovery phase in software development?</a></li>
-            <li><a href="#">What is a discovery phase in software?</a></li>
-        </ul>
-    </div>
-
 
 </div>
+
+
+<div class="automize-team-section">
+    <div class="team-section">
+        <div class="left-automize-team">
+            <img src="{% static 'images/Mask-Group.jpg' %}" />
+            <div class="info-team">
+                <a href="#">Digiteum Team</a>
+                <p>Follow me : <i class="fa-brands fa-linkedin"></i></p>
+            </div>
+        </div>
+        <div class="right-automize-team">
+            <p>
+                Digiteum is a seasoned team of tech experts, senior engineers,
+                architects, and UX/UI designers working together since 2010. We share
+                our rich knowledge and experience in cutting-edge technologies, custom
+                software design and development, modern engineering and automation
+                practices and talk about how to bridge business and technologies to help
+                companies compete, hit their goals, and stay resilient.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="related-articles-section">
+    <h3>related articles</h3>
+    <hr>
+    <div class="articles-blog-sample">
+        <div class="article-blog-sample">
+            <img src="{% static 'images/Mask-Group.jpg' %}">
+            <p><a href="#">Your Go-To Guide to Finding and Hiring .NET Developers</a></p>
+        </div>
+        <div class="article-blog-sample">
+            <img src="{% static 'images/Mask-Group.jpg' %}">
+            <p><a href="#">Your Go-To Guide to Finding and Hiring .NET Developers</a></p>
+        </div>
+        <div class="article-blog-sample">
+            <img src="{% static 'images/Mask-Group.jpg' %}">
+            <p><a href="#">Your Go-To Guide to Finding and Hiring .NET Developers</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="social-media">
+    <ul>
+        <li><i class="fa-brands fa-square-facebook"></i><a href="#">Facebook</a></li>
+        <li><i class="fa-brands fa-square-twitter"></i><a href="#">Twitter</a></li>
+        <li><i class="fa-brands fa-linkedin"></i><a href="#">Linkedin</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a href="#">Email</a></li>
+    </ul>
+</div>
+
 
 {% endblock %}

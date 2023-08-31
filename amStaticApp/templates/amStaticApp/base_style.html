@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'amStaticApp/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'amStaticApp/css/main.css' %}" />
+  <link rel="stylesheet" href="{% block style %} {% endblock %}">
+    {% block custom_style %} {% endblock %}
+  <!-- Additional CSS or other meta tags can be added here -->
+  <title>{% block title %}My App{% endblock %}</title>
+
+</head>
+
+<body>
+
+
+  <div class="{% block container %}container{% endblock %}">
+    {% block content %} {% endblock %}
+
+  </div>
+
+
+
+
+  <script src="https://kit.fontawesome.com/862b1267d5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{% static 'amStaticApp/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'amStaticApp/js/main.js' %}"></script>
+
+</body>
+
+</html>
