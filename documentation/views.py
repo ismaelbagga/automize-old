@@ -65,9 +65,17 @@ def header1_view(request):
     return render(request, 'elements/headers/header1.html')
 
 
+def header2_view(request):
+    return render(request, 'elements/headers/header2.html')
+
+
 # footers
 def footer1_view(request):
     return render(request, 'elements/footers/footer1.html')
+
+
+def footer2_view(request):
+    return render(request, 'elements/footers/footer2.html')
 
 
 # cards

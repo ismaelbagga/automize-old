@@ -1,7 +1,170 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 
-    <iframe id="myIframe" src="{% url 'test' %}" style="width: 90%; height: 500px"></iframe>
+
+    {#    <header class="docs-header">#}
+    {#        <h1 class="docs-heading">#}
+    {#            Heading#}
+    {#            <span class="docs-time">Last updated: 2019-06-01</span>#}
+    {#        </h1>#}
+    {#        <section class="docs-intro">#}
+    {#            <p>#}
+    {#                this is a text talking about heading#}
+    {#            </p>#}
+    {#        </section>#}
+    {#        <!--//docs-intro-->#}
+    {##}
+    {#        <h5>Github Code Example:</h5>#}
+    {#        <p>#}
+    {#            You can#}
+    {#            <a#}
+    {#                    class="theme-link"#}
+    {#                    href="https://gist.github.com/"#}
+    {#                    target="_blank"#}
+    {#            >embed your code snippets using Github gists</a#}
+    {#            >#}
+    {#        </p>#}
+    {#        <div class="docs-code-block">#}
+    {#            <!-- ** Embed github code starts ** -->#}
+    {#            <script src="{% static 'https://gist.github.com/xriley/fce6cf71edfd2dadc7919eb9c98f3f17.js' %}"></script>#}
+    {#            <!-- ** Embed github code ends ** -->#}
+    {#        </div>#}
+    {#        <!--//docs-code-block-->#}
+    {##}
+    {#        <h5>Highlight.js Example:</h5>#}
+    {#        <p>#}
+    {#            You can#}
+    {#            <a#}
+    {#                    class="theme-link"#}
+    {#                    href="https://github.com/highlightjs/highlight.js"#}
+    {#                    target="_blank"#}
+    {#            >embed your code snippets using highlight.js</a#}
+    {#            >#}
+    {#            It supports#}
+    {#            <a#}
+    {#                    class="theme-link"#}
+    {#                    href="https://highlightjs.org/static/demo/"#}
+    {#                    target="_blank"#}
+    {#            >185 languages and 89 styles</a#}
+    {#            >.#}
+    {#        </p>#}
+    {#        <p>#}
+    {#            This template uses#}
+    {#            <a#}
+    {#                    class="theme-link"#}
+    {#                    href="https://highlightjs.org/static/demo/"#}
+    {#                    target="_blank"#}
+    {#            >Atom One Dark</a#}
+    {#            >#}
+    {#            style for the code blocks: <br/><code#}
+    {#        >&#x3C;link rel=&#x22;stylesheet&#x22;#}
+    {#            href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css&#x22;&#x3E;</code#}
+    {#        >#}
+    {#        </p>#}
+    {#        <div class="docs-code-block">#}
+    {#                <pre class="shadow-lg rounded"><code class="json hljs">[#}
+    {#  {#}
+    {#    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"es"</span>,#}
+    {#    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">12000</span>, <span#}
+    {#                            class="hljs-number">20000</span>],#}
+    {#    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span#}
+    {#                            class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}#}
+    {#  },#}
+    {#  {#}
+    {#    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"oranges"</span>,#}
+    {#    <span class="hljs-attr">"count"</span>: [<span class="hljs-number">17500</span>, <span#}
+    {#                            class="hljs-literal">null</span>],#}
+    {#    <span class="hljs-attr">"description"</span>: {<span class="hljs-attr">"text"</span>: <span class="hljs-string">"..."</span>, <span#}
+    {#                            class="hljs-attr">"sensitive"</span>: <span class="hljs-literal">false</span>}#}
+    {#  }#}
+    {#]#}
+    {##}
+    {##}
+    {#</code></pre>#}
+    {#        </div>#}
+    {#        <!--//docs-code-block-->#}
+    {#    </header>#}
+    <section class="docs-section">
+        <h2 class="section-heading">Heading 1</h2>
+        <h3>Preview</h3>
+        <a
+                class="copy-button btn btn-primary"
+                href="{% url 'test' %}"
+                target="_blank"
+        >
+        <i class="fa-solid fa-up-right-from-square"></i> Open in new page
+        </a>
+        <iframe id="myIframe" class="my-3" src="{% url 'test' %}" style="width: 100%; height: 500px"></iframe>
+        <div class="my-5"></div>
+        <h3>Code</h3>
+        <div class="code-tabs">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'html1')">HTML</button>
+                <button class="tablinks" onclick="openTab(event, 'css1')">SASS</button>
+                <button class="tablinks" onclick="openTab(event, 'js1')">
+                    JavaScript
+                </button>
+            </div>
+
+            <div id="html1" class="tabcontent">
+                <button
+                        class="copy-button btn btn-secondary"
+                        data-clipboard-target="#code-block-html-1"
+                >
+                    <i class="fa-solid fa-copy"></i> Copy Code
+                </button>
+
+                <pre
+                        class="shadow-lg rounded my-2"
+                ><code class="json hljs" id="code-block-html-1">
+        &lt;button class=&quot;base-btn am-btn-primary&quot;&gt;&lt;/button&gt;
+      </code></pre>
+            </div>
+
+            <div id="css1" class="tabcontent">
+                <button
+                        class="copy-button btn btn-secondary"
+                        data-clipboard-target="#code-block-sass-1"
+                >
+                    Copy Code
+                </button>
+                <pre
+                        class="shadow-lg rounded"
+                ><code class="json hljs" id="code-block-sass-1">
+        .am-btn-primary {
+          // Color & background
+          background-color: $primary-color;
+          color: white;
+          border: 2px solid $primary-color;
+          &:hover {
+            background-color: white;
+            border: 2px solid $primary-color;
+            color: $primary-color;
+          }
+        }
+
+        </code></pre>
+            </div>
+
+            <div id="js1" class="tabcontent">
+                <button
+                        class="copy-button btn btn-secondary"
+                        data-clipboard-target="#code-block-js-1"
+                >
+                    Copy Code
+                </button>
+                <pre
+                        class="shadow-lg rounded"
+                ><code class="json hljs" id="code-block-js-1">
+				JS
+
+        </code></pre>
+            </div>
+        </div>
+    </section>
+    <!--//section-->
+
+
 
 {% endblock %}

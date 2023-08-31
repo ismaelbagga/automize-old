@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="{% static 'amStaticApp/css/bootstrap.min.css' %}" />
   <link rel="stylesheet" href="{% static 'amStaticApp/css/main.css' %}" />
   <link rel="stylesheet" href="{% block style %} {% endblock %}">
+    {% block custom_style %} {% endblock %}
   <!-- Additional CSS or other meta tags can be added here -->
   <title>{% block title %}My App{% endblock %}</title>
 
@@ -16,7 +17,7 @@
 <body>
 
 
-  <div class="container">
+  <div class="{% block container %}container{% endblock %}">
     {% block content %} {% endblock %}
 
   </div>
