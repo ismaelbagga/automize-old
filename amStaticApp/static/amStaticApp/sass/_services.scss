@@ -39,7 +39,7 @@
   align-items: flex-start;
   padding: 0 100px;
   margin: 50px 0;
-  //   padding: 40px 0;
+
 
   .text-content {
     width: 60%;
@@ -49,14 +49,8 @@
       font-weight: 700;
       margin: 40px 0;
     }
-
-    div {
-      p {
-        font-size: 23px;
-        line-height: 36px;
-        color: #666666;
-        font-weight: 300;
-      }
+    p{
+      font-size: 18px;
     }
   }
 
@@ -70,6 +64,12 @@
       text-align: center;
       font-weight: 700;
       margin: 40px 0;
+    }
+
+    .check{
+      input[type="checkbox"]{
+        width: 40px;
+      }
     }
 
     .contact-container {
@@ -460,6 +460,9 @@ nav {
       flex-direction: column;
       width: 90%;
       text-align: center;
+      p{
+        text-align: left;
+      }
     }
     .call-to-action{
       width: 90%;
@@ -479,7 +482,7 @@ nav {
   }
 
   .services-section-services{
-    height: 290vh;
+    height: 140vh;
     .cards{
       flex-direction: column;
       width: 50%;
@@ -490,6 +493,9 @@ nav {
   .section-big-cards{
     .cards-container{
       flex-direction: column;
+      .am-card{
+        padding: 40px 0px;
+      }
     }
   }
   .heading-line{
@@ -497,7 +503,7 @@ nav {
   }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:430px){
   .services-section-header{
     .text-container{
       height: auto;
@@ -510,6 +516,12 @@ nav {
     }
   }
   .services-section-services{
-    height: 100vh;
+    height: 230vh;
+  }
+}
+
+@media screen and (max-width:399px){
+  .services-section-services{
+    height: 180vh;
   }
 }

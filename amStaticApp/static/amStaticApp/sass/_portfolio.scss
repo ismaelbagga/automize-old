@@ -76,7 +76,7 @@
             
             .card{
                 border: none;
-                width: 270px ;
+                width: 330px ;
                 margin: 10px 30px;
 
                 img{
@@ -111,8 +111,15 @@
     }
 }
 
+@media screen and (max-width: 900px){
+    .portfolio-section-header{
+        height: 80vh;
+    }
+}
+
 @media screen and (max-width: 500px){
     .portfolio-section-header{
+        height: 50vh;
         .content-container{
             h2{
                 font-size: 30px;
