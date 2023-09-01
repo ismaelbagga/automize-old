@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="{% static 'images/logo/logo_icon.png' %}">
+
     <link
       rel="stylesheet"
       href="{% static 'amStaticApp/css/bootstrap.min.css' %}"
@@ -19,7 +21,7 @@
   <body>
     <nav>
       <div class="wrapper">
-        <div class="logo"><a href="{% url 'home' %}">Automize</a></div>
+        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo/logo_hozirontal.png' %}"></a></div>
         <ul class="nav-links">
           <li class="has-dropdown">
             <a href="{% url 'services' %}">Services </a>
