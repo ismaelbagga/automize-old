@@ -14,17 +14,19 @@
     <link rel="stylesheet" href="{% block style %} {% endblock %}" />
     <!-- Additional CSS or other meta tags can be added here -->
     <title>{% block title %}My App{% endblock %}</title>
-    
-    </script>
   </head>
-
   <body>
+   
+    {% url "services" as ServicePage %}
+    {% url "portfolio" as PortfolioPage %}
+    {% url "blog" as BlogPage %}
+    {% url "about" as AboutPage %}
     <nav>
-      <div class="wrapper">
+      <div class="wrapper  ">
         <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo/logo_hozirontal.png' %}"></a></div>
         <ul class="nav-links">
-          <li class="has-dropdown">
-            <a href="{% url 'services' %}">Services </a>
+          <li class="has-dropdown ">
+            <a class="{% if request.path == ServicePage %}active{% endif %}" href="{{ServicePage}}">Services </a>
             <i class="fa-solid fa-chevron-down" id="services-dropdown-btn"></i>
             <div class="mega-box">
               <div class="content">
@@ -65,9 +67,9 @@
               </div>
             </div>
           </li>
-          <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="{% url 'blog' %}">Blog</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a class="{% if request.path ==  PortfolioPage %}active{% endif %}" href="{{PortfolioPage}}">Portfolio</a></li>
+          <li><a class="{% if request.path ==  BlogPage %}active{% endif %}" href="{{BlogPage}}">Blog</a></li>
+          <li><a class="{% if request.path ==  AboutPage %}active{% endif %}" href="{{AboutPage}}">About</a></li>
           <li>
             <a href="{% url 'contact' %}" class="base-btn am-btn-primary"
               >Contact Us</a
@@ -129,6 +131,7 @@
             </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-7">
             <div class="row">
@@ -162,23 +165,26 @@
           </div>
           <div class="col-md-5 mb-md-0 mb-4">
             <h2 class="footer-heading">Subscribe</h2>
-            <form action="#" class="subscribe-form">
+            <form  class="subscribe-form"  method="post" action="{%url 'subscribe' %}" autocomplete="off">
+              {% csrf_token %}
               <div class="form-group d-flex">
-                <input
-                  type="text"
-                  class="form-control rounded-left email"
-                  placeholder="Enter email address"
-                />
-                <button
-                  type="submit"
-                  class="form-control submit rounded-right sub"
+                <input name="email" type="email" class="form-control rounded-left email"placeholder="Enter email address" 
+               value=""
                 >
-                  Subscribe
-                </button>
+                <button type="submit" class="form-control submit rounded-right sub">Subscribe</button>
               </div>
-              <span class="subheading"
-                >Get digital marketing updates in your mailbox</span
-              >
+              <span class="subheadin"> 
+                
+                 {% if messages  %}
+                {% for message in messages %}
+                  {% if message.tags == 'info' %}
+                      <p class="alert" id="email-message-status" style="color: rgb(12, 206, 12); ">{{message}}</p>
+                  {% endif %}
+                  {% if message.tags == 'error' %}
+                  <p class="alert" id="email-message-status" style="color: rgb(235, 34, 34); ">{{message}}</p>
+              {% endif %}
+                {% endfor %}
+              {% endif %}</span>
             </form>
           </div>
         </div>
@@ -235,9 +241,17 @@
     </footer>
 
     <script>
+    
+
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenuToggle = document.getElementById("mobileMenuToggle");
         const navLinks = document.querySelector(".nav-links");
+        // -------------------------------------------------------------------------------------------------------
+        const shouldScrollDown =  document.querySelector("#email-message-status") ;
+        if( shouldScrollDown)   {
+          window.scrollTo(0,document.body.scrollHeight)
+        }
+        // -------------------------------------------------------------------------------------------------------
 
         mobileMenuToggle.addEventListener("click", function () {
           navLinks.classList.toggle("open");

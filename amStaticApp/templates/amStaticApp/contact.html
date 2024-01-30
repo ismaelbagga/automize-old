@@ -7,33 +7,61 @@
 
 <div class="contact-container">
   <h1>Let's talk about your project</h1>
-
+  
   <div class="contact-details">
-
-    <form class="contact form-contact">
+    <form class="contact form-contact" method="post" action="contact" autocomplete="off" >
+       {% csrf_token %}
+       {% if messages %}
+    {% for message in messages %}
+      {% if message.tags == 'success' %}
+          <p class="alert" style="color: rgb(12, 206, 12); ">{{message}}</p>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
       <div class="contact-row">
         <div class="inputBox-contact">
-          <span>Name</span>
-          <input type="text" />
+          <span> Name </span>
+          <input name="name" type="text"  {% if form.name.value != none %}
+              value={{form.name.value}}
+          {% endif %}  >
+             {% for error in form.name.errors %}
+                 <p style="color : red">{{error}}</p>
+             {% endfor %}
+            
         </div>
         <div class="inputBox-contact">
           <span>Email</span>
-          <input type="email" />
+          <input  name="email" type="email" {% if form.email.value != none %}
+          value={{ form.email.value }}
+          {% endif %} >
+             {% for error in form.email.errors %}
+                 <p style="color : red">{{error}}</p>
+             {% endfor %}
         </div>
       </div>
       <div class="contact-row">
         <div class="inputBox-contact">
           <span>Company</span>
-          <input type="text" />
+          <input name="Company" type="text" {% if form.Company.value != none  %}
+          value={{ form.Company.value }}
+          {% endif %} >
+          {% for error in form.Company.errors %}
+                 <p style="color : red">{{error}}</p>
+             {% endfor %}
         </div>
       </div>
       <div class="inputBox-contact">
         <span>Message</span>
-        <textarea cols="15" rows="12"></textarea>
+        <textarea name="Message" cols="15" rows="12"> {% if form.Message.value != none  %}
+          {{form.Message.value}}
+        {% endif %}</textarea>
+        {% for error in form.Message.errors %}
+                 <p style="color : red">{{error}}</p>
+             {% endfor %}
       </div>
 
       <div class="form-check">
-        <input class="form-check-input btn-outline-danger" type="checkbox" value="">
+        <input class="form-check-input btn-outline-danger" type="checkbox" value="{{form.chik.value}}">
         <label class="form-check-label">
           Lorem ipsum dolor sit amet, consectetur adipisci ngipsum
           dolor sit amet, consectetur adipiscing elit, sed

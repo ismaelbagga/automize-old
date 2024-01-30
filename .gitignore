@@ -183,4 +183,13 @@ GitHub.sublime-settings
 
 # node for sass folders
 node_modules/
+# amStaticApp/static/**
 amStaticApp/static/amStaticApp/css/main.css
+amStaticApp/static/css/
+amStaticApp/static/admin/
+amStaticApp/static/fontawesome/
+amStaticApp/static/images/
+amStaticApp/static/fonts/
+amStaticApp/static/js/
+amStaticApp/static/plugins/
+amStaticApp/static/scss/bootstrap/scss/**

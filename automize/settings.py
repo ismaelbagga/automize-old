@@ -150,3 +150,9 @@ STORAGES = {
 # Don't store the original (un-hashed filename) version of static files, to reduce slug size:
 # https://whitenoise.readthedocs.io/en/latest/django.html#WHITENOISE_KEEP_ONLY_HASHED_FILES
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '2afcdc63aa1c62'
+EMAIL_HOST_PASSWORD = '1e1f110d8ae697'
+EMAIL_PORT = '2525'
