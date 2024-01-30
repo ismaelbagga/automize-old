@@ -8,9 +8,9 @@
 
     <link
       rel="stylesheet"
-      href="{% static 'amStaticApp/css/bootstrap.min.css' %}"
+      href="{% static '/css/bootstrap.min.css' %}"
     />
-    <link rel="stylesheet" href="{% static 'amStaticApp/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/dist/main.css' %}" />
     <link rel="stylesheet" href="{% block style %} {% endblock %}" />
     <!-- Additional CSS or other meta tags can be added here -->
     <title>{% block title %}My App{% endblock %}</title>
@@ -278,7 +278,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{% static 'amStaticApp/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'amStaticApp/js/main.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

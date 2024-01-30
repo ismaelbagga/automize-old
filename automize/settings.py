@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
     #Local App
     'amStaticApp',
-    'documentation',    
+# 'documentation',    
 ]
 
 MIDDLEWARE = [
