@@ -39,5 +39,9 @@ def service_design_sample_view(request):
     return render(request, 'amStaticApp/service_design_sample.html')
 
 
-def service_tech_sample_view(request):
-    return render(request, 'amStaticApp/service_tech_sample.html')
+def web_dev(request):
+    return render(request, 'amStaticApp/services/web_dev.html')
+
+
+def mobile(request):
+    return render(request, 'amStaticApp/services/mobile.html')

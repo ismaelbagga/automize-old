@@ -157,6 +157,7 @@
         align-items: center;
         background-color: white;
         text-align: center;
+        width: 25%;
         border: none;
       
 
@@ -436,7 +437,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 20% 0 10% 0;
+    margin: 80px 0;
 
     h1 {
       font-size: 32px;
@@ -648,4 +649,10 @@
 
   }
 
+}
+
+.service-tech-sample-section-clients-comments{
+  .client-comment{
+    width: 30%;
+  }
 }

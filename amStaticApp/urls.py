@@ -12,6 +12,6 @@ urlpatterns = [
     path('portfolio_sample', views.portfolio_sample_view, name="portfolio_sample"),
     path('services', views.services_view, name="services"),
     path('service_design_sample', views.service_design_sample_view, name="service_design_sample"),
-    path('service_tech_sample', views.service_tech_sample_view, name="service_tech_sample"),
-
+    path('services/web_development', views.web_dev, name="web_dev"),
+    path('services/mobile', views.mobile, name="mobile_dev"),
 ]

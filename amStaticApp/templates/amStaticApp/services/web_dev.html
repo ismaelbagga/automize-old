@@ -1,0 +1,144 @@
+{% extends 'amStaticApp/base.html' %} {% load static %} {% block title %}
+    Service Design Sample | Automize {% endblock %} {% block content %}
+
+    <div class="services-tech-header-banner">
+        <h2 class="container">SERVICES FOR CUSTOM WEB DEVELOPMENT</h2>
+        <p>
+            Select tried-and-true web development services to provide your business and clients the digital tools they
+            need to be successful, creative, and efficient—and to stay ahead of the competition.
+        </p>
+        <a href="{% url 'contact' %}" class="base-btn am-btn-secondary">Contact Us</a>
+    </div>
+
+    <div class="services-tech-container">
+        <div class="services-tech-text-section">
+            <h1>OUR SERVICES FOR WEB DEVELOPMENT</h1>
+            <hr/>
+            <section>
+                <p>
+                    Automize is a one-stop shop for web development services for successful businesses with exacting
+                    deadlines and high standards.
+                </p>
+                <p>
+                    As a bespoke web development services provider, we maintain a laser-like focus on your company's
+                    objectives, delve deeply into your technological infrastructure and business environment,
+                    investigate the market, and assess your needs and capacity for innovation in order to provide a
+                    digital strategy that will support the evolution of your organization.
+                </p>
+            </section>
+        </div>
+
+        <div class="services-tech-text-section">
+            <h1>what we do</h1>
+            <hr/>
+            <section>
+                <p>
+                    At Automize, we specialize in crafting bespoke web solutions that drive success. From responsive
+                    design to seamless e-commerce integration, our services are tailored to meet your unique needs. With
+                    a focus on innovation and excellence, we'll help you stay ahead of the curve and outshine the
+                    competition.
+                </p>
+
+                <p>Partner with us to elevate your online presence and achieve your business goals.</p>
+            </section>
+        </div>
+
+        <div class="services-section-icons">
+            <div class="icons-text-wrapper">
+                <div class="choices-box">
+                    <img src="{% static 'images/t.png' %}"/>
+                    <p>COMPLEX WEB PLATFORMS</p>
+                </div>
+                <div class="choices-box">
+                    <img src="{% static 'images/s.png' %}"/>
+                    <p>WEB APP DEVELOPMENT</p>
+                </div>
+                <div class="choices-box">
+                    <img src="{% static 'images/Group-27.png' %}"/>
+                    <p>UX/UI WEB DESIGN</p>
+                </div>
+                <div class="choices-box">
+                    <img src="{% static 'images/Group-27.png' %}"/>
+                    <p>WEB APPLICATIONS FOR IOT</p>
+                </div>
+            </div>
+            <a href="{% url 'contact' %}" class="base-btn am-btn-secondary my-5">
+                tell us about your project
+            </a>
+        </div>
+
+
+        <section class="service-tech-sample-section-methodology">
+            <h1>MANAGE DELIVERY AND EXPENSES USING AN AGILE PROCESS</h1>
+            <span class="heading-line"></span>
+            <div class="description">
+                <p>
+                    We adopt a tried-and-tested agile methodology to ensure transparency and efficiency in every stage
+                    of the development process. With our approach, we guarantee predictably successful outcomes, meet
+                    delivery deadlines, and maintain cost-effectiveness.
+                </p>
+            </div>
+
+            <div class="cards-container">
+                <div class="card">
+                    <img src="{% static 'images/Group-3-4.png' %}"/>
+                    <div class="text-content">
+                        <h5>DIGITAL STRATEGY</h5>
+                        <p>
+                            We start by thoroughly researching your business objectives, target audience, and market
+                            landscape. From this, we create bespoke design and technical strategies to drive your
+                            success.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/Group-3-3.png' %}"/>
+                    <div class="text-content">
+                        <h5>UX/UI DESIGN</h5>
+                        <p>
+                            Using top-notch user-centered design principles, we craft engaging web interfaces that
+                            seamlessly blend functionality, elegance, simplicity, and innovation to captivate users.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/Group-3-2.png' %}"/>
+                    <div class="text-content">
+                        <h5>WEB DEVELOPMENT</h5>
+                        <p>
+                            We employ an iterative approach to promptly accommodate changes, manage costs, and ensure
+                            timely delivery. This guarantees a product that aligns with your evolving business
+                            requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/Group-3-4.png' %}"/>
+                    <div class="text-content">
+                        <h5>QA&OPTIMIZATION</h5>
+                        <p>
+                            We seamlessly integrate new web products into your digital infrastructure, rigorously test
+                            them in real-world environments, and leverage performance insights for ongoing optimization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="{% url 'contact' %}" class="base-btn am-btn-secondary mt-5">HIRE WEB DEVELOPERS</a>
+        </section>
+
+ 
+        <div class="services-tech-text-bottom-section">
+            <h1>APPLY NOW FOR WEBSITE DEVELOPMENT SERVICES</h1>
+            <hr/>
+            <section>
+                <p>
+                    Hire a capable custom web development company once, and you will never have to spend months trying
+                    to find qualified specialists to design, develop, support, and scale your web system. So that you
+                    could focus on growing your business.
+                </p>
+            </section>
+            <a href="{% url 'contact' %}" class="base-btn am-btn-secondary mt-5">HIRE WEB DEVELOPERS</a>
+        </div>
+    </div>
+
+{% endblock %}
