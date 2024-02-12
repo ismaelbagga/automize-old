@@ -4,6 +4,7 @@
 .services-section-header {
   @include mixins.fullwidth;
   padding-top: 30px;
+
   .text-container {
     background-image: url("../../images/hero-image.webp");
     width: 100%;
@@ -15,6 +16,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
     h2 {
       font-size: 58px;
       font-weight: 700;
@@ -43,14 +45,19 @@
 
   .text-content {
     width: 60%;
+
     h1 {
       font-size: 46px;
       text-align: left;
       font-weight: 700;
       margin: 40px 0;
     }
-    p{
-      font-size: 18px;
+
+    p {
+      font-weight: 300;
+      font-size: 23px;
+      vertical-align: baseline;
+      line-height: 36px;
     }
   }
 
@@ -59,6 +66,7 @@
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+
     h5 {
       font-size: 18px;
       text-align: center;
@@ -66,8 +74,8 @@
       margin: 40px 0;
     }
 
-    .check{
-      input[type="checkbox"]{
+    .check {
+      input[type="checkbox"] {
         width: 40px;
       }
     }
@@ -118,8 +126,10 @@
           line-height: 21px;
           text-align: left;
           margin: 5px;
+
           a {
             color: variables.$primary-color;
+
             &:hover {
               text-decoration: none;
             }
@@ -142,6 +152,7 @@
 
     a {
       width: 100%;
+
       &:hover {
         color: white;
       }
@@ -208,12 +219,11 @@
 
 .services-section-services {
   @include mixins.fullwidth;
-  padding: 30px;
   text-align: center;
   height: 700px;
   background-color: #f2f2f2;
   padding: 50px 0;
-  margin: 50px 0px;
+  margin: 0 0 50px;
 
   .content-container {
     // margin: 60px 0 500px 0;
@@ -235,6 +245,7 @@
       width: 80%;
       display: flex;
       justify-content: space-between;
+
       .card {
         background-color: white;
         //   width: 265px;
@@ -242,6 +253,7 @@
         padding: 25px 18px;
         margin: 0 10px;
         align-items: center;
+
         h3 {
           text-align: center;
           font-size: 18px;
@@ -315,6 +327,7 @@
       .am-btn-secondary {
         background-color: white;
         color: variables.$primary-color;
+
         &:hover {
           color: white;
           background-color: variables.$secondary-color;
@@ -341,76 +354,85 @@ nav {
   box-shadow: none !important;
 }
 
-@media screen and (max-width:980px){
-  .services-section-header{
-    .text-container{
-      h2{
+@media screen and (max-width: 980px) {
+  .services-section-header {
+    .text-container {
+      h2 {
         font-size: 45px;
       }
-      h4{
+
+      h4 {
         font-size: 35px;
       }
     }
   }
 
-  .services-section-custom-development{
+  .services-section-custom-development {
     padding: 0;
-    .text-content{
-      h1{
+
+    .text-content {
+      h1 {
         font-size: 35px;
       }
 
-      div{
-        p{
+      div {
+        p {
           font-size: 18px;
           line-height: 28px;
         }
       }
     }
 
-    .call-to-action{
-  
-      .contact-container{
+    .call-to-action {
+
+      .contact-container {
         font-size: 12px;
         padding: 5px;
-        div{
+
+        div {
           font-size: 8px;
         }
       }
     }
   }
 
-  .services-section-technologies{
+  .services-section-technologies {
     font-size: 12px;
-    .cards-column{
-      .card{
+
+    .cards-column {
+      .card {
         font-size: 10px;
         line-height: 20px;
         // padding: 15px;
         margin: 5px;
 
-        h4{
+        h4 {
           font-size: 20px;
         }
-        p{
+
+        p {
           font-size: 15px;
         }
       }
     }
   }
 
-  .services-section-services{
+  .services-section-services {
     margin: 0;
-    .content-container{
+
+    .content-container {
       margin: 0;
-      .cards{
-        .card{
+
+      .cards {
+        .card {
           margin: 0 5px;
           padding: 20px 15px;
-          h3{
-            padding:5px;
+
+          h3 {
+            padding: 5px;
           }
-          p{
+
+          p {
             margin-bottom: 40px;
           }
         }
@@ -418,110 +440,124 @@ nav {
     }
   }
 
-  .section-big-cards{
-    .cards-container{
+  .section-big-cards {
+    .cards-container {
       margin: 0;
-      .am-card{
+
+      .am-card {
         padding: 40px;
-        margin: 10px ;
-        p{
+        margin: 10px;
+
+        p {
           // font-size: 18px;
           line-height: 20px;
         }
       }
     }
-    p{
+
+    p {
       font-size: 25px;
     }
   }
 }
 
-@media screen and (max-width:800px){
-  .services-section-header{
-    .text-container{
+@media screen and (max-width: 800px) {
+  .services-section-header {
+    .text-container {
       height: auto;
-      h2{
+
+      h2 {
         font-size: 38px;
       }
-      h4{
+
+      h4 {
         font-size: 28px;
       }
     }
   }
 
-  .services-section-custom-development{
+  .services-section-custom-development {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .text-content{
+
+    .text-content {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       width: 90%;
       text-align: center;
-      p{
+
+      p {
         text-align: left;
       }
     }
-    .call-to-action{
+
+    .call-to-action {
       width: 90%;
     }
   }
 
-  .services-section-technologies{
-    .cards-column{
+  .services-section-technologies {
+    .cards-column {
       flex-direction: column;
-      .card{
+
+      .card {
         text-align: center;
-        h4{
+
+        h4 {
           text-align: center;
         }
       }
     }
   }
 
-  .services-section-services{
+  .services-section-services {
     height: 140vh;
-    .cards{
+
+    .cards {
       flex-direction: column;
       width: 50%;
-      margin: 15px ;
+      margin: 15px;
     }
   }
 
-  .section-big-cards{
-    .cards-container{
+  .section-big-cards {
+    .cards-container {
       flex-direction: column;
-      .am-card{
+
+      .am-card {
         padding: 40px 0px;
       }
     }
   }
-  .heading-line{
+  .heading-line {
     width: 200px;
   }
 }
 
-@media screen and (max-width:430px){
-  .services-section-header{
-    .text-container{
+@media screen and (max-width: 430px) {
+  .services-section-header {
+    .text-container {
       height: auto;
-      h2{
+
+      h2 {
         font-size: 28px;
       }
-      h4{
+
+      h4 {
         font-size: 18px;
       }
     }
   }
-  .services-section-services{
+  .services-section-services {
     height: 230vh;
   }
 }
 
-@media screen and (max-width:399px){
-  .services-section-services{
+@media screen and (max-width: 399px) {
+  .services-section-services {
     height: 180vh;
   }
 }

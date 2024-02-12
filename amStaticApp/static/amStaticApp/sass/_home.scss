@@ -96,8 +96,8 @@
     .box-home {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        place-items: center;
-        width: 85%;
+        place-items: start;
+        width: 90%;
         margin-top: 5%;
 
         .item-box-home {
@@ -166,7 +166,7 @@
 
         .left-section {
             width: 45%;
-            
+
 
             span {
                 font-size: 22px;
@@ -389,12 +389,12 @@
             .text-header-home {
                 flex-flow: row wrap;
                 width: 80%;
-               
+
                 h1 {
                     font-size: 20px;
                     line-height: 26px;
                 }
-    
+
                 p {
                     font-size: 16px;
                     line-height: 30px;
@@ -404,7 +404,7 @@
                 width: 80%;
 
             }
-    
+
         }
 
     }
@@ -511,7 +511,7 @@
 
             .right-blockquote-home {
                 width: 90%;
-            
+
                 blockquote {
                     padding: 5px;
                     &::before {
