@@ -15,4 +15,6 @@ urlpatterns = [
     path('services/web_development/', views.web_dev, name="web_dev"),
     path('services/mobile/', views.mobile, name="mobile_dev"),
     path('services/digital_marketing/', views.digital_marketing, name="digital_marketing"),
+    path('technologies/android/', views.android, name="android"),
+    path('technologies/ios/', views.ios, name="ios"),
 ]

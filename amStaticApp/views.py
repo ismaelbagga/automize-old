@@ -49,3 +49,11 @@ def mobile(request):
 
 def digital_marketing(request):
     return render(request, 'amStaticApp/services/digital_marketing.html')
+
+
+def android(request):
+    return render(request, 'amStaticApp/technologies/android.html')
+
+
+def ios(request):
+    return render(request, 'amStaticApp/technologies/ios.html')
