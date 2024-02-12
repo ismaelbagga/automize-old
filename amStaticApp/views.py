@@ -45,3 +45,7 @@ def web_dev(request):
 
 def mobile(request):
     return render(request, 'amStaticApp/services/mobile.html')
+
+
+def digital_marketing(request):
+    return render(request, 'amStaticApp/services/digital_marketing.html')
