@@ -138,18 +138,16 @@
                     <div class="col-md-4 mb-md-0 mb-4">
                         <h2 class="footer-heading">Company</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="d-block">Our services</a></li>
-                            <li><a href="#" class="d-block">Clients</a></li>
-                            <li><a href="#" class="d-block">Contact</a></li>
-                            <li><a href="#" class="d-block">Press</a></li>
+                            <li><a href="{% url 'services' %}" class="d-block">Our services</a></li>
+                            <li><a href="{% url 'web_dev' %}" class="d-block">Web</a></li>
+                            <li><a href="{% url 'mobile_dev' %}" class="d-block">Mobile</a></li>
+                            <li><a href="{% url 'python' %}" class="d-block">Python</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 mb-md-0 mb-4">
                         <h2 class="footer-heading">Resources</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="d-block">Blog</a></li>
-                            <li><a href="#" class="d-block">Newsletter</a></li>
-                            <li><a href="#" class="d-block">Privacy Policy</a></li>
+                            <li><a href="{% url 'contact' %}" class="d-block">Contact</a></li>
                         </ul>
                     </div>
                 </div>
