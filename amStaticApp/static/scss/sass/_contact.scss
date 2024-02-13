@@ -1,0 +1,205 @@
+@use "variables";
+@use "typography";
+
+.contact-container {
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -2.4px;
+    padding: 70px 0 0 60px;
+  }
+
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    gap: 5%;
+
+    .contact {
+      background-color: white;
+      box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .form-contact {
+      padding: 25px;
+      width: 60%;
+
+      .contact-row {
+        display: flex;
+        gap: 5%;
+      }
+
+      .inputBox-contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        span {
+          color: #6f6f6f;
+          margin-top: 10px;
+          padding-bottom: 15px;
+        }
+
+        input {
+          height: 60px;
+          padding: 2%;
+          font-size: 1.1em;
+          outline: none;
+          border: 1px solid #eee9e9;
+          background-color: #f9f9f9;
+        }
+      }
+
+      .inputBox-contact {
+        width: 100%;
+
+        textarea {
+          padding: 10px;
+          font-size: 1.1em;
+          outline: none;
+          border: 1px solid #ede8e8;
+          resize: none;
+          min-height: 220px;
+          margin-bottom: 10px;
+          background-color: #f9f9f9;
+        }
+      }
+
+      .form-check {
+        margin-bottom: 5%;
+
+        label {
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+
+  .contact-info {
+    width: 25%;
+
+    blockquote {
+      position: relative;
+      font-style: italic;
+      width: 100%;
+
+      &::before {
+        content: "\201C"; // Unicode for the opening double quotation mark
+        position: absolute;
+        top: -80px;
+        left: -15%;
+        font-size: 12rem;
+        color: variables.$primary-color;
+      }
+
+      .info-box {
+        padding: 10%;
+
+        p {
+          font-style: italic;
+          line-height: 35px;
+          font-size: 18px;
+        }
+
+        .desc-contact {
+          padding-top: 25px;
+
+          span {
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+
+    .map-contact {
+
+
+      .adress-contact {
+
+        .local-contact {
+          position: relative;
+          top: 75px;
+          left: 20px;
+        }
+
+        .adress {
+          margin-left: 30%;
+          line-height: 24px;
+          font-size: 14px;
+        }
+
+        .country-adress {
+          margin-left: 30%;
+          line-height: 24px;
+          font-size: 14px;
+          font-weight: 800;
+        }
+
+        .email-adress {
+          color: variables.$primary-color;
+          margin-left: 30%;
+          line-height: 24px;
+          font-size: 14px;
+        }
+      }
+
+      ul {
+        margin: 5%;
+
+        li {
+          list-style-type: square;
+          line-height: 40px;
+          margin-left: 40px;
+          font-size: 18px;
+
+          &::marker {
+            color: variables.$primary-color;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media(max-width: 900px) {
+  .contact-container {
+    h1 {
+      padding: 70px 0 0 0;
+      line-height: 48px;
+    }
+
+    .contact-details {
+      flex-direction: column;
+      padding: 60px 0;
+
+      .form-contact {
+        width: 100%;
+        padding: 20px 30px;
+        margin-bottom: 55px;
+
+        .contact-row {
+          gap: 0;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .contact-info {
+      width: 100%;
+
+      blockquote {
+        &::before {
+          left: -5%;
+        }
+      }
+    }
+  }
+}

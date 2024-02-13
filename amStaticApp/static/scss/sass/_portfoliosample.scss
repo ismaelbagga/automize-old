@@ -1,0 +1,263 @@
+@use "variables";
+@use "mixins";
+
+.portfolio_sample_section_infos {
+  padding: 42px 0px 0px;
+  width: fit-content;
+  margin: 120px auto;
+
+  .title {
+    color: variables.$text-color;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 92px;
+    margin: 10px 0px 48px;
+  }
+
+  .subtitle {
+    color: variables.$primary-color;
+    font-size: 50px;
+    margin: 0px 0px 60px;
+  }
+
+  .description-banner-single-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 24.4286px;
+    padding: 10px;
+  }
+
+  .description-item {
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+    .top-content {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.61;
+      margin-bottom: 10px;
+    }
+
+    .bottom-content {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.61;
+
+      .bottom-content-a {
+        color: #dd170f;
+      }
+    }
+  }
+
+  // .top-content {
+  //     font-style: normal;
+  //     font-weight: 400;
+  //     font-size: 18px;
+  //     line-height: 1.61;
+  //     color: #1E1E21;
+  //     margin-bottom: 10px;
+  // }
+}
+
+.section-text-image {
+  margin: 60px 0;
+
+  .sec-row {
+    max-width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    .content-text {
+      width: 50%;
+      .title {
+        font-weight: 400;
+        font-size: 36px;
+        margin: 20px 0;
+      }
+
+      .text-wrp {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        ul {
+          li {
+            line-height: 40px;
+            list-style-type: square;
+
+            &::marker {
+              color: variables.$primary-color;
+            }
+          }
+        }
+      }
+    }
+    .section-wrapper {
+      width: 50%;
+      margin: 30px;
+
+      .image-content {
+        max-width: 552px;
+        width: 100%;
+
+        .image-wrapper {
+          img {
+            width: 100%;
+            object-fit: cover;
+            padding: 20px;
+          }
+        }
+
+        .description {
+          font-style: italic;
+          font-weight: 400;
+          font-size: 18px;
+          color: #616d7e;
+        }
+      }
+    }
+  }
+}
+
+.banner-partners {
+    @include mixins.fullwidth;
+  padding: 90px 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+//   position: relative;
+  color: white;
+  background-image: url("../../images/web-application-for-charities.jpg.webp");
+//   width: 100vw !important;
+//   margin-left: calc(-50vw + 50%) !important;
+  .content-wrapper {
+    width: 70%;
+    // max-width: 96%;
+    margin: 0 auto;
+    .wrapper {
+      padding: 0 94px;
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .txt {
+        font-size: 27px;
+        line-height: 1.75;
+        padding-top: 20px;
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
+
+.portfolio_sample_contact_us {
+  margin: 60px 0;
+  padding: 24px 0;
+
+  .sub-contact {
+    width: 738px;
+    max-width: 96%;
+    margin: 0 auto;
+    text-align: center;
+
+    .question {
+      font-size: 32px;
+      line-height: 1.375;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.portfolio-sample-full-image {
+  img {
+    @include mixins.fullwidth;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .banner-partners {
+    .content-wrapper{
+      .wrapper{
+        .txt {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .content-text{
+    .text-wrp{
+     line-height: 20px;
+     ul{
+      li{
+        line-height: 20px;
+      }
+     }
+    }
+  }
+}
+
+@media screen and (max-width: 835px){
+  .section-text-image{
+    .sec-row{
+      flex-direction: column;
+      .content-text{
+        width: 100%;
+      }
+      .section-wrapper{
+        width: 100%;
+       
+      }
+
+    }
+  }
+
+  .banner-partners {
+    .content-wrapper{
+      width: auto;
+      .wrapper{
+        padding: 0;
+        .icon{
+          display: none !important;
+        }
+        .txt {
+          font-size:15px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .section-text-image{
+    .sec-row{
+      flex-direction: column;
+      .content-text{
+        margin: 15px;
+        width: 100%;
+      }
+      .section-wrapper{
+        width: 100%;
+      }
+    }
+  }
+
+  .banner-partners {
+    .content-wrapper{
+      .wrapper{
+        .icon{
+          display: none !important;
+        
+        }
+        .txt {
+          font-size:15px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

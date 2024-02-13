@@ -1,0 +1,77 @@
+@use "variables";
+/* typography.scss */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
+/* Add more @font-face rules for other font weights and styles */
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+html,
+body,
+* {
+  font-family: "Open Sans";
+}
+
+am-text-bold {
+  font-weight: bold;
+  .section-title {
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

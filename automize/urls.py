@@ -21,5 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('amStaticApp.urls')),
     path('docs/', include('documentation.urls')),
-
 ]
