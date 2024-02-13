@@ -17,4 +17,6 @@ urlpatterns = [
     path('services/digital_marketing/', views.digital_marketing, name="digital_marketing"),
     path('technologies/android/', views.android, name="android"),
     path('technologies/ios/', views.ios, name="ios"),
+    path('technologies/python/', views.python, name="python"),
+    path('technologies/c-development/', views.c_development, name="c_development"),
 ]

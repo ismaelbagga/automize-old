@@ -57,3 +57,11 @@ def android(request):
 
 def ios(request):
     return render(request, 'amStaticApp/technologies/ios.html')
+
+
+def python(request):
+    return render(request, 'amStaticApp/technologies/python.html')
+
+
+def c_development(request):
+    return render(request, 'amStaticApp/technologies/c-development.html')
